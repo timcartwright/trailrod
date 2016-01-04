@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'annotate'
 gem 'country_select'
+gem 'globalize', '~> 5.0.0'
 
 group :development, :test do
   gem 'byebug'
