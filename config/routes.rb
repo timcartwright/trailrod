@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get "home/land"
     get 'testimonial/index'
     get '/', to: 'home#land'
+    get "/:id" => "high_voltage/pages#show", :as => :page, :format => false
   end
 
   root 'home#land'

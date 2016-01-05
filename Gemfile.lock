@@ -89,6 +89,7 @@ GEM
     globalize (5.0.1)
       activemodel (>= 4.2.0, < 4.3)
       activerecord (>= 4.2.0, < 4.3)
+    high_voltage (2.4.0)
     i18n (0.7.0)
     i18n_data (0.7.0)
     jbuilder (2.4.0)
@@ -203,6 +204,7 @@ DEPENDENCIES
   devise_invitable
   font-awesome-rails
   globalize (~> 5.0.0)
+  high_voltage (~> 2.4.0)
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener

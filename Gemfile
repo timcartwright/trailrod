@@ -18,6 +18,7 @@ gem 'font-awesome-rails'
 gem 'annotate'
 gem 'country_select'
 gem 'globalize', '~> 5.0.0'
+gem 'high_voltage', '~> 2.4.0'
 
 group :development, :test do
   gem 'byebug'
