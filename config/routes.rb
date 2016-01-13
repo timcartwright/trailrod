@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :trails
   # scope ':locale', locale: /en|fr/ do
   #   root to: 'home#land'
   #   get "home/land"
