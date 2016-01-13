@@ -1,5 +1,9 @@
 class Home
   def next_trail
-    @next_trail = Trail.first
+    @next_trail ||= Trail.includes(:events).first
+  end
+
+  def next_trail_events
+    next_trail.events
   end
 end

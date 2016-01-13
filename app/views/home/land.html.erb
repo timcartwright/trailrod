@@ -9,6 +9,10 @@
     <div class="row">
       <div class="col-md-6 white">
         <%= @home.next_trail.name %>
+
+        <% @home.next_trail_events.each do |event| %>
+          <%= event.distance %>
+        <% end %>
       </div>
       <div class="col-md-6 other">
         
