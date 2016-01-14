@@ -13,7 +13,8 @@
     </section>
   <% end %>
 
-  <%= render "common/header" %>
+  <%= render "common/header" unless @disable_nav %>
+  
   <div class="container-fluid">
     <div class="flash_messages">
       <%= flash_tag(notice, "notice") %>
