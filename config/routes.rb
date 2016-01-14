@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
   resources :events
-  resources :trails
+  
   # scope ':locale', locale: /en|fr/ do
   #   root to: 'home#land'
   #   get "home/land"
@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|fr/ do
     get "home/land"
     get 'testimonial/index'
+    resources :trails
     get '/', to: 'home#land'
     get "/:id" => "high_voltage/pages#show", :as => :page, :format => false
   end
