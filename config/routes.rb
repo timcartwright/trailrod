@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|fr/ do
     get "home/land"
     get 'testimonial/index'
-    resources :trails
+    resources :trails, only: [:index, :show]
     get '/', to: 'home#land'
     get "/:id" => "high_voltage/pages#show", :as => :page, :format => false
   end
