@@ -16,4 +16,7 @@
 #
 
 module TrailsHelper
+  def show_trail_bg
+    "background-image: url('http://get-muddy.com/wp-content/uploads/2014/12/crossingstream1.jpg');"
+  end
 end

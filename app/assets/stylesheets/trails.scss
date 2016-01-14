@@ -1,3 +1,17 @@
 // Place all the styles related to the Trails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.image-header {
+    // background: url('http://get-muddy.com/wp-content/uploads/2014/12/crossingstream1.jpg') no-repeat top center;
+    background-size: 130%;
+    background-position: 50%;
+    height: 170px !important;
+    padding: 380px 0 0 0;
+    width: 100%;
+    display: block;
+    // position: fixed;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    z-index: 888;
+}

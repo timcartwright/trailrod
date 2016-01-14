@@ -1,5 +1,10 @@
 <% content_for :image_header do %>
-  <%= @trail.name %>
+  <div style="<%= show_trail_bg %>" class="image-header">
+    <h1>
+      <%= @trail.name %>
+    </h1>
+  </div>
 <% end %>
-
-<%= @trail.name %>
+<main class="div">
+  <%= @trail.name %>
+</main>
