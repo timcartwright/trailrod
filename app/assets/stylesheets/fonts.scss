@@ -15,6 +15,13 @@
 @font-face {
   font-family: 'Calibre';
   src: font-url('Calibre-Bold.eot?#iefix') format('embedded-opentype'),  font-url('Calibre-Bold.woff') format('woff'), font-url('Calibre-Bold.ttf')  format('truetype'), font-url('Calibre-Bold.svg#Calibre-Bold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('Calibre-Black.eot?#iefix') format('embedded-opentype'),  url('Calibre-Black.woff') format('woff'), url('Calibre-Black.ttf')  format('truetype'), url('Calibre-Black.svg#Calibre-Black') format('svg');
   font-weight: 900;
   font-style: normal;
 }

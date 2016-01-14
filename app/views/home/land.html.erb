@@ -1,36 +1,47 @@
 <div class="row">
   <div class="col-md-6 tdr">
-   dfdfd
+    <h3 class="next-trail-name">
+      Trail of Rodrigues
+    </h3>
   </div>
   <div class="col-md-6 rta">
-   dfdfd
+    <h3 class="next-trail-name">
+      Rod Trail Association
+    </h3>
   </div>
   <div class="col-md-6">
     <div class="row">
       <div class="col-md-6 white">
-        <%= @home.next_trail.name %>
+        <h2>
+          Next Trail
+        </h2>
+        <h3 class="next-trail-name">
+          <%= @home.next_trail.name %>
+        </h3>
 
         <% @home.next_trail_events.each do |event| %>
-          <%= event.distance %>
+          <%= "#{event.distance}k" %>
         <% end %>
+        <p>
+          <%= link_to "Full Details", trail_path(@home.next_trail) %>
+        </p>
       </div>
       <div class="col-md-6 other">
-        
+        <%= I18n.locale %>
+
+        <%= t :hello %>
+
+        <p>
+        <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
+        |
+        <%= link_to_unless I18n.locale == :fr, "Francais", locale: :fr %>
+        </p>
+        <p>
+          <%= link_to "Change lang", home_land_path %>
+        </p>
       </div>
     </div>
-    <h1>Home#land</h1>
-    <p>Find me in app/views/home/land.html.erb</p>
-    <%= I18n.locale %>
-
-    <%= t :hello %>
-
-    <p>
-    <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
-    |
-    <%= link_to_unless I18n.locale == :fr, "Francais", locale: :fr %>
-    </p>
-    <p>
-      <%= link_to "Change lang", home_land_path %>
-    </p>
+    
+    
   </div>
 </div>
