@@ -22,7 +22,6 @@ class TrailsController < ApplicationController
 
   def show
     @trail = Trail.find(params[:id])
-    render layout: 'image_header'
   end
 
 end

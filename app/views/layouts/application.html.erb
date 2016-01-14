@@ -7,14 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render "common/header" %>
-<div class="container-fluid">
-  <div class="flash_messages">
-    <%= flash_tag(notice, "notice") %>
-    <%= flash_tag(alert, "alert") %>
-  </div>
-  <%= yield %>
-</div>
+  <% if content_for? :image_header %>
+    <section>
+      <%= yield :image_header %>
+    </section>
+  <% end %>
 
+  <%= render "common/header" %>
+  <div class="container-fluid">
+    <div class="flash_messages">
+      <%= flash_tag(notice, "notice") %>
+      <%= flash_tag(alert, "alert") %>
+    </div>
+    <%= yield %>
+  </div>
 </body>
 </html>
