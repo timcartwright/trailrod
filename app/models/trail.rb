@@ -18,6 +18,8 @@
 class Trail < ActiveRecord::Base
   has_many :events
 
+  validates :name, :date, :organiser, :description, presence: true
+
   def slug
     name.downcase.gsub(" ", "-")  
   end

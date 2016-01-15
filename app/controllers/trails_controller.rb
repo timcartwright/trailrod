@@ -24,4 +24,19 @@ class TrailsController < ApplicationController
     @trail = Trail.find(params[:id])
   end
 
+  def new
+    @trail = Trail.new
+  end
+
+  def create
+    # debugger
+    @trail = Trail.new(trail_params)
+    redirect_to trails_path
+  end
+
+private
+  def trail_params
+    params.require(:trail).permit(:name, :date, :location, :organiser, :description, :external_link, :register_online)
+  end
+
 end

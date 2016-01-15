@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'dashboard/index'
+
+  scope "/admin" do
+    get '/', to: 'dashboard#index'
+    # resources :trails, except: [:index, :show]
+  end
 
   resources :events
   
@@ -12,9 +18,9 @@ Rails.application.routes.draw do
   devise_for :users
 
   scope ':locale', locale: /en|fr/ do
-    get "home/land"
+    get 'home/land'
     get 'testimonial/index'
-    resources :trails, only: [:index, :show]
+    resources :trails, only: [:index, :show, :new, :create]
     get '/', to: 'home#land'
     get "/:id" => "high_voltage/pages#show", :as => :page, :format => false
   end
