@@ -15,4 +15,20 @@
 #
 
 class EventsController < ApplicationController
+
+  def new
+    @event = Event.new
+    @trail = Trail.find(params[:trail_id])
+  end
+
+  def create
+    debugger
+    @event = Event.new(event_params)
+    redirect_to trails_path
+  end
+
+private
+  def event_params
+    params.require(:event).permit(:name, :description, :distance, :local_price, :foreign_price)
+  end
 end

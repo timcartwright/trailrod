@@ -30,8 +30,9 @@ class TrailsController < ApplicationController
 
   def create
     # debugger
-    @trail = Trail.new(trail_params)
-    redirect_to trails_path
+    trail = Trail.new(trail_params)
+    trail.save
+    redirect_to new_trail_event_path(trail)
   end
 
 private
