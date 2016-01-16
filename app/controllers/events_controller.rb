@@ -22,9 +22,13 @@ class EventsController < ApplicationController
   end
 
   def create
-    debugger
-    @event = Event.new(event_params)
-    redirect_to trails_path
+    @trail = Trail.find(params[:trail_id])
+    @event = @trail.events.new(event_params)
+    if @event.save
+      redirect_to trails_path
+    else
+      render :new
+    end
   end
 
 private
