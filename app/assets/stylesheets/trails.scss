@@ -15,3 +15,30 @@
     -webkit-transform: translateZ(0);
     z-index: 888;
 }
+
+.trail-box {
+    text-align: center;
+    height: 300px;
+    color: #FFF;
+    padding: 0;
+    // background: url('http://get-muddy.com/wp-content/uploads/2014/12/crossingstream1.jpg') no-repeat top center;
+
+    .content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 5rem;
+        
+    }
+}
+
+.overlay {
+     background-color: rgba(230, 85, 0, 0.5);
+     height: 300px;
+     padding: 0;
+     margin: 0;
+}

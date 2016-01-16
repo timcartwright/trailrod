@@ -17,7 +17,7 @@
 
 class TrailsController < ApplicationController
   def index
-    @trails = Trail.all
+    @trails = Trail.all.includes(:events)
   end
 
   def show
