@@ -9,8 +9,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'bootstrap-sass'
-gem 'bootswatch-rails'
 gem 'devise'
 gem 'devise_invitable'
 gem 'simple_form'
@@ -19,6 +17,7 @@ gem 'annotate'
 gem 'country_select'
 gem 'globalize', '~> 5.0.0'
 gem 'high_voltage', '~> 2.4.0'
+gem 'materialize-sass'
 
 group :development, :test do
   gem 'byebug'
