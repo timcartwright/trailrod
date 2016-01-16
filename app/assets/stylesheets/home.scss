@@ -7,3 +7,30 @@
   color: $white;
   font-size: 6rem;
 }
+
+.tdr-wrap {
+  background-image: url("http://get-muddy.com/wp-content/uploads/2014/12/crossingstream1.jpg");
+  background-color: #FFF;
+  height: 95vh;
+}
+
+.tdr {
+  height: 100vh;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.other {
+  background-color: #e65500;
+  color: $white;
+  height: 50vh;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.rta-wrap {
+  background-image: url("http://get-muddy.com/wp-content/uploads/2014/12/nico-bike.jpg");
+  height: 45vh;
+  background-size: cover;
+  background-position: 50% 50%;
+}
