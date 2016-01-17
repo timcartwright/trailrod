@@ -3,9 +3,12 @@
     <%= render "common/header" unless @disable_nav %>
     <div>
       <div class="content">
-        <h3 class="next-trail-name">
+        <h3 class="next-trail-name center">
           <%= @trail.name %>
         </h3>
+        <p class="center">
+          <%= @trail.date.strftime("%d %B") if @trail.date %>
+        </p>
       </div>
     </div>
   </div>
