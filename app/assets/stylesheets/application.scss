@@ -1,6 +1,15 @@
-@import "materialize";
+@import "materialize/components/color";
+
+$primary-color: color("orange", "darken-3") !default;
+$secondary-color: color("lime", "darken-2") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
+
+@import 'materialize';
 @import "font-awesome";
 @import "fonts";
 @import "common";
 @import "home";
 @import "trails";
+
