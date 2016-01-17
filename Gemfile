@@ -19,6 +19,7 @@ gem 'globalize', '~> 5.0.0'
 gem 'high_voltage', '~> 2.4.0'
 gem 'materialize-sass'
 gem 'material_icons'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'byebug'
