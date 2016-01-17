@@ -1,16 +1,18 @@
-<% content_for :image_header do %>
-  <div style="<%= show_trail_bg %>" class="image-header">
-    <div class="container">
-      <h1 class="header-title">
-        <%= @trail.name %>
-      </h1>
+<div class="row">
+  <div class="col m12 l6">
+    <%= render "common/header" unless @disable_nav %>
+    <div>
+      <div class="content">
+        <h3 class="next-trail-name">
+          <%= @trail.name %>
+        </h3>
+      </div>
     </div>
   </div>
-<% end %>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div>
+  <div class="col m12 l6 tdr" style="background-color: rgba(175, 180, 43, 0.85); color: #fff;">
+    <div class="">
+      <div class="content">
+        <div>
         <h2>
           <%= @trail.name %>
         </h2>
@@ -27,27 +29,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
         </p>
       </div>
-    </div>
-
-    <div class="col-md-6">
-      <div>
-        <h2>
-          <%= @trail.name %>
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
-        </p>
       </div>
     </div>
   </div>
 
-</div>
