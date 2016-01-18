@@ -1,8 +1,21 @@
-<% content_for :image_header do %>
-<div class="container-fluid">
-  <div class="row">
-    <%= render @trails %>
+<div class="row">
+  <div class="col m12 l6">
+    <%= render "common/header" %>
+    <div>
+      <div class="content">
+        <h3 class="next-trail-name center">
+          Trail Calendar
+        </h3>
+        <p class="center">
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col m12 l6 tdr" style="background-color: rgba(175, 180, 43, 0.85); color: #fff;">
+    <div class="">
+      <div class="content">
+        <%= render @trails %>
+      </div>
+    </div>
   </div>
 </div>
-<% end %>
-
