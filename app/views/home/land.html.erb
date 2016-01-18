@@ -1,55 +1,92 @@
-<div class="row">
-  <div class="col s6">
-    <div class=" tdr tdr-wrap z-depth-4">
-      <div class="content">
-        <h3 class="next-trail-name">
-          Trail of Rodrigues
-        </h3>
-      </div>
-    </div>
-  </div>
-  <div class="col s6">
-    <div class=" rta rta-wrap z-depth-2">
-      <div class="content">
-        <h3 class="next-trail-name">
-          Rod Trail Association
-        </h3>
-      </div>
-    </div>
-  </div>
-  <div class="col s6">
-    <div class="row">
-      <div class="col s6 next-trail z-depth-2">
-        <h2>
-          Next Trail
-        </h2>
-        <h3 class="next-trail-name">
-          <%= @home.next_trail.name %>
-        </h3>
-
-        <% @home.next_trail_events.each do |event| %>
-          <%= "#{event.distance}k" %>
-        <% end %>
-        <p>
-          <%= link_to "Full Details", trail_path(@home.next_trail), class: "btn btn-primary" %>
-        </p>
-      </div>
-      <div class="col s6 other">
-        <%= I18n.locale %>
-
-        <%= t :hello %>
-
-        <p>
-        <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
-        |
-        <%= link_to_unless I18n.locale == :fr, "Francais", locale: :fr %>
-        </p>
-        <p>
-          <%= link_to "Change lang", home_land_path %>
-        </p>
-      </div>
-    </div>
-    
-    
-  </div>
+<div class="dashboard display-animation" style="margin: 0 auto; width: 100%;">
+  <a class="tile tile-lg tile-pink ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/google_spec.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Google Guidelines</span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  <a class="tile tile-lg tile-sqr tile-purple ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/materialreel.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Material Design Reel</span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  <a class="tile tile-lg tile-sqr tile-cyan ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/principles.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Material Design <span class="caption">PDF</span></span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  <a class="tile tile-lg tile-sqr tile-amber ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img tile-img-bg" style="background-image: url(http://www.google.com/design/images/doodlearchive.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Doodle Archive</span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  <a class="tile tile-lg tile-light-blue ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img tile-img-bg" style="background-image: url(http://www.google.com/design/images/googleplus.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Google+</span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  <a class="tile tile-lg tile-sqr tile-red ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/design-minutes.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Design Minutes</span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  <a class="tile tile-lg tile-sqr tile-indigo ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/cast.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Google Cast UX</span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  <a class="tile tile-lg tile-sqr tile-deep-orange ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img" style="background-image: url(http://www.google.com/design/images/glass.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Glass Design</span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  <a class="tile tile-lg tile-light-green ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img tile-img-bg" style="background-image: url(http://www.google.com/design/images/webdesigner.png);"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Google Web Designer</span>
+        </span>
+      </span>      
+    </span>
+  </a>
 </div>
