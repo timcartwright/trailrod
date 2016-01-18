@@ -1,20 +1,20 @@
 <div class="row">
-  <div class="col m12 l6">
-    <div>
-      <div class="content">
-        <h3 class="next-trail-name center">
-          Trail Calendar
-        </h3>
-        <p class="center">
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col m12 l6 tdr" style="background-color: rgba(175, 180, 43, 0.85); color: #fff;">
-    <div class="">
-      <div class="content">
-        <%= render @trails %>
-      </div>
+  <div class="col s12">
+    <div class="dashboard display-animation" style="margin: 0 auto; width: 100%;">
+      <a class="tile tile-lg tile-sqr tile-pink ripple-effect tdr tdr-wrap" href="#">
+        <span class="content-wrapper">
+          <span class="tile-content">
+            <h3 class="next-trail-name">
+              Trail of Rodrigues
+            </h3>
+            <span class="tile-img"></span>
+            <span class="tile-holder tile-holder-sm">
+              <span class="title">Google Guidelines</span>
+            </span>
+          </span>      
+        </span>
+      </a>
+      <%= render @trails %>
     </div>
   </div>
 </div>

@@ -1,19 +1,22 @@
-<%= link_to trail_path(trail) do %>
-  <div class="col m12 l6 trail-box">
-    <div class="wrap">
-      <div class="content">
-        <h3>
-          <%= trail.name %>
-        </h3>
-        <p>
-          <%= trail.date.strftime("%d %B") if trail.date %>
-        </p>
-        <p>
-          <% trail.events.each do |event| %>
-            <%= "#{event.distance}k" %>
-          <% end %>
-        </p>
-      </div>
-    </div>
-  </div>
+<%= link_to trail_path(trail),  class: "tile tile-lg tile-sqr tile-deep-orange ripple-effect" do %>
+  <span class="content-wrapper">
+    <span class="tile-content">
+      <h3>
+        <%= trail.name %>
+      </h3>
+      <p>
+        <%= trail.date.strftime("%d %B") if trail.date %>
+      </p>
+      <p>
+        <% trail.events.each do |event| %>
+          <%= "#{event.distance}k" %>
+        <% end %>
+      </p>
+      <span class="tile-holder tile-holder-sm">
+        <span class="title">
+          <%= trail.organiser %>
+        </span>
+      </span>
+    </span>      
+  </span>
 <% end %>

@@ -1,21 +1,26 @@
 <div class="row">
-  <div class="col m12 l6">
-    <div>
-      <div class="content">
-        <h3 class="next-trail-name center">
-          <%= @trail.name %>
-        </h3>
-        <p class="center">
-          <%= @trail.date.strftime("%d %B") if @trail.date %>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col m12 l6 tdr" style="background-color: rgba(175, 180, 43, 0.85); color: #fff;">
-    <div class="">
-      <div class="content">
-        <div>
-        <h2>
+  <div class="col s12">
+    <div class="dashboard display-animation" style="margin: 0 auto; width: 100%;">
+      <a class="tile tile-lg tile-sqr tile-pink ripple-effect tdr tdr-wrap" href="#">
+        <span class="content-wrapper">
+          <span class="tile-content">
+            <h3 class="next-trail-name center">
+              <%= @trail.name %>
+            </h3>
+            <p class="center">
+              <%= @trail.date.strftime("%d %B") if @trail.date %>
+            </p>
+            <span class="tile-img"></span>
+            <span class="tile-holder tile-holder-sm">
+              <span class="title">Google Guidelines</span>
+            </span>
+          </span>      
+        </span>
+      </a>
+      <div class="tile tile-lg tile-deep-orange">
+        <span class="content-wrapper">
+          <span class="tile-content">
+            <h2>
           <%= @trail.name %>
         </h2>
         <p>
@@ -30,8 +35,14 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
         </p>
-      </div>
+            <span class="tile-img"></span>
+            <span class="tile-holder tile-holder-sm">
+              <span class="title">Google Guidelines</span>
+            </span>
+          </span>      
+        </span>
       </div>
     </div>
   </div>
+</div>
 

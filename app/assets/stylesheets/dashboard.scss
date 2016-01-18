@@ -23,7 +23,7 @@ body{
   &.open{
     transform: translateX(250px)  translateY(50px);
     -webkit-transform: translateX(250px)  translateY(50px);
-    box-shadow: 0 0 50px fade(black, 20%);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
   }
   
   section{
@@ -116,7 +116,7 @@ body{
   }
 }
 
-nav{
+nav {
   background-color: #14B9FF;
   width: 100%;
   height: 100%;
@@ -124,17 +124,17 @@ nav{
   left: 0;
   top: 0;
   
-  ul{
+  ul {
     width: 250px;
     margin-top: 50px;
     
-    &:hover{
-      li{
-        color: fade(white, 50%);
+    &:hover {
+      li > a {
+        color: rgba(255, 255, 255, 0.5);
       }
     }
     
-    li{
+    li > a {
       transition-duration: 0.25s;
       display: block;
       padding: 5px 40px;
@@ -142,7 +142,7 @@ nav{
       letter-spacing: 0.02em;
       text-align: right;
       
-      &:hover{
+      &:hover {
         cursor: pointer;
         color: white;
       }
@@ -152,10 +152,6 @@ nav{
   &.open{
   }
 }
-
-/* -- import Roboto Font ------------------------------ */
-@import "https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic";
-
 
 /* -- box model --------------------------------------- */
 *,
@@ -176,11 +172,7 @@ html {
 }
 
 body {
-  font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue, Helvetica, Arial', sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.4;
   color: #212121;
   background-color: #f5f5f5;
   -webkit-font-smoothing: antialiased;
@@ -1284,19 +1276,19 @@ body {
 }
 /*-- Tiles size --------------------------------------- */
 .tile {
-  width: 270px;
-  height: 130px;
+  width: 545px;
+  height: 260px;
 }
 .tile .content-wrapper .tile-content {
-  height: 130px;
-  padding: 10px;
+  height: 260px;
+  padding: 20px;
 }
 .tile .content-wrapper .tile-content .tile-img {
   height: 86.66666667px;
 }
 .tile .content-wrapper .tile-content .tile-img-bg {
-  width: 270px;
-  height: 130px;
+  width: 545px;
+  height: 260px;
   margin-left: -10px;
   margin-top: -10px;
 }
@@ -1310,31 +1302,31 @@ body {
   left: 10px;
 }
 .tile.tile-sqr {
-  width: 130px;
+  width: 260px;
 }
 .tile.tile-sqr .content-wrapper .tile-content .tile-img-bg {
-  width: 130px;
+  width: 260px;
 }
 .tile-lg {
-  width: 550px;
-  height: 270px;
+  width: 1100px;
+  height: 545px;
 }
 .tile-lg .content-wrapper .tile-content {
-  height: 270px;
-  padding: 20px;
+  height: 545px;
+  padding: 10px;
 }
 .tile-lg .content-wrapper .tile-content .tile-img {
   height: 180px;
 }
 .tile-lg .content-wrapper .tile-content .tile-img-bg {
-  width: 550px;
-  height: 270px;
+  width: 1100px;
+  height: 545px;
   margin-left: -20px;
   margin-top: -20px;
 }
 .tile-lg .content-wrapper .tile-content .tile-img-sm {
-  width: 135px;
-  height: 90px;
+  width: 270px;
+  height: 180px;
 }
 .tile-lg .content-wrapper .tile-content .tile-img-sm,
 .tile-lg .content-wrapper .tile-content .tile-holder-sm {
@@ -1342,13 +1334,13 @@ body {
   left: 20px;
 }
 .tile-lg.tile-sqr {
-  width: 270px;
+  width: 545px;
 }
 .tile-lg.tile-sqr .content-wrapper .tile-content .tile-img-bg {
-  width: 270px;
+  width: 545px;
 }
 .tile-sm {
-  width: 130px;
+  width: 260px;
   height: 60px;
 }
 .tile-sm .content-wrapper .tile-content {
@@ -1359,7 +1351,7 @@ body {
   height: 40px;
 }
 .tile-sm .content-wrapper .tile-content .tile-img-bg {
-  width: 130px;
+  width: 260px;
   height: 60px;
   margin-left: -5px;
   margin-top: -5px;
