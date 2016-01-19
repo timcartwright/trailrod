@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .next-trail-name {
-  font-weight: 800;
+  font-weight: 900;
   color: $white;
   font-size: 4rem;
 }
@@ -38,4 +38,14 @@
   height: 45vh;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.primary-tile {
+  background-image: url(asset-path('beach-start.jpg'));
+  background-size: 900px 600px;
+}
+
+.pig-image {
+  background-image: url(asset-path('pig-in-basket.jpg'));
+  background-size: 400px 600px;
 }

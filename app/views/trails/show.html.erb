@@ -1,18 +1,16 @@
 
     <div class="dashboard display-animation" style="margin: 0 auto; width: 100%;">
-      <a class="tile tile-lg tile-sqr tile-pink ripple-effect tdr tdr-wrap" href="#">
+      <a class="tile tile-lg tile-sqr">
         <span class="content-wrapper">
           <span class="tile-content">
-            <h3 class="next-trail-name center">
-              <%= @trail.name %>
-            </h3>
-            <p class="center">
-              <%= @trail.date.strftime("%d %B") if @trail.date %>
-            </p>
-            <span class="tile-img"></span>
-            <span class="tile-holder tile-holder-sm">
-              <span class="title">Google Guidelines</span>
+            
+            <span class="tile-img tile-img-bg pig-image">
+              
             </span>
+            <span class="tile-holder tile-holder-sm">
+              <span class="title"><%= @trail.name %></span>
+            </span>
+            
           </span>      
         </span>
       </a>
@@ -20,7 +18,12 @@
         <span class="content-wrapper">
           <span class="tile-content">
             <h2>
-          <%= @trail.name %>
+          <h3 class="next-trail-name">
+              <%= @trail.name %>
+            </h3>
+            <p class="center">
+              <%= @trail.date.strftime("%d %B") if @trail.date %>
+            </p>
         </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
@@ -28,18 +31,37 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga recusandae quae dolorem magnam, harum doloremque nemo, adipisci non unde amet, nobis atque libero odio dolor et ea officiis, sit at?
-        </p>
-            <span class="tile-img"></span>
-            <span class="tile-holder tile-holder-sm">
-              <span class="title">Google Guidelines</span>
-            </span>
+        
+            
           </span>      
         </span>
       </div>
+      <a class="tile tile-lg tile-pink ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        
+        <span class="tile-img tile-img-bg primary-tile"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Trail of Rodrigues</span>
+        </span>
+      </span>      
+    </span>
+  </a>
+  
+  <a class="tile tile-lg tile-sqr tile-deep-orange ripple-effect" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <h3 class="next-trail-name">
+          The Trail of Rodrigues
+        </h3>
+        <p>
+          12th November 2016
+        </p>
+        <p>
+          You are a runner, perhaps a hiker or perhaps just someone who likes being out in Nature. Well, this site is for you. 
+        </p>
+      </span>      
+    </span>
+  </a>
     </div>
  
