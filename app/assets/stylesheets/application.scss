@@ -50,6 +50,7 @@ $link-color: color("light-blue", "darken-1") !default;
 @import "material_icons";
 @import "fonts";
 @import "common";
+@import "layout";
+@import "navigation";
 @import "home";
 @import "trails";
-@import "dashboard";

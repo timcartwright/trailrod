@@ -38,6 +38,7 @@
   <a class="tile tile-lg tile-sqr tile-red ripple-effect" href="#">
     <span class="content-wrapper">
       <span class="tile-content">
+
         <span class="tile-img" style="background-image: url(http://www.google.com/design/images/design-minutes.png);"></span>
         <span class="tile-holder tile-holder-sm">
           <span class="title">Design Minutes</span>
@@ -46,16 +47,28 @@
     </span>
   </a>
   
-  <a class="tile tile-lg tile-light-blue ripple-effect" href="#">
+  <div class="tile tile-lg tile-light-blue ripple-effect" href="#">
     <span class="content-wrapper">
       <span class="tile-content">
+        <%= I18n.locale %>
+
+        <%= t :hello %>
+
+        <p>
+        <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
+        |
+        <%= link_to_unless I18n.locale == :fr, "Francais", locale: :fr %>
+        </p>
+        <p>
+          <%= link_to "Change lang", home_land_path %>
+        </p>
         <span class="tile-img tile-img-bg" style="background-image: url(http://www.google.com/design/images/googleplus.png);"></span>
         <span class="tile-holder tile-holder-sm">
           <span class="title">Google+</span>
         </span>
       </span>      
     </span>
-  </a>
+  </div>
 
   <%= link_to trail_path(@home.next_trail),  class: "tile tile-lg tile-cyan ripple-effect" do %>
     <span class="content-wrapper">
