@@ -20,7 +20,9 @@
       <%= flash_tag(notice, "notice") %>
       <%= flash_tag(alert, "alert") %>
     </div>
-    <%= yield %>
+    <div class="main-wrapper">
+      <%= yield %>
+    </div>
   </div>
 </body>
 </html>
