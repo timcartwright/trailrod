@@ -730,6 +730,14 @@ a.tile {
   width: 445px;
 }
 
+.tile-narrow.tile-half-height {
+  height: 295px;
+}
+
+.tile-narrow.tile-half-height .content-wrapper .tile-content .tile-img-bg {
+  height: 295px;
+}
+
 
 /*-- Display animation -------------------------------- */
 .display-animation > * {
