@@ -19,6 +19,46 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+h1, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 4.2vw;
+  line-height: 110%;
+  margin: 2.1vw 0 1.68vw 0;
+}
+
+h2 {
+  font-size: 3.56vw;
+  line-height: 110%;
+  margin: 1.78vw 0 1.424vw 0;
+}
+
+h3 {
+  font-size: 2.92vw;
+  line-height: 110%;
+  margin: 1.46vw 0 1.168vw 0;
+}
+
+h4 {
+  font-size: 2.28vw;
+  line-height: 110%;
+  margin: 1.14vw 0 0.912vw 0;
+}
+
+h5 {
+  font-size: 1.64vw;
+  line-height: 110%;
+  margin: 0.82vw 0 0.656vw 0;
+}
+
+h6 {
+  font-size: 1vw;
+  line-height: 110%;
+  margin: 0.5vw 0 0.4vw 0;
+}
+
 .main-wrapper {
   margin: 0 auto;
   width: 100%;
@@ -36,5 +76,11 @@ body {
   }
   &.runners-on-rope {
     background-image: url(asset-path('runners-on-rope-sq.jpg'));
+  }
+  &.band {
+    background-image: url(asset-path('band.jpg'));
+  }
+  &.mountain-goat {
+    background-image: url(asset-path('runner-mountain-goat.jpg'));
   }
 }

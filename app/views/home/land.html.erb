@@ -20,9 +20,14 @@
         <p>
           12th November 2016
         </p>
+        <h4>
+          A la source de l'Esprit du Trail
+        </h4>
         <p>
-          You are a runner, perhaps a hiker or perhaps just someone who likes being out in Nature. Well, this site is for you. 
+          42km de Plaisir – 22km de Bonheur – 7km d'Authenticité
         </p>
+        
+        
       </span>      
     </span>
   </a>
@@ -47,64 +52,48 @@
     </span>
   </div>
   
-  <div class="tile tile-lg tile-light-blue ripple-effect" href="#">
-    <span class="content-wrapper">
-      <span class="tile-content">
-        <%= I18n.locale %>
-
-        <%= t :hello %>
-
-        <p>
-        <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
-        |
-        <%= link_to_unless I18n.locale == :fr, "Francais", locale: :fr %>
-        </p>
-        <p>
-          <%= link_to "Change lang", home_land_path %>
-        </p>
-      </span>      
-    </span>
-  </div>
-
-  <%= link_to trail_path(@home.next_trail),  class: "tile tile-lg tile-cyan ripple-effect" do %>
-    <span class="content-wrapper">
-      <span class="tile-content">
-        <h2>
-      Next Trail
-    </h2>
-    <h3 class="next-trail-name">
-      <%= @home.next_trail.name %>
-    </h3>
-
-    <% @home.next_trail_events.each do |event| %>
-      <%= "#{event.distance}k" %>
-    <% end %>
-       
-    </span>
-  <% end %>
-
-  <a class="tile tile-lg tile-narrow tile-amber ripple-effect" href="#">
+  <a class="tile tile-lg tile-light-blue ripple-effect" href="#">
     <span class="content-wrapper">
       <span class="tile-content">
         
-        <span class="tile-img tile-img-bg pig-image"></span>
+        <span class="tile-img tile-img-bg mountain-goat"></span>
         <span class="tile-holder tile-holder-sm">
-          <span class="title">Rodrigues</span>
+          <span class="title">Rod Trail Association</span>
         </span>
       </span>      
     </span>
   </a>
-
-
-  <div class="tile tile-short tile-half-width tile-narrow tile-amber" href="#">
+  
+  <a class="tile tile-lg tile-cyan ripple-effect" href="#">
     <span class="content-wrapper">
       <span class="tile-content">
+        <span class="tile-img tile-img-bg band"></span>
+        <span class="tile-holder tile-holder-sm">
+          <span class="title">Discover Rodrigues</span>
+        </span>
+       
+    </span>
+  </a>
+  
+  <%= link_to trail_path(@home.next_trail),  class: "tile tile-lg tile-narrow tile-cyan ripple-effect" do %>
+
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <h2>
+          Next Trail
+        </h2>
+        <h3 class="next-trail-name">
+          <%= @home.next_trail.name %>
+        </h3>
+
+        <% @home.next_trail_events.each do |event| %>
+          <%= "#{event.distance}k" %>
+        <% end %>
         
-        <span class="tile-img tile-img-bg yan"></span>
         
       </span>      
     </span>
-  </div>
+  <% end %>
   
   <div class="tile tile-short tile-half-width tile-narrow tile-amber" href="#">
     <span class="content-wrapper">
@@ -116,11 +105,27 @@
     </span>
   </div>
 
-  <div class="tile tile-short tile-narrow tile-amber" href="#">
+  <div class="tile tile-short tile-half-width tile-narrow tile-deep-orange" href="#">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <h3>
+          "It was the best trail we have ever done, I can't wait to come back next year!"
+        </h3>
+        <p>
+          Tim Cartwright,
+        <br />
+          Trail de Rodrigues 2014
+        </p>
+        
+      </span>      
+    </span>
+  </div>
+
+  <div class="tile tile-short tile-narrow tile-deep-orange" href="#">
     <span class="content-wrapper">
       <span class="tile-content">
         
-        <span class="tile-img tile-img-bg runners-on-rope"></span>
+        <span class="tile-img tile-img-bg yan"></span>
         
       </span>      
     </span>
