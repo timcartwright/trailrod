@@ -78,7 +78,7 @@
 .dashboard > * {
   display: block;
   float: left;
-  margin: 5px;
+  margin: 0.3vw;
 }
 
 /* -- Tiles ------------------------------------------- */
@@ -653,18 +653,18 @@ a.tile {
 /*-- Tiles size --------------------------------------- */
 
 .tile-short {
-  width: 900px;
-  height: 400px;
+  width: 63vw;
+  height: 31vw;
 }
 .tile-short .content-wrapper .tile-content {
-  height: 400px;
+  height: 31vw;
   padding: 20px;
   padding-top: 0;
 }
 
 .tile-short .content-wrapper .tile-content .tile-img-bg {
-  width: 900px;
-  height: 400px;
+  width: 63vw;
+  height: 31vw;
   margin-left: -20px;
   margin-top: 0px;
 }
@@ -680,25 +680,25 @@ a.tile {
   color: #fff;
 }
 .tile-short.tile-narrow {
-  width: 400px;
+  width: 31.1vw;
 }
 .tile-short.tile-narrow .content-wrapper .tile-content .tile-img-bg {
-  width: 400px;
+  width: 31.1vw;
 }
 
 .tile-lg {
-  width: 900px;
-  height: 600px;
+  width: 63vw;
+  height: 42vw;
 }
 .tile-lg .content-wrapper .tile-content {
-  height: 600px;
+  height: 42vw;
   padding: 20px;
   padding-top: 0;
 }
 
 .tile-lg .content-wrapper .tile-content .tile-img-bg {
-  width: 900px;
-  height: 600px;
+  width: 63vw;
+  height: 42vw;
   margin-left: -20px;
   margin-top: 0px;
 }
@@ -714,38 +714,38 @@ a.tile {
   color: #fff;
 }
 .tile-lg.tile-narrow {
-  width: 400px;
+  width: 31.1vw;
 }
 .tile-lg.tile-narrow .content-wrapper .tile-content .tile-img-bg {
-  width: 400px;
+  width: 31.1vw;
 }
 
 .tile-short.tile-half-width,
 .tile-lg.tile-half-width {
-  width: 445px;
+  width: 31.2vw;
 }
 
 .tile-short.tile-half-width .content-wrapper .tile-content .tile-img-bg,
 .tile-lg.tile-half-width .content-wrapper .tile-content .tile-img-bg {
-  width: 445px;
+  width: 31.2vw;
 }
 
 .tile-short.tile-full-width,
 .tile-lg.tile-full-width {
-  width: 1310px;
+  width: 94.7vw;
 }
 
 .tile-short.tile-full-width .content-wrapper .tile-content .tile-img-bg,
 .tile-lg.tile-full-width .content-wrapper .tile-content .tile-img-bg {
-  width: 1310px;
+  width: 94.7vw;
 }
 
 .tile-narrow.tile-half-height {
-  height: 295px;
+  height: 20.7vw;
 }
 
 .tile-narrow.tile-half-height .content-wrapper .tile-content .tile-img-bg {
-  height: 295px;
+  height: 20.7vw;
 }
 
 .tile-flexible-height {
@@ -764,7 +764,7 @@ a.tile {
 
 .non-tile {
   padding: 20px;
-  max-width: 900px;
+  max-width: 63vw;
 }
 
 /*-- Display animation -------------------------------- */
