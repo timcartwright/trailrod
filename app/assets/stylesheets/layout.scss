@@ -652,6 +652,40 @@ a.tile {
 }
 /*-- Tiles size --------------------------------------- */
 
+.tile-short {
+  width: 900px;
+  height: 400px;
+}
+.tile-short .content-wrapper .tile-content {
+  height: 400px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.tile-short .content-wrapper .tile-content .tile-img-bg {
+  width: 900px;
+  height: 400px;
+  margin-left: -20px;
+  margin-top: 0px;
+}
+
+.tile-short .content-wrapper .tile-content .tile-img-sm,
+.tile-short .content-wrapper .tile-content .tile-holder-sm {
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(175, 180, 54, 0.85);
+  width: 100%;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #fff;
+}
+.tile-short.tile-narrow {
+  width: 400px;
+}
+.tile-short.tile-narrow .content-wrapper .tile-content .tile-img-bg {
+  width: 400px;
+}
+
 .tile-lg {
   width: 900px;
   height: 600px;
@@ -679,11 +713,21 @@ a.tile {
   font-size: 3rem;
   color: #fff;
 }
-.tile-lg.tile-sqr {
+.tile-lg.tile-narrow {
   width: 400px;
 }
-.tile-lg.tile-sqr .content-wrapper .tile-content .tile-img-bg {
+.tile-lg.tile-narrow .content-wrapper .tile-content .tile-img-bg {
   width: 400px;
+}
+
+.tile-short.tile-half-width,
+.tile-lg.tile-half-width {
+  width: 445px;
+}
+
+.tile-short.tile-half-width .content-wrapper .tile-content .tile-img-bg,
+.tile-lg.tile-half-width .content-wrapper .tile-content .tile-img-bg {
+  width: 445px;
 }
 
 
