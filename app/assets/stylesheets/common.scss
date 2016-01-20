@@ -20,6 +20,15 @@ body {
 }
 
 .main-wrapper {
-   margin: 0 auto;
-   width: 1330px;
+  margin: 0 auto;
+  width: 1330px;
+}
+
+.tile-img-bg {
+  &.rta {
+    background-image: url(asset-path('runners-having-fun-on-beach.jpg'));
+  }
+  &.girls-in-red {
+    background-image: url(asset-path('two-girls-in-red-sq.jpg'));
+  }
 }
