@@ -730,6 +730,16 @@ a.tile {
   width: 445px;
 }
 
+.tile-short.tile-full-width,
+.tile-lg.tile-full-width {
+  width: 1310px;
+}
+
+.tile-short.tile-full-width .content-wrapper .tile-content .tile-img-bg,
+.tile-lg.tile-full-width .content-wrapper .tile-content .tile-img-bg {
+  width: 1310px;
+}
+
 .tile-narrow.tile-half-height {
   height: 295px;
 }
@@ -738,6 +748,24 @@ a.tile {
   height: 295px;
 }
 
+.tile-flexible-height {
+  height: auto;
+
+  .content-wrapper {
+    position: relative;
+
+    .tile-content {
+      height: auto;
+      padding-top: 20px;
+    }
+
+  }
+}
+
+.non-tile {
+  padding: 20px;
+  max-width: 900px;
+}
 
 /*-- Display animation -------------------------------- */
 .display-animation > * {
