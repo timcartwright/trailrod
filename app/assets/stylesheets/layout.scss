@@ -774,7 +774,11 @@ a.tile {
   max-width: 63vw;
 }
 
+// Tile overrides
 
+.md-layout-filler {
+  display: none;
+}
 
 /*-- Display animation -------------------------------- */
 .display-animation > * {
