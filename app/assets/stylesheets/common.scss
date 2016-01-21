@@ -89,4 +89,11 @@ h6 {
   &.kids-watch-with-umbrella {
     background-image: url(asset-path('kids-watch-with-umbrella.jpg'));
   }
+  &.beach-start {
+  background-image: url(asset-path('beach-start.jpg'));
+  }
+  &.pig {
+  background-image: url(asset-path('pig-in-basket.jpg'));
+  background-position: 50% 10% !important;
+  }
 }

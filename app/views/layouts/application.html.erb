@@ -16,7 +16,10 @@
         <%= flash_tag(notice, "notice") %>
         <%= flash_tag(alert, "alert") %>
       </div>
-      <%= yield %>
+      <div class="dashboard display-animation">
+        <%= yield %>
+        <%= render "common/footer" %>
+      </div>
     </div>
   </div>
 </body>
