@@ -19,6 +19,8 @@
 
 
 $(document).ready(function() {
+
+  // nav
   $(".button-collapse").sideNav();
 
   $(".openNav").click(function() {
@@ -27,6 +29,8 @@ $(document).ready(function() {
     $(".wrapper").toggleClass("open");
     $(this).toggleClass("open");
   });
+
+  // animation of tile positions on load
 
   var speed = 2000;
   var container =  $('.display-animation');
@@ -43,6 +47,8 @@ $(document).ready(function() {
               .addClass('animated');
       });
   });
+
+  // ripple effect on click
 
   $(".ripple-effect").click(function(e){
     var rippler = $(this);
@@ -73,7 +79,38 @@ $(document).ready(function() {
         top: y+'px',
         left:x+'px'
     }).addClass("animate");
-  })
+  });
+
+  // Swap divs for mobile layout
+
+  function responsive_change_box_order() {
+    if (window.matchMedia("(max-width: 900px)").matches) {
+      if ($('.swap-me').isBefore($('.swap-me-with'))) {
+        $('.swap-me').remove().insertAfter($('.swap-me-with'));
+      }
+    }
+    else
+    {
+      if ($('.swap-me').isAfter($('.swap-me-with'))) {
+        $('.swap-me').remove().insertBefore($('.swap-me-with'));
+      }
+    }
+  };
+  
+  $.fn.isAfter = function(sel){
+      return this.prevAll().filter(sel).length !== 0;
+  };
+
+  $.fn.isBefore = function(sel){
+      return this.nextAll().filter(sel).length !== 0;
+  };
+
+  //on load
+  responsive_change_box_order();
+
+  //on resize
+  window.addEventListener('resize', responsive_change_box_order );
+  
 });
 
 
