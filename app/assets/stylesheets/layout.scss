@@ -105,6 +105,13 @@ a.tile {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  // .content-wrapper .tile-content .tile-img.tile-img-bg {
+  //   -webkit-background-size: 110%;
+  //   -moz-background-size: 110%;
+  //   -o-background-size: 110%;
+  //   background-size: 110%;
+  // }
 }
 /* -- Tiles content ----------------------------------- */
 .tile .content-wrapper {
@@ -766,6 +773,8 @@ a.tile {
   padding: 20px;
   max-width: 63vw;
 }
+
+
 
 /*-- Display animation -------------------------------- */
 .display-animation > * {
