@@ -64,6 +64,12 @@ h6 {
   width: 100%;
 }
 
+.sponsors-image {
+  padding: 1vw;
+  width: 18vw;
+  height: 18vw;
+}
+
 .tile-img-bg {
   &.rta {
     background-image: url(asset-path('runners-having-fun-on-beach.jpg'));
