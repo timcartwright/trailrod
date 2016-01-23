@@ -88,20 +88,6 @@
       <% @home.next_trail_events.each do |event| %>
         <%= "#{event.distance}k" %>
       <% end %>
-
-      <%= I18n.locale %>
-
-      <%= t :hello %>
-
-      <p>
-      <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
-      |
-      <%= link_to_unless I18n.locale == :fr, "Francais", locale: :fr %>
-      </p>
-      <p>
-        <%= link_to "Change lang", home_land_path %>
-      </p>
-      
       
     </span>      
   </span>
