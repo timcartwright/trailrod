@@ -14,12 +14,6 @@
   // margin: 15px;
 }
 
-.tdr-wrap {
-  background-image: url("http://get-muddy.com/wp-content/uploads/2014/12/crossingstream1.jpg");
-  background-color: #FFF;
-  position: relative;
-}
-
 .tdr {
   background-size: cover;
   background-position: 50% 0%;
@@ -31,21 +25,4 @@
   height: 50vh;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-.rta-wrap {
-  background-image: url("http://get-muddy.com/wp-content/uploads/2014/12/nico-bike.jpg");
-  height: 45vh;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.primary-tile {
-  background-image: url(asset-path('beach-start.jpg'));
-  background-size: 900px 600px;
-}
-
-.pig-image {
-  background-image: url(asset-path('pig-in-basket.jpg'));
-  background-size: 400px 600px;
 }

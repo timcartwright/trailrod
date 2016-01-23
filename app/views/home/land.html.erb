@@ -74,7 +74,7 @@
   </span>
 </a>
 
-<%= link_to trail_path(@home.next_trail),  class: "tile tile-lg tile-narrow tile-shorten tile-cyan ripple-effect" do %>
+<div class="tile tile-lg tile-narrow tile-shorten tile-cyan ripple-effect">
 
   <span class="content-wrapper">
     <span class="tile-content">
@@ -82,17 +82,30 @@
         Next Trail
       </h2>
       <h3 class="next-trail-name">
-        <%= @home.next_trail.name %>
+        <%= link_to @home.next_trail.name, trail_path(@home.next_trail) %>
       </h3>
 
       <% @home.next_trail_events.each do |event| %>
         <%= "#{event.distance}k" %>
       <% end %>
+
+      <%= I18n.locale %>
+
+      <%= t :hello %>
+
+      <p>
+      <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
+      |
+      <%= link_to_unless I18n.locale == :fr, "Francais", locale: :fr %>
+      </p>
+      <p>
+        <%= link_to "Change lang", home_land_path %>
+      </p>
       
       
     </span>      
   </span>
-<% end %>
+</div>
 
 <div class="tile tile-short tile-half-width tile-narrow tile-amber" href="#">
   <span class="content-wrapper">
@@ -129,28 +142,6 @@
       
       <span class="tile-img tile-img-bg yan"></span>
       
-    </span>      
-  </span>
-</div>
-
-
-
-
-<div class="tile tile-lg tile-full-width tile-flexible-height tile-light-blue ripple-effect" href="#">
-  <span class="content-wrapper">
-    <span class="tile-content">
-      <%= I18n.locale %>
-
-      <%= t :hello %>
-
-      <p>
-      <%= link_to_unless I18n.locale == :en, "English", locale: :en %>
-      |
-      <%= link_to_unless I18n.locale == :fr, "Francais", locale: :fr %>
-      </p>
-      <p>
-        <%= link_to "Change lang", home_land_path %>
-      </p>
     </span>      
   </span>
 </div>

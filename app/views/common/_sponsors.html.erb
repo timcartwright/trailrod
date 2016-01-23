@@ -1,7 +1,7 @@
 <div class="tile tile-lg tile-full-width tile-flexible-height">
   <span class="content-wrapper">
     <span class="tile-content center">
-      <% @home.sponsors.each do |image| %>
+      <% Dir.glob("app/assets/images/sponsors/*.jpg").each do |image| %>
         <%= image_tag "sponsors/#{image.split('/').last}", class: "sponsors-image" %>
       <% end %>
     </span>      
