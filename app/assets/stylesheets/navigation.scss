@@ -144,17 +144,28 @@ nav {
       }
     }
     
-    li > a {
-      transition-duration: 0.25s;
-      display: block;
-      padding: 5px 40px;
-      color: white;
-      letter-spacing: 0.02em;
+    li {
       text-align: right;
+      padding: 5px 35px;
+      letter-spacing: 0.02em;
+      display: block;
+      font-weight: bold;
+      color: white;
+
+      a {
+      transition-duration: 0.25s;
+      color: white;
+      font-weight: normal;
+      position: relative;
       
-      &:hover {
-        cursor: pointer;
-        color: white;
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+
+        &:active {
+          top: 1px;
+        }
       }
     }
   }
