@@ -1,0 +1,49 @@
+<div class='row'>
+  <div class='col s12'>
+    <h2>
+      Trailer Profile
+    </h2>
+    <%= simple_form_for @profile do |f| %>
+    <div class="row">
+      <%= f.input :first_name, wrapper_html: {class: 'col s12 m12 l6'} %>
+      <%= f.input :family_name, wrapper_html: {class: 'col s12 m12 l6'} %>
+    </div>
+    <div class="row">
+      <%= f.input :email, type: 'email', wrapper_html: {class: 'col s12 m12 l6'} %>
+      <%= f.input :mobile, label: 'Mobile number', wrapper_html: {class: 'col s12 m12 l6'} %>
+    </div>
+    <div class="row">
+      <%= f.input :date_of_birth, as: :string, wrapper_html: {class: 'col s12 m12 l6'}, input_html: {class: 'datepicker'} %>
+      <div class="col s12 m12 l6">
+        <%= f.collection_radio_buttons :gender, [['male', 'Male'] ,['female', 'Female']], :first, :last %>
+      </div>
+    </div>
+    <div class="row">
+      <%= f.input :nationality, label: false, wrapper_html: {class: 'col s12 m12 l6'} do %>
+        <%= f.country_select :nationality, prompt: 'Select nationality', priority_countries: ['MU'] %>
+      <% end %>
+      <%= f.input :nationality, label: false, wrapper_html: {class: 'col s12 m12 l6'} do %>
+        <%= f.country_select :country_of_residence, prompt: 'Select country of residence', priority_countries: ['MU'], include_blank: 'Rodrigues' %>
+      <% end %>
+      
+    </div>
+    <div class="row">
+      <%= f.input :passport_number, label: 'ID or Passport number', wrapper_html: {class: 'col s12 m12 l6'} %>
+      <%= f.input :tshirt_size, prompt: 'Select t-shirt size', collection: ['XL', 'L', 'M', 'S', 'XS'], wrapper_html: {class: 'col s12 m12 l6'} %>
+    </div>
+    <div class="row">
+      <%= f.input :emergency_contact_name, wrapper_html: {class: 'col s12 m12 l6'} %>
+      <%= f.input :emergency_contact_phone, wrapper_html: {class: 'col s12 m12 l6'} %>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l6">
+        <%= f.collection_check_boxes :accepted_terms, [[true, 'I accept the terms and conditions']], :first, :last %>
+      </div>
+      
+      
+    </div>
+    
+    <%= f.button :submit, 'Save Profile' %>
+  <% end %>
+  </div>
+</div>

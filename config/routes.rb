@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :profiles
   root to: redirect("/#{I18n.default_locale}", status: 302), as: :redirected_root
 
   get 'dashboard/index'
@@ -23,6 +22,7 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|fr/ do
     root 'home#land'
     get 'testimonial/index'
+    resources :profiles
     resources :trails, only: [:index, :show, :new, :create] do
       resources :events, only: [:index, :show, :new, :create]
     end
