@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trail Rodrigues</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= render "common/header" %>
+  
+  <div class="wrapper">
+    <div class="main-wrapper">
+      <div class="flash_messages">
+        <%= flash_tag(notice, "notice") %>
+        <%= flash_tag(alert, "alert") %>
+      </div>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
