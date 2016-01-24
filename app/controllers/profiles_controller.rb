@@ -31,5 +31,18 @@ class ProfilesController < ApplicationController
 
   def create
     debugger
+    @profile = Profile.new(profile_params)
+    if @profile.save
+      redirect_to trails_path
+    else
+      render :new
+    end
   end
+
+private
+  def profile_params
+    params.require(:profile).permit(:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms)
+  end
+
+
 end

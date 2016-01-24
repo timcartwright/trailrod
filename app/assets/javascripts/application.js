@@ -109,9 +109,17 @@ $(document).ready(function() {
   //on resize
   window.addEventListener('resize', responsive_change_box_order );
 
+  $('.dateofbirthpicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 100, // Creates a dropdown of 15 years to control year
+    formatSubmit: 'yyyy-mm-dd',
+    hiddenName: true,
+    max: -1500
+  });
+
   $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
-    selectYears: 3 // Creates a dropdown of 15 years to control year
+    selectYears: true // Creates a dropdown of 15 years to control year
   });
 
   $('select').material_select();
