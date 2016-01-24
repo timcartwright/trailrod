@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160115062422) do
+ActiveRecord::Schema.define(version: 20160124092421) do
 
   create_table "events", force: :cascade do |t|
     t.string   "name"
@@ -26,6 +26,30 @@ ActiveRecord::Schema.define(version: 20160115062422) do
   end
 
   add_index "events", ["trail_id"], name: "index_events_on_trail_id"
+
+  create_table "profiles", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "family_name"
+    t.date     "date_of_birth"
+    t.string   "email"
+    t.string   "mobile"
+    t.string   "gender"
+    t.string   "nationality"
+    t.string   "country_of_residence"
+    t.string   "passport_number"
+    t.string   "tshirt_size"
+    t.string   "emergency_contact_name"
+    t.string   "emergency_contact_phone"
+    t.boolean  "accepted_terms"
+    t.boolean  "member_of_rta"
+    t.integer  "rta_number"
+    t.integer  "user_id"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  add_index "profiles", ["rta_number"], name: "index_profiles_on_rta_number"
+  add_index "profiles", ["user_id"], name: "index_profiles_on_user_id"
 
   create_table "testimonial_translations", force: :cascade do |t|
     t.integer  "testimonial_id", null: false
