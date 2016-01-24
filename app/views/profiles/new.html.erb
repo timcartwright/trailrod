@@ -37,7 +37,7 @@
     <div class="row">
       <div class="col s12 m12 l12">
         <%= f.check_box :accepted_terms %>
-        <%= f.label :accepted_terms, label: 'I have read, understood and approved the terms and conditions' %>
+        <%= f.label :accepted_terms, label: raw('I have read, understood and approved the <a class="modal-trigger" href="#terms-modal">terms and conditions</a>') %>
       </div>
       
       
@@ -47,3 +47,14 @@
   <% end %>
   </div>
 </div>
+
+<!-- Modal Structure -->
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <h4>Terms and Conditions</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
