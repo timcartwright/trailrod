@@ -1,0 +1,43 @@
+form {
+ .switch {
+  height: 60px;
+ }
+ .waves-input-wrapper {
+    border-radius: inherit;
+  }
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+  height: 4rem;
+  font-size: 1.6rem;
+}
+
+.input-field label {
+  font-size: 1.6rem;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 24px;
+}
+
+.select-wrapper input.select-dropdown {
+  font-size: 1.6rem;
+}
+
+.input-field label.active {
+  font-size: 1.0rem;
+  transform: translateY(-140%);
+}
+
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+  font-size: 1.6rem;
+  margin-right: 35px;
+}
+
+[type="checkbox"] + label {
+  font-size: 1.6rem;
+}
+
+.margin-top-18-px {
+  margin-top: 18px;
+}
