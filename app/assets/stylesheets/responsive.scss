@@ -1,5 +1,11 @@
 /*-- Small screen tiles size --------------------------------------- */
 
+@media screen and (max-width: 1250px) {
+  body {
+    font-size: 2.5vw;
+  }
+}
+
 @media screen and (max-width: 900px) {
 
 body {
@@ -324,6 +330,18 @@ h6 {
       padding-top: 20px;
     }
 
+  }
+}
+
+.tile .content-wrapper .tile-content {
+
+  .left-col {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .right-col {
+    width: 100%;
   }
 }
 

@@ -5,12 +5,17 @@
     </h2>
     <%= simple_form_for @trail do |f| %>
     <%= f.input :name %>
-    <%= f.input :date %>
+    <%= f.input :date, as: :string, input_html: {class: "datepicker"} %>
     <%= f.input :location %>
     <%= f.input :organiser %>
     <%= f.input :description %>
     <%= f.input :external_link %>
-    <%= f.input :register_online %>
+    <%= f.input :register_online, label: false, wrapper_html: {class: "switch"} do %>
+      <%= f.label :register_online do %>
+        <%= f.check_box :register_online %>
+        Enable Registration <span class="lever"></span>
+      <% end %>
+    <% end %>
     <%= f.button :submit, "Create Trail and Add Event Distances" %>
   <% end %>
   </div>

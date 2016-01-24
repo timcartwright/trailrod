@@ -127,6 +127,17 @@ a.tile {
   position: relative;
   display: block;
   overflow: hidden;
+
+  .left-col {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+  }
+
+  .right-col {
+    width: 48%;
+    float: left;
+  }
 }
 .tile .content-wrapper .tile-content .tile-img {
   position: relative;

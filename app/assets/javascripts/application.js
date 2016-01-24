@@ -108,8 +108,15 @@ $(document).ready(function() {
 
   //on resize
   window.addEventListener('resize', responsive_change_box_order );
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 3 // Creates a dropdown of 15 years to control year
+  });
   
 });
+
+
 
 
 
