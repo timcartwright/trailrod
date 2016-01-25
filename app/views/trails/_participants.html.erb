@@ -1,0 +1,17 @@
+<div class="tile tile-lg tile-full-width tile-flexible-height tile-light-blue ripple-effect" href="#">
+  <span class="content-wrapper">
+    <span class="tile-content">
+      <h2>
+        Participants
+      </h2>
+      <% @trail.events.each do |event| %>
+        <h3>
+          <%= "#{event.distance}k" %>
+        </h3>
+        <% @participants[event].each do |participant| %>
+          <%= participant.first_name %>
+        <% end %>
+      <% end %>
+    </span>      
+  </span>
+</div>
