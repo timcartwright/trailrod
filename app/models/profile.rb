@@ -26,4 +26,8 @@
 class Profile < ActiveRecord::Base
   belongs_to :user
   has_many :event_registrations
+
+  def full_name
+    "#{first_name} #{family_name}"
+  end
 end
