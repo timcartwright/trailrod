@@ -22,6 +22,9 @@ class TrailsController < ApplicationController
 
   def show
     @trail = Trail.includes(:events).find(params[:id])
+    @trail.events.each do |event|
+      @registered_event = event if current_user.profile.event_registrations.find_by(event_id: event.id)
+    end
   end
 
   def new

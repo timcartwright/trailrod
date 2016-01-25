@@ -65,8 +65,8 @@ private
   end
 
   def find_user_and_event
-    @user = User.find_by(params[:user_id])
-    @event = Event.includes(:trail).find_by(params[:event]) if params[:event]
+    @user = User.find(params[:user_id])
+    @event = Event.includes(:trail).find(params[:event]) if params[:event]
   end
 
 end
