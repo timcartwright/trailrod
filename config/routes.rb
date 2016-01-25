@@ -6,29 +6,18 @@ Rails.application.routes.draw do
 
   scope "/admin" do
     get '/', to: 'dashboard#index'
-    # resources :trails, except: [:index, :show]
   end
-
-  resources :events
-  
-  # scope ':locale', locale: /en|fr/ do
-  #   root to: 'home#land'
-  #   get "home/land"
-  # end
-
-  # root 'home#land'
-  devise_for :users
 
   scope ':locale', locale: /en|fr/ do
     root 'home#land'
-    get 'testimonial/index'
-    resources :profiles
+    devise_for :users, :path => 'accounts'
+    resources :users do
+      resources :profiles
+    end
     resources :trails, only: [:index, :show, :new, :create] do
       resources :events, only: [:index, :show, :new, :create]
     end
     get "/:id" => "high_voltage/pages#show", :as => :page, :format => false
   end
-
-
   
 end

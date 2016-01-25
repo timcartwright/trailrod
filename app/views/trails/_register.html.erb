@@ -1,0 +1,28 @@
+<div class="tile tile-lg tile-narrow tile-green">
+  <span class="content-wrapper">
+    <span class="tile-content">
+      <h3 class="next-trail-name">
+        Register
+      </h3>
+      <p>
+        Adults: Rs 150
+      </p>
+      <p>
+        Chidren: Rs 100
+      </p>
+      <% if user_signed_in? %>
+        <% @trail.events.each do |event| %>
+          <p>
+            <% if current_user.profile %>
+              <%= link_to "Register for #{event.distance}k", edit_user_profile_path(current_user.id, current_user.profile.id, event: event.id), class: "waves-effect waves-light btn" %>
+            <% else %>
+              <%= link_to "Register for #{event.distance}k", new_user_profile_path(current_user.id, event: event.id), class: "waves-effect waves-light btn" %>
+            <% end %>
+          </p>
+        <% end %>
+      <% else %>
+        <%= link_to 'Login to register', new_user_session_path, class: "waves-effect waves-light btn" %>
+      <% end %>
+    </span>      
+  </span>
+</div>

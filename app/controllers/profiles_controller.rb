@@ -25,12 +25,18 @@
 
 class ProfilesController < ApplicationController
 
+  before_action :find_user_and_event, only: [:new, :edit]
+
   def new
     @profile = Profile.new
   end
 
+  def edit
+    @profile = Profile.find_by(params[:id])
+    
+  end
+
   def create
-    debugger
     @profile = Profile.new(profile_params)
     if @profile.save
       redirect_to trails_path
@@ -44,5 +50,9 @@ private
     params.require(:profile).permit(:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms)
   end
 
+  def find_user_and_event
+    @user = User.find_by(params[:user_id])
+    @event = Event.find_by(params[:event]) if params[:event]
+  end
 
 end
