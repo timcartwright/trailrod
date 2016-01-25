@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :event_registrations
   root to: redirect("/#{I18n.default_locale}", status: 302), as: :redirected_root
 
   get 'dashboard/index'
