@@ -25,15 +25,10 @@
 
 class ProfilesController < ApplicationController
 
-  before_action :find_user_and_event, only: [:new, :edit]
+  before_filter :find_user_and_event, only: [:new, :edit, :update]
 
   def new
     @profile = Profile.new
-  end
-
-  def edit
-    @profile = Profile.find_by(params[:id])
-    
   end
 
   def create
@@ -45,6 +40,25 @@ class ProfilesController < ApplicationController
     end
   end
 
+  def edit
+    @profile = Profile.find(params[:id])
+  end
+
+  def update
+    @profile = Profile.find(params[:id])
+    @profile.update_attributes(profile_params)
+    if @profile.save
+      if params[:profile][:event]
+        event = Event.includes(:trail).find(params[:profile][:event])
+        redirect_to new_trail_event_event_registration_path(event.trail.id, event.id)
+      else
+        render :edit
+      end
+    else
+      render :edit
+    end
+  end
+
 private
   def profile_params
     params.require(:profile).permit(:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms)
@@ -52,7 +66,7 @@ private
 
   def find_user_and_event
     @user = User.find_by(params[:user_id])
-    @event = Event.find_by(params[:event]) if params[:event]
+    @event = Event.includes(:trail).find_by(params[:event]) if params[:event]
   end
 
 end

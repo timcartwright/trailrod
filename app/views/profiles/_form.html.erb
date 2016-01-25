@@ -37,11 +37,8 @@
     
     
   </div>
-  <% if @event %>
-    <%= link_to "Confirm Details and Register", edit_user_profile_path(current_user.id, current_user.profile.id), class: "waves-effect waves-light btn" %>
-  <% else %>
+    <%= f.hidden_field :event, value: @event.id if @event %>
     <%= f.button :submit, 'Save Profile' %>
-  <% end %>
 <% end %>
 
 <!-- Modal Structure -->

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :event_registrations
   root to: redirect("/#{I18n.default_locale}", status: 302), as: :redirected_root
 
   get 'dashboard/index'
@@ -12,12 +11,17 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|fr/ do
     root 'home#land'
     devise_for :users, :path => 'accounts'
+
     resources :users do
       resources :profiles
     end
+
     resources :trails, only: [:index, :show, :new, :create] do
-      resources :events, only: [:index, :show, :new, :create]
+      resources :events, only: [:index, :show, :new, :create] do
+        resources :event_registrations
+      end
     end
+
     get "/:id" => "high_voltage/pages#show", :as => :page, :format => false
   end
   
