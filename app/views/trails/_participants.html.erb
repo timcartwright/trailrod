@@ -5,12 +5,18 @@
         Participants
       </h2>
       <% @trail.events.each do |event| %>
+      <span class="left-col">
         <h3>
           <%= "#{event.distance}k" %>
         </h3>
-        <% @participants[event].each do |participant| %>
-          <%= participant.first_name %>
-        <% end %>
+        <ul>
+          <% @participants[event].each do |participant| %>
+            <li>
+              <%= participant.first_name %>
+            </li>
+          <% end %>
+        </ul>
+      </span>
       <% end %>
     </span>      
   </span>
