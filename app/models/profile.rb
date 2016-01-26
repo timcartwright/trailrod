@@ -25,7 +25,8 @@
 
 class Profile < ActiveRecord::Base
   belongs_to :user
-  has_many :event_registrations
+  has_many :registrations, class_name: EventRegistration.name
+  has_many :events, through: :registrations
 
   def full_name
     "#{first_name} #{family_name}"

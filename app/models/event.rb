@@ -16,7 +16,8 @@
 
 class Event < ActiveRecord::Base
   belongs_to :trail
-  has_many :event_registrations
+  has_many :registrations, class_name: EventRegistration.name
+  has_many :participants, through: :registrations, source: :profile
 
   validates :name, :distance, presence: true
 
