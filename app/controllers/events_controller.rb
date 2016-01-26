@@ -17,15 +17,15 @@
 class EventsController < ApplicationController
 
   def new
-    @event = Event.new
     @trail = Trail.find(params[:trail_id])
+    @event = @trail.events.new
   end
 
   def create
     @trail = Trail.find(params[:trail_id])
     @event = @trail.events.new(event_params)
     if @event.save
-      redirect_to trails_path
+      redirect_to @trail
     else
       render :new
     end

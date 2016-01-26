@@ -26,7 +26,7 @@ class EventRegistrationsController < ApplicationController
   def create
     event = Event.find(params[:event_id])
     event.register(current_user)
-    redirect_to trail_path(params[:trail_id])
+    redirect_to event.trail
   end
 
 end
