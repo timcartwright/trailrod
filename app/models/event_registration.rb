@@ -21,6 +21,8 @@ class EventRegistration < ActiveRecord::Base
   belongs_to :event
   belongs_to :profile
 
+  validates :event_id, :profile_id, presence: true
+
   validate :cannot_register_more_than_once_per_trail
 
 private

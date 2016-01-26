@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+        <th data-field="id">Name</th>
+        <th data-field="name">Category</th>
+        <th data-field="price">Paid</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registrations.each do |registration| %>
+      <tr>
+        <td><%= registration.profile.full_name %></td>
+        <td><%= registration.race_category %></td>
+        <td><%= registration.amount %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
