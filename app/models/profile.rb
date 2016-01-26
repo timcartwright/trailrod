@@ -28,6 +28,8 @@ class Profile < ActiveRecord::Base
   has_many :registrations, class_name: EventRegistration.name
   has_many :events, through: :registrations
 
+  validates :user_id, uniqueness: true, allow_nil: true
+
   def full_name
     "#{first_name} #{family_name}"
   end

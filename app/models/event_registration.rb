@@ -20,4 +20,12 @@
 class EventRegistration < ActiveRecord::Base
   belongs_to :event
   belongs_to :profile
+
+  validate :cannot_register_more_than_once_per_trail
+
+private
+  def cannot_register_more_than_once_per_trail
+    related_events = self.event.trail.events.map(&:id)
+    errors.add(:event_id, "is duplicate") if EventRegistration.find_by(event_id: related_events, profile_id: profile_id)
+  end
 end
