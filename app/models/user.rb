@@ -33,4 +33,8 @@ class User < ActiveRecord::Base
   def is_admin?
     self.admin
   end
+
+  def has_profile?
+    self.profile
+  end
 end

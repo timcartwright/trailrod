@@ -16,7 +16,7 @@
         <% else %>
           <% @trail.events.each do |event| %>
             <p>
-              <% if current_user.profile %>
+              <% if current_user.has_profile? %>
                 <%= link_to "Register for #{event.distance}k", edit_user_profile_path(current_user.id, current_user.profile.id, event: event.id), class: "waves-effect waves-light btn" %>
               <% else %>
                 <%= link_to "Register for #{event.distance}k", new_user_profile_path(current_user.id, event: event.id), class: "waves-effect waves-light btn" %>
