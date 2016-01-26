@@ -27,4 +27,8 @@ class Event < ActiveRecord::Base
     registration.save
   end
 
+  def related_events
+    self.trail.events
+  end
+
 end
