@@ -1,21 +1,24 @@
-<div class='row'>
-  <div class='col s12'>
-    <h2>
-      Confirm Registraion for <%= "#{@event.trail.name} #{@event.distance}k" %>
-    </h2>
-    
-    <%= link_to "Confirm Registration", trail_event_event_registrations_path(@event.trail.id, @event.id), method: :post, class: "waves-effect waves-light btn" %>
-  </div>
-</div>
+<% if current_user.is_admin? %>
 
-<div class='row'>
-  <div class='col s12'>
-    <h2>
-      Add Participants to <%= "#{@event.trail.name} #{@event.distance}k" %>
-    </h2>
-    <%= simple_form_for [@event.trail, @event, @registration] do |f| %>
-      <%= f.input :profile_id, collection: @trailers, label_method: :full_name, value_method: :id, label:false %>
-      <%= f.button :submit, "Register" %>
-    <% end %>
+  <div class='row'>
+    <div class='col s12'>
+      <h2>
+        Add Participants to <%= "#{@event.trail.name} #{@event.distance}k" %>
+      </h2>
+      <%= render 'form' %>
+    </div>
   </div>
-</div>
+
+<% else %>
+
+  <div class='row'>
+    <div class='col s12'>
+      <h2>
+        Confirm Registraion for <%= "#{@event.trail.name} #{@event.distance}k" %>
+      </h2>
+      
+      <%= link_to "Confirm Registration", trail_event_event_registrations_path(@event.trail.id, @event.id), method: :post, class: "waves-effect waves-light btn" %>
+    </div>
+  </div>
+  
+<% end %>
