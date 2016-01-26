@@ -23,7 +23,7 @@ class Event < ActiveRecord::Base
 
   def register(trailer)
     registration = self.registrations.new
-    registration.profile = trailer.profile
+    registration.profile = trailer
     registration.save
   end
 

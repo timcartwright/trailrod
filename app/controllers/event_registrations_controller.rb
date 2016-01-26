@@ -23,11 +23,18 @@ class EventRegistrationsController < ApplicationController
 
   def new
     @event = Event.includes(:trail).find(params[:event_id])
+    @registration = EventRegistration.new
+    @trailers = Profile.all
   end
 
   def create
+    if current_user.is_admin?
+      trailer = Profile.find(params[:event_registration][:profile_id]) || current_user.profile
+    else
+      trailer = current_user.profile
+    end
     event = Event.find(params[:event_id])
-    event.register(current_user)
+    event.register(trailer)
     redirect_to event.trail
   end
 
