@@ -21,4 +21,10 @@ class Event < ActiveRecord::Base
 
   validates :name, :distance, presence: true
 
+  def register(trailer)
+    registration = self.registrations.new
+    registration.profile = trailer.profile
+    registration.save
+  end
+
 end

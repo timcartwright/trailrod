@@ -29,4 +29,5 @@ class User < ActiveRecord::Base
          :confirmable
 
   has_one :profile
+  
 end
