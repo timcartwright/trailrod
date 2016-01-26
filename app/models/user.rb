@@ -29,5 +29,8 @@ class User < ActiveRecord::Base
          :confirmable
 
   has_one :profile
-  
+
+  def is_admin?
+    self.admin
+  end
 end

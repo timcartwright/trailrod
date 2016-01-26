@@ -16,6 +16,9 @@
 #
 
 class TrailsController < ApplicationController
+
+  before_action :authenticate_user!, only: [:new, :create]
+  
   def index
     @trails = Trail.all.includes(:events)
   end

@@ -16,6 +16,8 @@
 
 class EventsController < ApplicationController
 
+  before_action :authenticate_user!, only: [:new, :create]
+
   def new
     @trail = Trail.find(params[:trail_id])
     @event = @trail.events.new

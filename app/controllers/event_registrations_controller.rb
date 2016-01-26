@@ -19,6 +19,8 @@
 
 class EventRegistrationsController < ApplicationController
 
+  before_action :authenticate_user!, only: [:new, :create]
+
   def new
     @event = Event.includes(:trail).find(params[:event_id])
   end
@@ -28,5 +30,8 @@ class EventRegistrationsController < ApplicationController
     event.register(current_user)
     redirect_to event.trail
   end
+
+private
+  
 
 end
