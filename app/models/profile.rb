@@ -33,4 +33,8 @@ class Profile < ActiveRecord::Base
   def full_name
     "#{first_name} #{family_name}"
   end
+
+  def is_registered?(event)
+    self.events.include?(event)
+  end
 end

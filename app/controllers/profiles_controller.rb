@@ -30,11 +30,12 @@ class ProfilesController < ApplicationController
   before_filter :find_user_and_event, only: [:new, :edit, :update, :create]
 
   def new
-    @profile = @user.profile.new
+    @profile = Profile.new
   end
 
   def create
-    @profile = @user.profile.new(profile_params)
+    @profile = Profile.new(profile_params)
+    @profile.user = @user
     if @profile.save
       redirect_to trails_path
     else
@@ -66,7 +67,7 @@ private
   end
 
   def find_user_and_event
-    @user = User.find(params[:user_id])
+    @user = profile_owner
     @event = Event.includes(:trail).find(params[:event]) if params[:event]
   end
 
@@ -75,6 +76,14 @@ private
     unless current_user.profile == @profile || current_user.is_admin?
       flash[:error] = "You can only edit your own profile."
       redirect_to root_path
+    end
+  end
+
+  def profile_owner
+    if current_user.is_admin?
+      User.find(params[:user_id])
+    else
+      current_user
     end
   end
 

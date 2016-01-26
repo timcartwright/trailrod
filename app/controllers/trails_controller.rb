@@ -18,7 +18,7 @@
 class TrailsController < ApplicationController
 
   before_action :authenticate_user!, only: [:new, :create]
-  
+
   def index
     @trails = Trail.all.includes(:events)
   end
@@ -27,7 +27,7 @@ class TrailsController < ApplicationController
     @trail = Trail.includes(:events).find(params[:id])
     @participants = Hash.new
     @trail.events.each do |event|
-      @registered_event = event if current_user.profile.registrations.find_by(event_id: event.id)
+      @registered_event = event if current_user.profile.is_registered?(event)
       @participants[event] = event.participants
     end
   end
@@ -37,7 +37,6 @@ class TrailsController < ApplicationController
   end
 
   def create
-    # debugger
     @trail = Trail.new(trail_params)
     if @trail.save
       redirect_to new_trail_event_path(@trail)
