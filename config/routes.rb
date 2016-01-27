@@ -12,9 +12,8 @@ Rails.application.routes.draw do
     root 'home#land'
     devise_for :users, :path => 'accounts'
 
-    resources :users do
-      resources :profiles
-    end
+    resources :users
+    resources :profiles
 
     resources :trails, only: [:index, :show, :new, :create] do
       resources :events, only: [:index, :show, :new, :create] do

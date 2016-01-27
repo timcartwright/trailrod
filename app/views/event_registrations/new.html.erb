@@ -1,19 +1,37 @@
+<h2>
+  <%= "Registration for #{@event.trail.name} #{@event.distance}k" %>
+</h2>
+
 <% if current_user.is_admin? %>
 
   <div class='row'>
     <div class='col s12'>
-      <h2>
-        Add Participants to <%= "#{@event.trail.name} #{@event.distance}k" %>
-      </h2>
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add a new person to the database</a>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal profile-form">
+        <div class="modal-content">
+          <%= render 'profiles/form' %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col s12'>
+      <h3>
+        Register trailers for this event
+      </h3>
       <%= render 'form' %>
     </div>
   </div>
 
   <div class='row'>
     <div class='col s12'>
-      <h2>
+      <h3>
         Participants
-      </h2>
+      </h3>
       <%= render 'participants' %>
     </div>
   </div>
@@ -22,10 +40,6 @@
 
   <div class='row'>
     <div class='col s12'>
-      <h2>
-        Confirm Registraion for <%= "#{@event.trail.name} #{@event.distance}k" %>
-      </h2>
-      
       <%= link_to "Confirm Registration", trail_event_event_registrations_path(@event.trail.id, @event.id), method: :post, class: "waves-effect waves-light btn" %>
     </div>
   </div>

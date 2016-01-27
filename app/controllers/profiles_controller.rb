@@ -35,12 +35,17 @@ class ProfilesController < ApplicationController
 
   def create
     @profile = Profile.new(profile_params)
-    @profile.user = @user
+    @profile.user = @user unless current_user.is_admin?
     if @profile.save
-      redirect_to trails_path
+      # redirect_to trails_path
     else
-      render :new
+      # render :new
     end
+    @event = Event.includes(:trail).find(params[:profile][:event])
+    @registrations = @event.registrations.includes(:profile).all
+    @registration = EventRegistration.new
+    @trailers = Profile.all
+    @profile = Profile.new
   end
 
   def edit
@@ -80,9 +85,7 @@ private
   end
 
   def profile_owner
-    if current_user.is_admin?
-      User.find(params[:user_id])
-    else
+    if current_user
       current_user
     end
   end

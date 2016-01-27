@@ -1,12 +1,13 @@
+<div id="registration-form">
 <%= simple_form_for [@event.trail, @event, @registration], remote: true do |f| %>
   <div class="row">
-    <%= f.input :profile_id, collection: @trailers, label_method: :full_name, value_method: :id, label:false, wrapper_html: {class: 'col s12 m6 l6'} %>
+    <%= f.input :profile_id, collection: @trailers, label_method: :full_name, value_method: :id, label:false, wrapper_html: {class: 'col s12 m6 l6'}, prompt: 'Select Trailer' %>
     <div class="col s12 m6 l6 margin-top-18-px">
       <%= f.collection_radio_buttons :race_category, [['Senior', 'Senior'] ,['Junior', 'Junior']], :first, :last, { checked: 'Senior' } %>
     </div>
   </div>
   <div class="row">
-    <%= f.input :amount, wrapper_html: {class: 'col s12 m6 l6'} %>
+    <%= f.input :amount, label: 'Amount Paid', wrapper_html: {class: 'col s12 m6 l6'} %>
     <div class="col s12 m6 l6 margin-top-18-px">
       <%= f.collection_radio_buttons :currency, [['MUR', 'MUR'] ,['EUR', 'EUR']], :first, :last, { checked: 'MUR' } %>
     </div>
@@ -17,6 +18,7 @@
     </div>
   </div>
   <div class="row">
-    <%= f.button :submit, "Register" %>
+    <%= f.button :submit, "Register for #{@event.trail.name} #{@event.distance}k" %>
   </div>
 <% end %>
+</div>

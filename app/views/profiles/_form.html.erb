@@ -1,4 +1,4 @@
-<%= simple_form_for [@user, @profile] do |f| %>
+<%= simple_form_for [@profile], remote: true do |f| %>
   <div class="row">
     <%= f.input :first_name, wrapper_html: {class: 'col s12 m12 l6'} %>
     <%= f.input :family_name, wrapper_html: {class: 'col s12 m12 l6'} %>
@@ -38,7 +38,7 @@
     
   </div>
     <%= f.hidden_field :event, value: @event.id if @event %>
-    <%= f.button :submit, 'Save and Continue' %>
+    <%= f.button :submit, 'Save and Continue', class: "modal-close" %>
 <% end %>
 
 <!-- Modal Structure -->

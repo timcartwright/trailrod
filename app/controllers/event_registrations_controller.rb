@@ -29,6 +29,7 @@ class EventRegistrationsController < ApplicationController
       @registrations = @event.registrations.includes(:profile).all
       @registration = EventRegistration.new
       @trailers = Profile.all
+      @profile = Profile.new
     end
   end
 
