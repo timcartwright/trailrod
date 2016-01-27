@@ -1,0 +1,6 @@
+<div id="lookup-form">
+  <%= simple_form_for :edit_profile, url: profiles_load_path, remote: true do |f| %>
+    <%= f.input :id, collection: @trailers, label_method: :full_name, value_method: :id, label:false, prompt: 'Select Trailer to Edit'  %>
+    <%= f.button :submit, "Edit" %>
+  <% end %>
+</div>

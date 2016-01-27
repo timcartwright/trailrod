@@ -37,7 +37,7 @@ class EventRegistrationsController < ApplicationController
     @event = Event.find(params[:event_id])
     if current_user.is_admin?
       @registration = EventRegistration.new(registration_params)
-      @registration.paid = (@registration.amount > 0)
+      # @registration.paid = (@registration.amount > 0)
       @registration.payment_date = Time.now
       @registration.event = @event
       @registration.save

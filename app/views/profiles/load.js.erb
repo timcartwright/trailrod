@@ -1,0 +1,17 @@
+if ( $('#edit-profile-form').length ) {
+  $('#edit-profile-form').replaceWith('<%= j render('edit_form') %>');
+} else {
+  $('<%= j render('edit_form') %>').appendTo('#modal2 .modal-content');
+}
+
+$('.dateofbirthpicker').pickadate({
+  selectMonths: true, // Creates a dropdown to control month
+  selectYears: 100, // Creates a dropdown of 15 years to control year
+  formatSubmit: 'yyyy-mm-dd',
+  hiddenName: true,
+  max: -1500
+});
+
+$('select').material_select();
+
+$('#modal2').openModal();

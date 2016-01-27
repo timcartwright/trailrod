@@ -1,4 +1,7 @@
-<div id="registration-form">
+<div id="registration-form" class="card-panel">
+<h3>
+  Register trailers for this event
+</h3>
 <%= simple_form_for [@event.trail, @event, @registration], remote: true do |f| %>
   <div class="row">
     <%= f.input :profile_id, collection: @trailers, label_method: :full_name, value_method: :id, label:false, wrapper_html: {class: 'col s12 m6 l6'}, prompt: 'Select Trailer' %>
@@ -18,7 +21,9 @@
     </div>
   </div>
   <div class="row">
-    <%= f.button :submit, "Register for #{@event.trail.name} #{@event.distance}k" %>
+    <div class="col s12 m12 l12">
+      <%= f.button :submit, "Register" %>
+    </div>
   </div>
 <% end %>
 </div>

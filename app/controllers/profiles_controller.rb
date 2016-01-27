@@ -29,6 +29,8 @@ class ProfilesController < ApplicationController
   before_action :authorise, only: [:edit, :update]
   before_filter :find_user_and_event, only: [:new, :edit, :update, :create]
 
+  skip_before_action :verify_authenticity_token, only: [:load]
+
   def new
     @profile = Profile.new
   end
@@ -45,7 +47,6 @@ class ProfilesController < ApplicationController
     @registrations = @event.registrations.includes(:profile).all
     @registration = EventRegistration.new
     @trailers = Profile.all
-    @profile = Profile.new
   end
 
   def edit
@@ -64,6 +65,10 @@ class ProfilesController < ApplicationController
     else
       render :edit #change this
     end
+  end
+
+  def load
+    @editprofile = Profile.find(params[:edit_profile][:id])
   end
 
 private

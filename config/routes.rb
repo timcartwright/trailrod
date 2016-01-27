@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
     resources :users
     resources :profiles
+    post 'profiles/load', :to => 'profiles#load'
 
     resources :trails, only: [:index, :show, :new, :create] do
       resources :events, only: [:index, :show, :new, :create] do
