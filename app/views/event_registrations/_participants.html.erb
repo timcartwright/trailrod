@@ -1,4 +1,4 @@
-<table>
+<table id="participants">
   <thead>
     <tr>
         <th data-field="id">Name</th>
@@ -8,13 +8,7 @@
   </thead>
 
   <tbody>
-    <% @registrations.each do |registration| %>
-      <tr>
-        <td><%= registration.profile.full_name %></td>
-        <td><%= registration.race_category %></td>
-        <td><%= registration.amount %></td>
-      </tr>
-    <% end %>
+    <%= render @registrations %>
   </tbody>
 </table>
 

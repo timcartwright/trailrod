@@ -33,16 +33,16 @@ class EventRegistrationsController < ApplicationController
   def create
     event = Event.find(params[:event_id])
     if current_user.is_admin?
-      registration = EventRegistration.new(registration_params)
-      registration.paid = (registration.amount > 0)
-      registration.payment_date = Time.now
-      registration.event = event
-      registration.save
+      @registration = EventRegistration.new(registration_params)
+      @registration.paid = (@registration.amount > 0)
+      @registration.payment_date = Time.now
+      @registration.event = event
+      @registration.save
     else
       trailer = current_user.profile
       event.register(trailer)
+      redirect_to event.trail
     end
-    redirect_to event.trail
   end
 
 private
