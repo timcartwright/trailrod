@@ -21,6 +21,8 @@ class EventRegistrationsController < ApplicationController
 
   before_action :authenticate_user!, only: [:new, :create]
 
+  respond_to :html, :js
+
   def new
     @event = Event.includes(:trail).find(params[:event_id])
     if current_user.is_admin?
@@ -31,18 +33,23 @@ class EventRegistrationsController < ApplicationController
   end
 
   def create
-    event = Event.find(params[:event_id])
+    @event = Event.find(params[:event_id])
     if current_user.is_admin?
       @registration = EventRegistration.new(registration_params)
       @registration.paid = (@registration.amount > 0)
       @registration.payment_date = Time.now
-      @registration.event = event
+      @registration.event = @event
       @registration.save
     else
       trailer = current_user.profile
-      event.register(trailer)
-      redirect_to event.trail
+      @event.register(trailer)
+      redirect_to @event.trail
     end
+  end
+
+  def destroy
+    @registration = EventRegistration.find(params[:id])
+    @registration.destroy
   end
 
 private

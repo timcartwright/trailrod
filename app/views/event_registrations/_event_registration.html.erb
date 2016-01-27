@@ -1,5 +1,6 @@
-<tr id="<%= dom_id(event_registration.profile) %>">
+<tr id="<%= dom_id(event_registration) %>">
   <td><%= event_registration.profile.full_name %></td>
   <td><%= event_registration.race_category %></td>
   <td><%= event_registration.amount %></td>
+  <td><%= link_to raw("<i class='material-icons'>remove_circle</i>"), trail_event_event_registration_path(@event.trail, @event, event_registration), method: :delete, remote: true %></td>
 </tr>
