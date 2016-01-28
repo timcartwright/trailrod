@@ -51,17 +51,15 @@
   </span>
 </div>
 
-<a class="tile tile-lg tile-light-blue ripple-effect" href="#">
+<div class="tile tile-lg tile-light-blue ripple-effect" href="#">
   <span class="content-wrapper">
     <span class="tile-content">
       
       <span class="tile-img tile-img-bg mountain-goat"></span>
-      <span class="tile-holder tile-holder-sm">
-        <span class="title">Rod Trail Association</span>
-      </span>
+      
     </span>      
   </span>
-</a>
+</div>
 
 <a class="tile tile-lg tile-cyan ripple-effect" href="#">
   <span class="content-wrapper">
@@ -79,8 +77,11 @@
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
-        Next Trail
+        Rod Trail League
       </h2>
+      <h4>
+        Next Trail
+      </h4>
       <h3 class="next-trail-name">
         <%= link_to @home.next_trail.name, trail_path(@home.next_trail) %>
       </h3>
