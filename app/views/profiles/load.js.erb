@@ -1,7 +1,7 @@
 if ( $('#edit-profile-form').length ) {
-  $('#edit-profile-form').replaceWith('<%= j render('edit_form') %>');
+  $('#edit-profile-form').replaceWith("<%= j render 'form', edit: true, admin: true %>");
 } else {
-  $('<%= j render('edit_form') %>').appendTo('#modal2 .modal-content');
+  $("<%= j render 'form', edit: true, admin: true %>").appendTo('#modal2 .modal-content');
 }
 
 $('.dateofbirthpicker').pickadate({

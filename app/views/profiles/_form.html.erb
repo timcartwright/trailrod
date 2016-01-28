@@ -1,16 +1,16 @@
-<div id="edit-profile-form">
-<%= simple_form_for @profile, index: 'update', remote: true do |f| %>
+<div id=<%= edit ? "edit-profile-form" : "new-profile-form" %> >
+<%= simple_form_for @profile, index: (edit ? 'update' : 'create'), remote: true do |f| %>
   <div class="row">
-    <%= f.input :first_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
-    <%= f.input :family_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
+    <%= f.input :first_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: ({class: 'active'} if admin) %>
+    <%= f.input :family_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: ({class: 'active'} if admin) %>
   </div>
   <div class="row">
-    <%= f.input :email, type: 'email', wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
-    <%= f.input :mobile, label: 'Mobile number', wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
+    <%= f.input :email, type: 'email', wrapper_html: {class: 'col s12 m12 l6'}, label_html: ({class: 'active'} if admin) %>
+    <%= f.input :mobile, label: 'Mobile number', wrapper_html: {class: 'col s12 m12 l6'}, label_html: ({class: 'active'} if admin) %>
   </div>
   <div class="row">
-    <%= f.input :date_of_birth, as: :string, wrapper_html: {class: 'col s12 m12 l6'}, input_html: {class: 'dateofbirthpicker'}, label_html: {class: 'active'} %>
-      <%= f.input :passport_number, label: 'ID or Passport number', wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
+    <%= f.input :date_of_birth, as: :string, wrapper_html: {class: 'col s12 m12 l6'}, input_html: {class: 'dateofbirthpicker'}, label_html: ({class: 'active'} if admin) %>
+      <%= f.input :passport_number, label: 'ID or Passport number', wrapper_html: {class: 'col s12 m12 l6'}, label_html: ({class: 'active'} if admin) %>
   </div>
   <div class="row">
     <div class="col s12 m12 l6 margin-top-18-px">
@@ -27,8 +27,8 @@
     <% end %>
   </div>
   <div class="row">
-    <%= f.input :emergency_contact_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
-    <%= f.input :emergency_contact_phone, wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
+    <%= f.input :emergency_contact_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: ({class: 'active'} if admin) %>
+    <%= f.input :emergency_contact_phone, wrapper_html: {class: 'col s12 m12 l6'}, label_html: ({class: 'active'} if admin) %>
   </div>
   <div class="row">
     <div class="col s12 m12 l12">
@@ -39,7 +39,7 @@
     
   </div>
     <%= f.hidden_field :event, value: @event.id if @event %>
-    <%= f.button :submit, 'Save and Continue', class: "modal-close" %>
+    <%= f.button :submit, 'Save and Continue' %>
 <% end %>
 
 <!-- Modal Structure -->

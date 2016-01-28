@@ -27,7 +27,7 @@ class ProfilesController < ApplicationController
 
   before_action :authenticate_user!
   before_action :authorise, only: [:edit, :update]
-  before_filter :find_user_and_event, only: [:new, :edit, :update, :create]
+  before_filter :find_user_and_event, only: [:new, :edit, :update]
 
   skip_before_action :verify_authenticity_token, only: [:load]
 
@@ -43,7 +43,7 @@ class ProfilesController < ApplicationController
     else
       # render :new
     end
-    @event = Event.includes(:trail).find(params[:profile][:event])
+    @event = Event.includes(:trail).find(params[:profile][:create][:event])
     @registrations = @event.registrations.includes(:profile).all
     @registration = EventRegistration.new
     @trailers = Profile.all
@@ -54,17 +54,19 @@ class ProfilesController < ApplicationController
   end
 
   def update
+    debugger
     @profile.update_attributes(update_profile_params)
-    if @profile.save
-      if params[:profile][:event]
-        event = Event.includes(:trail).find(params[:profile][:event])
-        redirect_to new_trail_event_event_registration_path(event.trail.id, event.id)
-      else
-        render :edit
-      end
-    else
-      render :edit #change this
-    end
+    @profile.save
+    # if @profile.save
+    #   if params[:profile][:event]
+    #     event = Event.includes(:trail).find(params[:profile][:event])
+    #     redirect_to new_trail_event_event_registration_path(event.trail.id, event.id)
+    #   else
+    #     render :edit
+    #   end
+    # else
+    #   render :edit #change this
+    # end
   end
 
   def load
@@ -73,12 +75,13 @@ class ProfilesController < ApplicationController
 
 private
   def create_profile_params
-    params.require(:profile).permit(:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms)
+    all_params = params.require(:profile).permit(create: [:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms])
+    return all_params[:create]
   end
 
   def update_profile_params
     all_params = params.require(:profile).permit(update: [:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms])
-    all_params[:update]
+    return all_params[:update]
   end
 
   def find_user_and_event

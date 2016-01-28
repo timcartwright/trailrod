@@ -26,6 +26,7 @@ class TrailsController < ApplicationController
   def show
     @trail = Trail.includes(:events).find(params[:id])
     @participants = Hash.new
+    @profile = current_user.profile || current_user.profile.new
     @trail.events.each do |event|
       @participants[event] = event.participants
       if user_signed_in? && current_user.has_profile? && current_user.profile.is_registered?(event)

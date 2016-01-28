@@ -37,14 +37,16 @@ $(document).ready(function() {
   container.each(function() {
     var elements = $(this).children();
     elements.each(function() {
-      var elementOffset = $(this).offset();
-      var offset = elementOffset.left*0.8 + elementOffset.top;
-      var delay = parseFloat(offset/speed).toFixed(2);
-      $(this)
-        .css("-webkit-animation-delay", delay+'s')
-        .css("-o-animation-delay", delay+'s')
-        .css("animation-delay", delay+'s')
-        .addClass('animated');
+      if (!$(this).hasClass('do-not-animate')) {
+        var elementOffset = $(this).offset();
+        var offset = elementOffset.left*0.8 + elementOffset.top;
+        var delay = parseFloat(offset/speed).toFixed(2);
+        $(this)
+          .css("-webkit-animation-delay", delay+'s')
+          .css("-o-animation-delay", delay+'s')
+          .css("animation-delay", delay+'s')
+          .addClass('animated');
+        };
     });
   });
 

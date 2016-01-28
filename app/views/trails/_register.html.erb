@@ -16,11 +16,9 @@
         <% else %>
           <% @trail.events.each do |event| %>
             <p>
-              <% if current_user.has_profile? %>
-                <%= link_to "Register for #{event.distance}k", edit_profile_path(current_user.profile.id, event: event.id), class: "waves-effect waves-light btn" %>
-              <% else %>
-                <%= link_to "Register for #{event.distance}k", new_profile_path(event: event.id), class: "waves-effect waves-light btn" %>
-              <% end %>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+                  <%= "Register for #{event.distance}k" %>
+                </a>
             </p>
           <% end %>
         <% end %>
@@ -29,4 +27,15 @@
       <% end %>
     </span>      
   </span>
+</div>
+
+<!-- Modals -->
+<div id="modal1" class="modal profile-form do-not-animate">
+  <div class="modal-content">
+    <% if current_user.has_profile? %>
+      <%= render 'profiles/form', edit: true, admin: false %>
+    <% else %>
+      <%= render 'profiles/form', edit: false, admin: false %>
+    <% end %>
+  </div>
 </div>
