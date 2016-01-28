@@ -1,6 +1,6 @@
 <span id="form-block">
   <% if user_signed_in? %>
-    <% if @registered_event %>
+    <% if @registered_event && !current_user.is_admin? %>
       <%= "You are registered for the #{@registered_event.distance}k event" %>
     <% else %>
       <% @trail.events.each do |event| %>
