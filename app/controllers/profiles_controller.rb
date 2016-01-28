@@ -47,6 +47,7 @@ class ProfilesController < ApplicationController
     @registrations = @event.registrations.includes(:profile).all
     @registration = EventRegistration.new
     @trailers = Profile.all
+    @admin = current_user.is_admin?
   end
 
   def edit
@@ -57,6 +58,7 @@ class ProfilesController < ApplicationController
     @profile.update_attributes(update_profile_params)
     @profile.save
     @event = find_event
+    @admin = current_user.is_admin?
     # if @profile.save
     #   if params[:profile][:event]
     #     event = Event.includes(:trail).find(params[:profile][:event])

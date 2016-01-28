@@ -1,2 +1,7 @@
-$('#registration-form').replaceWith('<%= j render('event_registrations/form') %>');
-$('select').material_select();
+<% if @admin %>
+  $('#registration-form').replaceWith('<%= j render('event_registrations/form') %>');
+  $('select').material_select();
+  $('#modal1').closeModal();
+<% else %>
+  
+<% end %>

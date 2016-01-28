@@ -1,3 +1,5 @@
-console.log(<%= @event.id %>);
-
-$('<%= "#edit-profile-form-#{@event.id}" %>').replaceWith("<%= j render 'event_registrations/payment' %>");
+<% if @admin %>
+  $('#modal2').closeModal();
+<% else %>
+  $('<%= "#edit-profile-form-#{@event.id}" %>').replaceWith("<%= j render 'event_registrations/payment' %>");
+<% end %>
