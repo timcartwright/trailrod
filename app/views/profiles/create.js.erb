@@ -3,5 +3,5 @@
   $('select').material_select();
   $('#modal1').closeModal();
 <% else %>
-  
+  $('<%= "#new-profile-form-#{@event.id}" %>').replaceWith("<%= j render 'event_registrations/payment' %>");
 <% end %>

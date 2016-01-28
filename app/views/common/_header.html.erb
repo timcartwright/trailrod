@@ -4,6 +4,7 @@
       <li><%= link_to_unless_current "Home", root_path %></li>
       <li><%= link_to_unless_current "Trail of Rodrigues", page_path('trail-rodrigues') %></li>
       <li><%= link_to_unless_current "Trail Calendar", trails_path %></li>
+      <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
     </ul>
   </nav>
   <div class="openNav z-depth-3">
