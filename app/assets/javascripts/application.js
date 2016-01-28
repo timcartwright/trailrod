@@ -129,4 +129,6 @@ $(document).ready(function() {
   $('select').material_select();
   
   $('.modal-trigger').leanModal();
+
+  $('.dashboard .profile-form').remove().insertAfter($('.dashboard'));
 });

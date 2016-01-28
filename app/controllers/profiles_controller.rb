@@ -27,36 +27,36 @@ class ProfilesController < ApplicationController
 
   before_action :authenticate_user!
   before_action :authorise, only: [:edit, :update]
-  before_filter :find_user_and_event, only: [:new, :edit, :update]
 
   skip_before_action :verify_authenticity_token, only: [:load]
 
   def new
     @profile = Profile.new
+    @event = find_event
   end
 
   def create
     @profile = Profile.new(create_profile_params)
-    @profile.user = @user unless current_user.is_admin?
+    @profile.user = current_user unless current_user.is_admin?
     if @profile.save
       # redirect_to trails_path
     else
       # render :new
     end
-    @event = Event.includes(:trail).find(params[:profile][:create][:event])
+    @event = find_event
     @registrations = @event.registrations.includes(:profile).all
     @registration = EventRegistration.new
     @trailers = Profile.all
   end
 
   def edit
-    
+    @event = find_event
   end
 
   def update
-    debugger
     @profile.update_attributes(update_profile_params)
     @profile.save
+    @event = find_event
     # if @profile.save
     #   if params[:profile][:event]
     #     event = Event.includes(:trail).find(params[:profile][:event])
@@ -75,34 +75,36 @@ class ProfilesController < ApplicationController
 
 private
   def create_profile_params
-    all_params = params.require(:profile).permit(create: [:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms])
-    return all_params[:create]
+    create_param = "create_#{params[:event_id]}"
+    all_params = params.require(:profile).permit(create_param => [:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms])
+    return all_params[create_param]
   end
 
   def update_profile_params
-    all_params = params.require(:profile).permit(update: [:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms])
-    return all_params[:update]
+    update_param = "update_#{params[:event_id]}"
+    all_params = params.require(:profile).permit(update_param => [:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms])
+    return all_params[update_param]
   end
 
-  def find_user_and_event
-    @user = profile_owner
-    @event = Event.includes(:trail).find(params[:event]) if params[:event]
+  def find_user
+    if current_user.is_admin?
+      @profile = Profile.find(params[:id])
+      @profile.user
+    else
+      current_user
+    end
   end
+
+  def find_event
+    Event.includes(:trail).find(params[:event_id]) if params[:event_id]
+  end
+
 
   def authorise
     @profile = Profile.find(params[:id])
     unless current_user.profile == @profile || current_user.is_admin?
       flash[:error] = "You can only edit your own profile."
       redirect_to root_path
-    end
-  end
-
-  def profile_owner
-    if current_user.is_admin?
-      @profile = Profile.find(params[:id])
-      @profile.user
-    else
-      current_user
     end
   end
 
