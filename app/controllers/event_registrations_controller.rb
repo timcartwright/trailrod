@@ -32,8 +32,9 @@ class EventRegistrationsController < ApplicationController
   end
 
   def create
+    @admin = current_user.is_admin?
     @event = Event.find(params[:event_id])
-    if current_user.is_admin?
+    if @admin
       @registration = EventRegistration.new(registration_params)
       # @registration.paid = (@registration.amount > 0)
       @registration.payment_date = Time.now
@@ -42,7 +43,12 @@ class EventRegistrationsController < ApplicationController
     else
       trailer = current_user.profile
       @event.register(trailer)
-      redirect_to @event.trail
+      @trail = @event.trail
+      @trail.events.each do |event|
+        if current_user.profile.is_registered?(event)
+          @registered_event = event
+        end
+      end
     end
   end
 

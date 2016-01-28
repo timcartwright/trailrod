@@ -1,1 +1,3 @@
-console.log('updated');
+console.log(<%= @event.id %>);
+
+$('<%= "#edit-profile-form-#{@event.id}" %>').replaceWith("<%= j render 'event_registrations/payment' %>");

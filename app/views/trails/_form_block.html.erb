@@ -1,0 +1,28 @@
+<span id="form-block">
+  <% if user_signed_in? %>
+    <% if @registered_event %>
+      <%= "You are registered for the #{@registered_event.distance}k event" %>
+    <% else %>
+      <% @trail.events.each do |event| %>
+        <% @event = event %>
+        <p>
+            <a class="waves-effect waves-light btn modal-trigger" href=<%= "#profile-form-modal-#{event.id}" %> >
+              <%= "Register for #{event.distance}k" %>
+            </a>
+        </p>
+        <!-- Modals -->
+        <div id=<%= "profile-form-modal-#{event.id}" %> class="modal profile-form do-not-animate">
+          <div class="modal-content">
+            <% if current_user.has_profile? %>
+              <%= render 'profiles/form', edit: true, admin: false %>
+            <% else %>
+              <%= render 'profiles/form', edit: false, admin: false %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= link_to 'Login to register', new_user_session_path, class: "waves-effect waves-light btn" %>
+  <% end %>
+</span>

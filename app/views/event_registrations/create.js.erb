@@ -1,1 +1,9 @@
-$('<%= j render(@registration) %>').hide().appendTo('#participants').show(250);
+<% if @admin %>
+  $('<%= j render(@registration) %>').hide().appendTo('#participants').show(250);
+<% else %>
+  $('#form-block').replaceWith("<%= j render 'trails/form_block' %>");
+  $('.profile-form').closeModal();
+  $('.lean-overlay').fadeOut(250, function() {
+    $(this).remove();
+  });
+<% end %>

@@ -1,4 +1,4 @@
-<div id=<%= edit ? "edit-profile-form" : "new-profile-form" %> >
+<div id=<%= edit ? "edit-profile-form-#{@event.id if @event}" : "new-profile-form" %> >
 <%= simple_form_for @profile, index: (edit ? "update_#{@event.id if @event}" : "create_#{@event.id if @event}"), remote: true do |f| %>
   <div class="row">
     <%= f.input :first_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: ({class: 'active'} if admin) %>
