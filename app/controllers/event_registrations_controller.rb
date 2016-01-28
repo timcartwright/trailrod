@@ -21,8 +21,6 @@ class EventRegistrationsController < ApplicationController
 
   before_action :authenticate_user!, only: [:new, :create]
 
-  respond_to :html, :js
-
   def new
     @event = Event.includes(:trail).find(params[:event_id])
     if current_user.is_admin?

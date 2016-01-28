@@ -36,7 +36,7 @@ class ProfilesController < ApplicationController
   end
 
   def create
-    @profile = Profile.new(profile_params)
+    @profile = Profile.new(create_profile_params)
     @profile.user = @user unless current_user.is_admin?
     if @profile.save
       # redirect_to trails_path
@@ -54,7 +54,7 @@ class ProfilesController < ApplicationController
   end
 
   def update
-    @profile.update_attributes(profile_params)
+    @profile.update_attributes(update_profile_params)
     if @profile.save
       if params[:profile][:event]
         event = Event.includes(:trail).find(params[:profile][:event])
@@ -68,12 +68,17 @@ class ProfilesController < ApplicationController
   end
 
   def load
-    @editprofile = Profile.find(params[:edit_profile][:id])
+    @profile = Profile.find(params[:edit_profile][:id])
   end
 
 private
-  def profile_params
+  def create_profile_params
     params.require(:profile).permit(:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms)
+  end
+
+  def update_profile_params
+    all_params = params.require(:profile).permit(update: [:first_name, :family_name, :email, :mobile, :date_of_birth, :passport_number, :gender, :nationality, :tshirt_size, :country_of_residence, :emergency_contact_name, :emergency_contact_phone, :accepted_terms])
+    all_params[:update]
   end
 
   def find_user_and_event
@@ -90,7 +95,10 @@ private
   end
 
   def profile_owner
-    if current_user
+    if current_user.is_admin?
+      @profile = Profile.find(params[:id])
+      @profile.user
+    else
       current_user
     end
   end

@@ -1,5 +1,5 @@
 <div id="edit-profile-form">
-<%= simple_form_for [@editprofile], index: @editprofile.id, remote: true do |f| %>
+<%= simple_form_for @profile, index: 'update', remote: true do |f| %>
   <div class="row">
     <%= f.input :first_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
     <%= f.input :family_name, wrapper_html: {class: 'col s12 m12 l6'}, label_html: {class: 'active'} %>
