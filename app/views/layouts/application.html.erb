@@ -12,11 +12,11 @@
   
   <div class="wrapper">
     <div class="main-wrapper">
-      <div class="flash_messages">
-        <%= flash_tag(notice, "notice") %>
-        <%= flash_tag(alert, "alert") %>
-      </div>
       <div class="dashboard display-animation">
+        <div class="flash_messages">
+          <%= flash_tag(notice, "notice") %>
+          <%= flash_tag(alert, "alert") %>
+        </div>
         <%= yield %>
         <%= render "common/footer" %>
       </div>

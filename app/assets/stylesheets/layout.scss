@@ -854,3 +854,7 @@ a.tile {
     -webkit-transform: scale(1);
   }
 }
+
+.alert > .content-wrapper > .tile-content {
+  padding-bottom: 0;
+}

@@ -7,11 +7,14 @@ module ApplicationHelper
       msg_type = "danger"
     end
 
-    content_tag(:div, class: "alert alert-#{msg_type} alert-dismissible", role: "alert") do
-      button_tag(class: "close", "data-dismiss" => "alert") do
-        content_tag(:span, raw("&times;"), "aria-hidden" => true) +
-          content_tag(:span, "Close", class: "sr-only")
-      end + msg
+    content_tag(:div, class: "tile tile-lg tile-full-width tile-flexible-height tile-deep-orange alert alert-#{msg_type} alert-dismissible", role: "alert") do
+      content_tag(:span, class: "content-wrapper") do
+        content_tag(:span, class: "tile-content") do
+          content_tag(:h3) do
+            msg
+          end
+        end
+      end
     end
   end
 
