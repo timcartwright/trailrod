@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'devise_invitable'
+gem 'devise-i18n'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'annotate'
