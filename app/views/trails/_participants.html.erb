@@ -10,7 +10,7 @@
           <%= "#{event.distance}k" %>
         </h3>
         <h5>
-          <%= "#{@participants[event].length} registered" if @participants[event].length > 0 %>
+          <%= pluralize(@participants[event].count, 'participant') if @participants[event].length > 0 %>
         </h5>
         <ul>
           <% @participants[event].each do |participant| %>
