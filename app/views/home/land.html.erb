@@ -4,7 +4,7 @@
       
       <span class="tile-img tile-img-bg beach-start"></span>
       <span class="tile-holder tile-holder-sm">
-        <span class="title">Trail of Rodrigues</span>
+        <span class="title"><%= t('trail_of_rodrigues.title') %></span>
       </span>
     </span>      
   </span>
@@ -14,16 +14,16 @@
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
-        The Trail of Rodrigues
+        <%= t('trail_of_rodrigues.title') %>
       </h2>
       <p>
-        12th November 2016
+        <%= t('trail_of_rodrigues.date') %>
       </p>
       <h4>
-        A la source de l'Esprit du Trail
+        <%= t('trail_of_rodrigues.strapline') %>
       </h4>
       <p>
-        42km de Plaisir – 22km de Bonheur – 7km d'Authenticité
+        <%= t('trail_of_rodrigues.events') %>
       </p>
       
       
@@ -77,10 +77,10 @@
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
-        Rod Trail League
+        <%= t('trail_league.title') %>
       </h2>
       <h4>
-        Next Trail
+        <%= t('trail_league.next_trail') %>
       </h4>
       <h3 class="next-trail-name">
         <%= link_to @home.next_trail.name, trail_path(@home.next_trail) %>
@@ -108,7 +108,7 @@
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
-        Testimonials
+        <%= t('testimonials.title') %>
       </h2>
       <h3>
         "It was the best trail we have ever done, I can't wait to come back next year!"
@@ -116,7 +116,7 @@
       <p>
         Tim Cartwright,
       <br />
-        Trail de Rodrigues 2014
+        <%= t('trail_of_rodrigues.title') %> 2014
       </p>
       
     </span>      

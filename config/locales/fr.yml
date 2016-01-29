@@ -1,2 +1,16 @@
 fr:
-  hello: "Bonjour"
+  trail_of_rodrigues:
+    title: "Trail de Rodrigues"
+    date: "12 novembre 2016"
+    strapline: "A la source de l'Esprit du Trail"
+    events: "42km de Plaisir – 22km de Bonheur – 7km d'Authenticité"
+  trail_league:
+    title: "Ligue de Trail"
+    next_trail: "Trail Suivante"
+  testimonials:
+    title: "Livre d'Or"
+  register:
+    title: "Inscription"
+    for: "S'inscrire au"
+    registered: "Vous êtes inscrit à la"
+    login: "Login pour s'inscrire"

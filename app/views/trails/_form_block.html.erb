@@ -1,7 +1,7 @@
 <span id="form-block">
   <% if user_signed_in? %>
     <% if @registered_event && !current_user.is_admin? %>
-      <%= raw "<strong>Hello #{@profile.first_name}, you are registered for the #{@registered_event.distance}k</strong>" %>
+      <%= raw "<strong>#{t('register.registered')} #{@registered_event.distance}k</strong>" %>
     <% else %>
       <% @trail.events.each do |event| %>
         <% @event = event %>
@@ -12,7 +12,7 @@
         <% else %>
           <p>
             <a class="waves-effect waves-light btn modal-trigger" href=<%= "#profile-form-modal-#{event.id}" %> >
-              <%= "Register for #{event.distance}k" %>
+              <%= "#{t('register.for')} #{event.distance}k" %>
             </a>
           </p>
           <!-- Modals -->
@@ -31,7 +31,7 @@
   <% else %>
     <p>
       <a class="waves-effect waves-light btn modal-trigger" href="#login-form-modal">
-        Login to register
+        <%= t('register.login') %>
       </a>
     </p>
     <!-- Modals -->
