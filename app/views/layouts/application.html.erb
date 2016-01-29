@@ -13,10 +13,10 @@
   <div class="wrapper">
     <div class="main-wrapper">
       <div class="dashboard display-animation">
-        <div class="flash_messages">
-          <%= flash_tag(notice, "notice") %>
-          <%= flash_tag(alert, "alert") %>
-        </div>
+        <div class="flash_messages"><!-- remove blank space
+        --><%= flash_tag(notice, "notice") %><!-- remove blank space
+        --><%= flash_tag(alert, "alert") %><!-- remove blank space
+        --></div>
         <%= yield %>
         <%= render "common/footer" %>
       </div>

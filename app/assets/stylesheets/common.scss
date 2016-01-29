@@ -63,6 +63,10 @@ strong {
   font-weight: bold;
 }
 
+div.flash_messages:empty {
+   display: none;
+}
+
 .btn, .btn-large, .btn-flat {
   height: 48px;
   line-height: 48px;
