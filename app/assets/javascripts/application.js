@@ -130,5 +130,5 @@ $(document).ready(function() {
   
   $('.modal-trigger').leanModal();
 
-  $('.dashboard .profile-form').remove().insertAfter($('.dashboard'));
+  $('.dashboard .outside-dashboard').remove().insertAfter($('.dashboard'));
 });

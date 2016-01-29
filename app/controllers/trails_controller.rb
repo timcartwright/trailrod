@@ -17,6 +17,8 @@
 
 class TrailsController < ApplicationController
 
+  respond_to :html, :js
+
   before_action :authenticate_user!, only: [:new, :create]
 
   def index

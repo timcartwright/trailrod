@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   scope ':locale', locale: /en|fr/ do
     root 'home#land'
-    devise_for :users, :path => 'accounts', controllers: { sessions: 'sessions' }
+    devise_for :users, :path => 'accounts'
 
     resources :users
     resources :profiles

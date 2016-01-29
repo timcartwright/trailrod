@@ -16,7 +16,7 @@
             </a>
           </p>
           <!-- Modals -->
-          <div id=<%= "profile-form-modal-#{event.id}" %> class="modal profile-form do-not-animate">
+          <div id=<%= "profile-form-modal-#{event.id}" %> class="modal profile-form outside-dashboard do-not-animate">
             <div class="modal-content">
               <% if current_user.has_profile? %>
                 <%= render 'profiles/form', edit: true, admin: false %>
@@ -29,6 +29,16 @@
       <% end %>
     <% end %>
   <% else %>
-    <%= link_to 'Login to register', new_user_session_path, class: "waves-effect waves-light btn" %>
+    <p>
+      <a class="waves-effect waves-light btn modal-trigger" href="#login-form-modal">
+        Login to register
+      </a>
+    </p>
+    <!-- Modals -->
+    <div id="login-form-modal" class="modal login-form outside-dashboard do-not-animate">
+      <div class="modal-content">
+        <%= render 'devise/sessions/new' %>
+      </div>
+    </div>
   <% end %>
 </span>
