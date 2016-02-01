@@ -154,12 +154,13 @@ $(document).ready(function() {
   $('.load-first').imagesLoaded({ background: true })
     .always( function( instance ) {
       console.log('all images loaded');
-      NProgress.done();
       animate();
+      NProgress.done();
     })
     .progress( function( instance, image ) {
       var result = image.isLoaded ? 'loaded' : 'broken';
       console.log( 'image is ' + result + ' for ' + image.img.src );
+      NProgress.inc();
     });
 
   //on resize
