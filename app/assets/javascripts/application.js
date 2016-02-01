@@ -21,71 +21,84 @@
 
 $(document).ready(function() {
 
-  // nav
-  $(".button-collapse").sideNav();
+  // jquery helpers
+  $.fn.isAfter = function(sel){
+      return this.prevAll().filter(sel).length !== 0;
+  };
 
-  $(".openNav").click(function() {
-    $("body").toggleClass("navOpen");
-    $("nav").toggleClass("open");
-    $(".wrapper").toggleClass("open");
-    $(this).toggleClass("open");
-  });
+  $.fn.isBefore = function(sel){
+      return this.nextAll().filter(sel).length !== 0;
+  };
 
-  // animation of tile positions on load
-  var speed = 2000;
-  var container =  $('.display-animation');
-  container.each(function() {
-    var elements = $(this).children();
-    elements.each(function() {
-      if (!$(this).hasClass('do-not-animate')) {
-        var elementOffset = $(this).offset();
-        var offset = elementOffset.left*0.8 + elementOffset.top;
-        var delay = parseFloat(offset/speed).toFixed(2);
-        $(this)
-          .css("-webkit-animation-delay", delay+'s')
-          .css("-o-animation-delay", delay+'s')
-          .css("animation-delay", delay+'s')
-          .addClass('animated');
-        };
+  function navigation() {
+    // nav
+    $(".button-collapse").sideNav();
+
+    $(".openNav").click(function() {
+      $("body").toggleClass("navOpen");
+      $("nav").toggleClass("open");
+      $(".wrapper").toggleClass("open");
+      $(this).toggleClass("open");
     });
-  });
+  };
 
-  // ripple effect on click
+  function animate() {
+    // animation of tile positions
+    var speed = 2000;
+    var container =  $('.display-animation');
+    container.each(function() {
+      var elements = $(this).children();
+      elements.each(function() {
+        if (!$(this).hasClass('do-not-animate')) {
+          var elementOffset = $(this).offset();
+          var offset = elementOffset.left*0.8 + elementOffset.top;
+          var delay = parseFloat(offset/speed).toFixed(2);
+          $(this)
+            .css("-webkit-animation-delay", delay+'s')
+            .css("-o-animation-delay", delay+'s')
+            .css("animation-delay", delay+'s')
+            .addClass('animated');
+          };
+      });
+    });
+  };
 
-  $(".ripple-effect").click(function(e){
-    var rippler = $(this);
+  function rippleEffect() {
+    // ripple effect on click
+    $(".ripple-effect").click(function(e){
+      var rippler = $(this);
 
-    // create .ink element if it doesn't exist
-    if(rippler.find(".ink").length == 0) {
-        rippler.append("<span class='ink'></span>");
-    }
+      // create .ink element if it doesn't exist
+      if(rippler.find(".ink").length == 0) {
+          rippler.append("<span class='ink'></span>");
+      }
 
-    var ink = rippler.find(".ink");
+      var ink = rippler.find(".ink");
 
-    // prevent quick double clicks
-    ink.removeClass("animate");
+      // prevent quick double clicks
+      ink.removeClass("animate");
 
-    // set .ink diametr
-    if(!ink.height() && !ink.width())
-    {
-        var d = Math.max(rippler.outerWidth(), rippler.outerHeight());
-        ink.css({height: d, width: d});
-    }
+      // set .ink diametr
+      if(!ink.height() && !ink.width())
+      {
+          var d = Math.max(rippler.outerWidth(), rippler.outerHeight());
+          ink.css({height: d, width: d});
+      }
 
-    // get click coordinates
-    var x = e.pageX - rippler.offset().left - ink.width()/2;
-    var y = e.pageY - rippler.offset().top - ink.height()/2;
+      // get click coordinates
+      var x = e.pageX - rippler.offset().left - ink.width()/2;
+      var y = e.pageY - rippler.offset().top - ink.height()/2;
 
-    // set .ink position and add class .animate
-    ink.css({
-        top: y+'px',
-        left:x+'px'
-    }).addClass("animate");
-  });
+      // set .ink position and add class .animate
+      ink.css({
+          top: y+'px',
+          left:x+'px'
+      }).addClass("animate");
+    });
+  };
 
-  // Swap divs for mobile layout
-
-  function responsive_change_box_order() {
+  function changeBoxOrder() {
+    // Swap divs for mobile layout
     if (window.matchMedia("(max-width: 900px)").matches) {
       if ($('.swap-me').isBefore($('.swap-me-with'))) {
         $('.swap-me').remove().insertAfter($('.swap-me-with'));
@@ -99,24 +112,12 @@ $(document).ready(function() {
     }
   };
   
-  $.fn.isAfter = function(sel){
-      return this.prevAll().filter(sel).length !== 0;
-  };
+  function materializeInit() {
+    $('.dashboard .outside-dashboard').remove().insertAfter($('.dashboard'));
 
-  $.fn.isBefore = function(sel){
-      return this.nextAll().filter(sel).length !== 0;
-  };
-
-  //on load
-  responsive_change_box_order();
-
-  //on resize
-  window.addEventListener('resize', responsive_change_box_order );
-
-  function materialize_init() {
     $('.dateofbirthpicker').pickadate({
       selectMonths: true, // Creates a dropdown to control month
-      selectYears: 100, // Creates a dropdown of 15 years to control year
+      selectYears: 100, // Creates a dropdown of 100 years to control year
       formatSubmit: 'yyyy-mm-dd',
       hiddenName: true,
       max: -1500
@@ -132,7 +133,13 @@ $(document).ready(function() {
     $('.modal-trigger').leanModal();
   };
 
-  $('.dashboard .outside-dashboard').remove().insertAfter($('.dashboard'));
+  //on load
+  navigation();
+  changeBoxOrder();
+  rippleEffect();
+  materializeInit();
+  animate();
 
-  materialize_init();
+  //on resize
+  window.addEventListener('resize', changeBoxOrder );
 });
