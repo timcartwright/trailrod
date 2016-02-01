@@ -148,10 +148,15 @@ $(document).ready(function() {
   materializeInit();
   
 
-  $('body').imagesLoaded().always({ background: true }, function() {
-    console.log('loaded');
-    animate();
-  });
+  $('.tile-img-bg').imagesLoaded({ background: true })
+    .always( function( instance ) {
+      console.log('all images loaded');
+      animate();
+    })
+    .progress( function( instance, image ) {
+      var result = image.isLoaded ? 'loaded' : 'broken';
+      console.log( 'image is ' + result + ' for ' + image.img.src );
+    });
 
   //on resize
   window.addEventListener('resize', changeBoxOrder );
