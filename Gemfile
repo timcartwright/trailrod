@@ -22,6 +22,7 @@ gem 'material_icons'
 gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
 gem 'rails-jquery-autocomplete'
+gem 'nprogress-rails'
 
 group :development, :test do
   gem 'byebug'

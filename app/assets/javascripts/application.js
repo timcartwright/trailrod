@@ -17,6 +17,8 @@
 //= require autocomplete-rails
 //= require materialize-sprockets
 //= require turbolinks
+//= require nprogress
+//= require nprogress-turbolinks
 //= require_tree .
 
 /*!

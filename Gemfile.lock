@@ -116,6 +116,7 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
+    nprogress-rails (0.1.6.7)
     orm_adapter (0.5.0)
     pg (0.18.4)
     rack (1.6.4)
@@ -221,6 +222,7 @@ DEPENDENCIES
   letter_opener
   material_icons
   materialize-sass
+  nprogress-rails
   pg
   rails (= 4.2.5)
   rails-jquery-autocomplete
