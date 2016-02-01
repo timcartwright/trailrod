@@ -148,7 +148,7 @@ $(document).ready(function() {
   materializeInit();
   
 
-  $('body').imagesLoaded( function() {
+  $('body').imagesLoaded().always({ background: true }, function() {
     console.log('loaded');
     animate();
   });
