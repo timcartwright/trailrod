@@ -148,7 +148,7 @@ $(document).ready(function() {
   materializeInit();
   
 
-  $('.tile-img-bg').imagesLoaded({ background: true })
+  $('.load-first').imagesLoaded({ background: true })
     .always( function( instance ) {
       console.log('all images loaded');
       animate();
