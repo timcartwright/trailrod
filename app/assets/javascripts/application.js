@@ -167,3 +167,7 @@ $(document).ready(function() {
   window.addEventListener('resize', changeBoxOrder );
 });
 
+$(document).ajaxStart(function() {
+  $("#preloader").show();
+});
+

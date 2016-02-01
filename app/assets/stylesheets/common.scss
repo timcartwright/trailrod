@@ -88,6 +88,40 @@ div.flash_messages:empty {
   height: 18vw;
 }
 
+#nprogress .bar {
+  background: #f4511e !important;
+}
+
+#preloader {
+  display: none;
+
+  .preloader-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+  background-color: rgba(255, 255, 255, 0.8);
+
+    .valign {
+      width: 100%;
+      text-align: center;
+      
+    }
+  }
+}
+
+.waves-effect input[type="submit"] {
+  &:active {
+    border: 0;
+    font-style: normal;
+    font-size: 5rem;
+    text-transform: inherit;
+    background: none;
+  }
+}
+
 .tile-img-bg {
   &.rta {
     background-image: url(asset-path('runners-having-fun-on-beach.jpg'));
@@ -114,7 +148,7 @@ div.flash_messages:empty {
     background-image: url(asset-path('kids-watch-with-umbrella.jpg'));
   }
   &.beach-start {
-  background-image: url('http://get-muddy.com/wp-content/uploads/2013/08/Karyn-Southgate-512x512.jpg');
+  background-image: url(asset-path('beach-start.jpg'));
   }
   &.pig {
   background-image: url(asset-path('pig-in-basket.jpg'));
