@@ -88,9 +88,9 @@ div.flash_messages:empty {
   height: 18vw;
 }
 
-// #nprogress .bar {
-//   background: #f4511e !important;
-// }
+#nprogress .bar {
+  background: #f4511e !important;
+}
 
 .preloader {
   display: none;
