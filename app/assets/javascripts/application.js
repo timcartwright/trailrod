@@ -168,6 +168,6 @@ $(document).ready(function() {
 });
 
 $(document).ajaxStart(function() {
-  $("#preloader").show();
+  $(".preloader").show();
 });
 

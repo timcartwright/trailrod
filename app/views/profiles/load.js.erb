@@ -1,5 +1,5 @@
-if ( $('#edit-profile-form').length ) {
-  $('#edit-profile-form').replaceWith("<%= j render 'form', edit: true, admin: true %>");
+if ( $('<%= "#edit-profile-form-#{@event.id}" %>').length ) {
+  $('<%= "#edit-profile-form-#{@event.id}" %>').replaceWith("<%= j render 'form', edit: true, admin: true %>");
 } else {
   $("<%= j render 'form', edit: true, admin: true %>").appendTo('#modal2 .modal-content');
 }
@@ -13,5 +13,7 @@ $('.dateofbirthpicker').pickadate({
 });
 
 $('select').material_select();
+
+$(".preloader").hide();
 
 $('#modal2').openModal();

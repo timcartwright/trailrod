@@ -1,7 +1,7 @@
-$("#preloader").hide();
-
 <% if @admin %>
   $('#modal2').closeModal();
 <% else %>
   $('<%= "#edit-profile-form-#{@event.id}" %>').replaceWith("<%= j render 'event_registrations/payment' %>");
 <% end %>
+
+$(".preloader").hide();

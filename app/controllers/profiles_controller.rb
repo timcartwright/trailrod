@@ -73,6 +73,7 @@ class ProfilesController < ApplicationController
 
   def load
     @profile = Profile.find(params[:edit_profile][:id])
+    @event = find_event
   end
 
 private
