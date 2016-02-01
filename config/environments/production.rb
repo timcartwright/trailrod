@@ -63,6 +63,7 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { :host => 'desolate-plateau-7071.herokuapp.com' }
 
   config.action_mailer.smtp_settings = {
     :address   => "smtp.sendgrid.net",
@@ -71,7 +72,7 @@ Rails.application.configure do
     :user_name => ENV["SENDGRID_USERNAME"],
     :password  => ENV["SENDGRID_PASSWORD"], # SMTP password is any valid API key
     :authentication => 'login',
-    :domain => 'heroku.com', # your domain to identify your server when connecting
+    :domain => 'desolate-plateau-7071.herokuapp.com', # your domain to identify your server when connecting
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
