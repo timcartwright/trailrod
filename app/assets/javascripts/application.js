@@ -144,6 +144,7 @@ $(document).ready(function() {
   };
 
   //on load
+  NProgress.start();
   navigation();
   changeBoxOrder();
   rippleEffect();
@@ -153,6 +154,7 @@ $(document).ready(function() {
   $('.load-first').imagesLoaded({ background: true })
     .always( function( instance ) {
       console.log('all images loaded');
+      NProgress.done();
       animate();
     })
     .progress( function( instance, image ) {
