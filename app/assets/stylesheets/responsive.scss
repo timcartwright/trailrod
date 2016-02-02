@@ -179,37 +179,41 @@ h6 {
 @media screen and (max-width: 600px) {
 
 body {
-  font-size: 1.4rem;
+  font-size: 6vw;
 }
 
 h1 {
-  font-size: 4.2rem;
-  margin: 2.1rem 0 1.68rem 0;
+  font-size: 12.6vw;
+  margin: 4.2vw 0 3.36vw 0;
 }
 
 h2 {
-  font-size: 3.56rem;
-  margin: 1.78rem 0 1.424rem 0;
+  font-size: 10.68vw;
+  margin: 2.54vw 0 2.848vw 0;
 }
 
 h3 {
-  font-size: 2.92rem;
-  margin: 1.46rem 0 1.168rem 0;
+  font-size: 8.76vw;
+  margin: 2.92vw 0 2.346vw 0;
 }
 
 h4 {
-  font-size: 2.28rem;
-  margin: 1.14rem 0 0.912rem 0;
+  font-size: 6.84vw;
+  margin: 2.28vw 0 1.824vw 0;
 }
 
 h5 {
-  font-size: 1.64rem;
-  margin: 0.82rem 0 0.656rem 0;
+  font-size: 4.92vw;
+  margin: 1.64vw 0 1.32vw 0;
 }
 
 h6 {
-  font-size: 1rem;
-  margin: 0.5rem 0 0.4rem 0;
+  font-size: 3vw;
+  margin: 1vw 0 0.8vw 0;
+}
+
+.next-trail-name {
+  font-size: 12.6vw;
 }
 
 .sponsors-image {
@@ -258,7 +262,7 @@ h6 {
   height: 63.13vw;
 }
 .tile-lg .content-wrapper .tile-content {
-  height: 63.13vw;
+  // height: 142.05vh;
   padding: 20px;
   padding-top: 0;
 }
@@ -282,6 +286,7 @@ h6 {
 }
 .tile-lg.tile-narrow {
   width: 94.7vw;
+  height: 142.05vw;
 }
 .tile-lg.tile-narrow.tile-shorten {
   width: 94.7vw;
@@ -319,7 +324,7 @@ h6 {
   height: 31.57vw;
 }
 
-.tile-flexible-height {
+.tile-flexible-height, .tile-lg.tile-narrow {
   height: auto;
 
   .content-wrapper {
@@ -348,6 +353,11 @@ h6 {
 .non-tile {
   padding: 20px;
   max-width: 94.7vw;
+}
+
+.dashboard > * {
+  margin-bottom: 0.8vw;
+  margin-top: 0.8vw;
 }
 
 } // media query end
