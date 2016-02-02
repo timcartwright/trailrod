@@ -9,7 +9,7 @@ module ApplicationHelper
 
     content_tag(:div, class: "tile tile-lg tile-full-width tile-flexible-height tile-deep-orange alert alert-#{msg_type} alert-dismissible", role: "alert") do
       content_tag(:span, class: "content-wrapper") do
-        content_tag(:span, class: "tile-content") do
+        content_tag(:span, class: "tile-content center") do
           content_tag(:h3) do
             msg
           end

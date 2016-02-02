@@ -12,16 +12,9 @@
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: 'Calibre';
-//   src: font-url('Calibre-Bold.eot?#iefix') format('embedded-opentype'),  font-url('Calibre-Bold.woff') format('woff'), font-url('Calibre-Bold.ttf')  format('truetype'), font-url('Calibre-Bold.svg#Calibre-Bold') format('svg');
-//   font-weight: 800;
-//   font-style: normal;
-// }
-
 @font-face {
   font-family: 'Calibre';
-  src: font-url('Calibre-Black.eot?#iefix') format('embedded-opentype'),  font-url('Calibre-Black.woff') format('woff'), font-url('Calibre-Black.ttf')  format('truetype'), font-url('Calibre-Black.svg#Calibre-Black') format('svg');
+  src: font-url('Calibre-Bold.eot?#iefix') format('embedded-opentype'),  font-url('Calibre-Bold.woff') format('woff'), font-url('Calibre-Bold.ttf')  format('truetype'), font-url('Calibre-Bold.svg#Calibre-Bold') format('svg');
   font-weight: 800;
   font-style: normal;
 }

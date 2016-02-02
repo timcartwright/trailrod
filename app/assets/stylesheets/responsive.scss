@@ -280,7 +280,7 @@ h6 {
   background-color: rgba(175, 180, 54, 0.85);
   width: 100%;
   font-weight: 900;
-  font-size: 2.28rem;
+  font-size: 8.76vw;
   color: #fff;
 }
 .tile-lg.tile-narrow {
@@ -331,7 +331,8 @@ h6 {
 
     .tile-content {
       height: auto;
-      padding-top: 0;
+      padding-top: 1vw;
+      padding-bottom: 0;
     }
 
   }

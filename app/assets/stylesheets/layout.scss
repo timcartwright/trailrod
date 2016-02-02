@@ -855,6 +855,6 @@ a.tile {
   }
 }
 
-.alert > .content-wrapper > .tile-content {
-  padding-bottom: 0;
+.alert.tile-lg > .content-wrapper > .tile-content {
+  padding: 0 80px;
 }
