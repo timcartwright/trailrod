@@ -1,20 +1,17 @@
-<%= link_to url_with_protocol(trail.external_link) || trail_path(trail),  class: "tile tile-short tile-narrow tile-deep-orange ripple-effect", target: ("_blank" if trail.external_link) do %>
+<%= link_to url_with_protocol(trail.external_link) || trail_path(trail),  class: ["tile tile-short tile-narrow ripple-effect", (in_rodrigues?(trail.location) ? "tile-deep-orange" : "tile-light-blue")], target: ("_blank" if trail.external_link) do %>
   <span class="content-wrapper">
     <span class="tile-content">
       <h4 class="trail-date">
-        <%= l trail.date, format: '%d %B %Y' if trail.date %>
+        <%= l trail.date, format: '%-d %B %Y' if trail.date %>
       </h4>
       <h2>
-        <%= trail.name %>
+        <%= trail.name %><%= ", #{trail.location}" if !in_rodrigues?(trail.location) %>
       </h2>
       <p>
         <strong><%= trail.description %></strong>
       </p>
       <p>
         Organiser: <%= trail.organiser %>
-      </p>
-      <p>
-        Location: <%= trail.location %>
       </p>
       <p>
         <% trail.events.each do |event| %>

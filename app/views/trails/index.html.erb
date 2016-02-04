@@ -1,13 +1,43 @@
-<div class="tile tile-short tile-narrow tile-dark-green">
+<div class="tile tile-short tile-narrow tile-green">
   <span class="content-wrapper">
     <span class="tile-content">
+      <h3 class="next-trail-name">
+        Rodrigues
+        <%= t('trail_league.title') %>
+      </h3>
+    </span>      
+  </span>
+</div>
+
+<div class="tile tile-short tile-narrow tile-green">
+  <span class="content-wrapper">
+    <span class="tile-content">
+      <span class="tile-img tile-img-bg runners-on-rope"></span>
       <h3 class="next-trail-name">
         <%= t('trail_league.title') %>
       </h3>
       <span class="tile-img"></span>
-      <span class="tile-holder tile-holder-sm">
-        <span class="title">Calendar</span>
-      </span>
+      
+    </span>      
+  </span>
+</div>
+
+<div class="tile tile-short tile-narrow tile-cyan ripple-effect">
+
+  <span class="content-wrapper">
+    <span class="tile-content">
+      <h2>
+        <%= t('trail_league.next_trail') %>
+      </h2>
+      
+      <h3 class="next-trail-name">
+        <%= link_to @next_trail.name, trail_path(@next_trail) %>
+      </h3>
+
+      <% @next_trail.events.each do |event| %>
+        <%= "#{event.distance}k" %>
+      <% end %>
+      
     </span>      
   </span>
 </div>

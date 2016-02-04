@@ -19,4 +19,8 @@ module TrailsHelper
   def show_trail_bg
     "background: url('http://get-muddy.com/wp-content/uploads/2014/12/crossingstream1.jpg') no-repeat top center;"
   end
+
+  def in_rodrigues?(location)
+    location == "Rodrigues"
+  end
 end
