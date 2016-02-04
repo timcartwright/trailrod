@@ -23,6 +23,7 @@ gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
 gem 'rails-jquery-autocomplete'
 gem 'nprogress-rails'
+gem 'rails-i18n', '~> 4.0.0'
 
 group :development, :test do
   gem 'byebug'
