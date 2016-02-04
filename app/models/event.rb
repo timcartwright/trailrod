@@ -19,7 +19,7 @@ class Event < ActiveRecord::Base
   has_many :registrations, class_name: EventRegistration.name
   has_many :participants, through: :registrations, source: :profile
 
-  validates :name, :distance, presence: true
+  validates :distance, presence: true
 
   def register(trailer)
     registration = self.registrations.new

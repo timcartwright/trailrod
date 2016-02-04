@@ -7,16 +7,16 @@
       <h2>
         <%= trail.name %><%= ", #{trail.location}" if !in_rodrigues?(trail.location) %>
       </h2>
+      <h4>
+        <% trail.events.each do |event| %>
+          <%= "#{event.distance}k" %>
+        <% end %>
+      </h4>
       <p>
         <strong><%= trail.description %></strong>
       </p>
       <p>
         Organiser: <%= trail.organiser %>
-      </p>
-      <p>
-        <% trail.events.each do |event| %>
-          <%= "#{event.distance}k" %>
-        <% end %>
       </p>
       
     </span>      
