@@ -18,6 +18,10 @@ module ApplicationHelper
     end
   end
 
+  def url_with_protocol(url)
+    url ? /^http/i.match(url) ? url : "http://#{url}" : false
+  end
+
   # To enable devise in modal
 
   def resource_name

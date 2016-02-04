@@ -1,22 +1,27 @@
-<%= link_to trail_path(trail),  class: "tile tile-short tile-narrow tile-deep-orange ripple-effect" do %>
+<%= link_to url_with_protocol(trail.external_link) || trail_path(trail),  class: "tile tile-short tile-narrow tile-deep-orange ripple-effect", target: ("_blank" if trail.external_link) do %>
   <span class="content-wrapper">
     <span class="tile-content">
-      <h3>
+      <h4 class="trail-date">
+        <%= l trail.date, format: '%d %B %Y' if trail.date %>
+      </h4>
+      <h2>
         <%= trail.name %>
-      </h3>
+      </h2>
       <p>
-        <%= trail.date.strftime("%d %B") if trail.date %>
+        <strong><%= trail.description %></strong>
+      </p>
+      <p>
+        Organiser: <%= trail.organiser %>
+      </p>
+      <p>
+        Location: <%= trail.location %>
       </p>
       <p>
         <% trail.events.each do |event| %>
           <%= "#{event.distance}k" %>
         <% end %>
       </p>
-      <span class="tile-holder tile-holder-sm">
-        <span class="title">
-          <%= trail.organiser %>
-        </span>
-      </span>
+      
     </span>      
   </span>
 <% end %>
