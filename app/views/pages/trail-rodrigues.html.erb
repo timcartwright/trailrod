@@ -1,61 +1,52 @@
-<a class="tile tile-lg tile-pink ripple-effect" href="#">
+<div class="tile tile-lg tile-pink">
   <span class="content-wrapper">
     <span class="tile-content">
-      
-      <span class="tile-img tile-img-bg load-first runners-through-trees"></span>
+      <span class="tile-img tile-img-bg load-first runners-having-fun-on-beach"></span>
       <span class="tile-holder tile-holder-sm">
         <span class="title">Trail de Rodrigues</span>
       </span>
     </span>      
   </span>
-</a>
+</div>
 
 <div class="tile tile-lg tile-narrow tile-deep-orange swap-me">
   <span class="content-wrapper">
     <span class="tile-content">
-        <h3 class="next-trail-name">
-          Trail de Rodrigues
+        <h2>
+          A la source de l'Esprit du Trail
+        </h2>
+        
+        <h3>
+          Le Trail de Rodrigues 7eme édition, <br />6 novembre 2016
         </h3>
-        <p>
-          A la source de l'Esprit du Trail</p>
 
-        <p>42km de Plaisir – 22km de Bonheur – 7km d'Authenticité</p>
-
-        <p>
-          Le Trail de Rodrigues (6eme édition aura lieu le 8 novembre 2015). C'est l'évènement incontournable dans le calendrier d'évènementiels de l'île Rodrigues.
-        </p>
+        <h2>42km de Plaisir</br>22km de Bonheur</br>7km d'Authenticité</h2>
+        
     </span>      
   </span>
 </div>
+
+<%= render 'common/trail_rodrigues_courses' %>
 
 <div class="tile tile-lg tile-full-width tile-flexible-height tile-light-blue ripple-effect swap-me-with" href="#">
   <span class="content-wrapper">
     <span class="tile-content">
       <span class="left-col">
         <h3 class="next-trail-name">
-          A la source de l'Esprit du Trail
+          Accueil !
         </h3>
 
-        <p>S'inserant dans la logique du développement durable, le Trail de Rodrigues vise à réunir des hommes et des femmes dans les sentiers autour d'une pratique saine alliant le sport, la découverte et le plaisir de vivre en harmonie avec la nature.</p>
+        <p>Dépassant les six millions de coureurs en Europe et aux Etats Unis, le succès grandissant du trail n’a pas épargné l’ile Rodrigues. L’idée revient à Philippe LaHausse de la Louvriere du Rando Trail Nature et Yan de Maroussem de Yan nature – ile Maurice en 2008. Eric Lacroix de l'Université de la Réunion est devenu par la suite devenu le Consultant principal de la course.</p>
 
-        <p>Le Trail de Rodrigues. L'Eden du trail rythme avec l'Evasion et l'Authenticité. Il se réalise avec et pour la communauté.</p>
-
-        <p>Le Trail de Rodrigues 2015 aura pour thématique: " La Jeunesse et le Trail" visant à inculquer chez la jeune génération une culture sportive, le gout de l'effort et surtout le respect de l'environnement.</p>
-
-        <p>Oui, Rodrigues symbolise pour de plus en plus de personnes cette halte bénéfique, presque hors du temps, cet arrêt sur image où se mêlent quiétude et beauté dans l'oeil de celui qui observe, à la recherche d'un idéal en rupture avec le réel malhônnête, sans foi ni loi...</p>
-
-        <p>Faire halte dans une oasis de tranquilité ne peut qu'être bénéfique puisqu'elle permet d'extirper le vrai du faux et de faire le vide face à soi-même. C'est faire oeuvre de salut public que de faire la vidange des émotions négatives.</p>
+        <p>Une première édition a eu lieu le 21 novembre 2010 avec un peu plus de 300 participants. En 2011, la Rod Trail Association voit le jour et prend la charge de toute l’organisation du Trail de Rodrigues. L’Association travaille en étroite collaboration avec des institutions, des associations nationales et internationales, des ONG. De 300, le nombre de participants passera a plus de 900, mêlant les sportifs professionnels, les grandes personnalités du Trail et les sportifs amateurs dans un esprit de démocratie, de discipline et de convivialité.</p>
+        
       </span>
       <span class="right-col">
-
-
-        <p>Le Trail de Rodrigues, est une occasion de se ressourcer, tant dans l'effort physique que dans la douceur des paysages. De renaitre sur une toute petite île dont le coeur est resté intact. le calme y prend le relais de l'agitation caractéristique de ses grandes voisines qui se parent des habits de la modernité dont elles couvrent aussi les maux.</p>
-
-        <p>Il fut un temps, en effet, où la vie s'écoulait au rythme des marrées, des semences et des récoltes. Elles ont toutes été abandonnées par nos sociétés de consommation qui se rendent compte, douloureusement, que le bonheur ne s'achête pas dans les hypermarchés et que la technologie de pointe, les gadgets et les joujoux des grands enfants que nous sommes ne sortiront jamais de leur artificialité.</p>
-
-        <p>Alors Rodrigues, le 8 Novembre prochain, autant faire plein de tous nos sens.</p>
-
-        <p>L'accueil chaleureux et légendaire des Rodriguais vous garantira un séjour fort agréable.</p>
+        <p>Le Trail de Rodrigues vise a réunir des hommes et des femmes, des enfants autour d’une pratique saine alliant le sport, la découverte, la notion de proximité avec la nature et le respect de l’environnement.</p>
+        <p>Le Trail de l'Eden 44km, le Trail Solitaire 22km et le Trail Tortue 7km offrent des parcours avec une variété de difficultés techniques : le relief montagnard avec ses pentes herbeuses, ses sentiers terreux, et ses zones rocheuses et le littoral avec ses bords de plage, ses cotes rocheuses tourmentées, échancrées de nombreuses criques. On y court sans grand risque avec pour toile de fond des paysages somptueux.</p>
+        <p>Le Trail de Rodrigues est une halte bénéfique presque hors du temps, un arrêt sur image ou se mêlent quiétude et beauté. Il permet de faire le vide face à soi-même et de se purger des émotions négatives.</p>
+        <p>Evasion, authenticité rendez-vous le dimanche 6 novembre 2016 pour la 7eme édition du Trail de Rodrigues.
+        </p>
 
       </span>
     </span> 
@@ -70,11 +61,18 @@
       <h3 class="next-trail-name">
         Registration
       </h3>
+      <h4>Entry Fees</h4>
       <p>
-        Adults: Rs 150
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#entry-fees-foreign">
+          For Foreigners <i class='material-icons'>open_in_new</i>
+        </a>
       </p>
       <p>
-        Chidren: Rs 100
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#entry-fees-local">
+          For Mauritians <i class='material-icons'>open_in_new</i>
+        </a>
       </p>
     </span>      
   </span>
@@ -108,7 +106,501 @@
   </span>
 </div>
 
+<a class="tile tile-lg tile-pink ripple-effect" href="#">
+  <span class="content-wrapper">
+    <span class="tile-content">
+      
+      <span class="tile-img tile-img-bg load-first medals"></span>
+      <span class="tile-holder tile-holder-sm">
+        <span class="title"><%= t('trail_of_rodrigues.results') %> <i class='material-icons'>arrow_forward</i></span>
+      </span>
+    </span>      
+  </span>
+</a>
+
+<div class="tile tile-lg tile-narrow tile-deep-orange">
+  <span class="content-wrapper">
+    <span class="tile-content">
+      <h2>
+        Race Rules
+      </h2>
+      <p>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#general">
+          General <i class='material-icons'>open_in_new</i>
+        </a>
+      </p>
+      <p>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#categories">
+          Categories <i class='material-icons'>open_in_new</i>
+        </a>
+      </p>
+      <p>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#equipment">
+          Equipment <i class='material-icons'>open_in_new</i>
+        </a>
+      </p>
+    </span>      
+  </span>
+</div>
+
+<div class="tile tile-lg tile-narrow tile-green" href="#">
+  <span class="content-wrapper">
+    <%= image_tag 'logo-rod-trail-large.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
+
+    <span class="tile-content half-height">
+      
+      <p class="no-heading">
+        Since 2011, we have taken care of race logistics and security.
+      </p>
+      <p>We promote Trail as an eco-friendly and community enhancing activity.
+        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light green" %>
+      </p>
+    </span>      
+  </span>
+</div>
+
+<div class="tile tile-lg tile-light-blue ripple-effect" href="#">
+  <span class="content-wrapper">
+    <span class="tile-content">
+      
+      <span class="tile-img tile-img-bg load-first mountain-goat"></span>
+      
+    </span>      
+  </span>
+</div>
+
 <%= render "common/testimonial" %>
 <%= render "common/sponsors" %>
 
+<!-- Entry Fees Foreigners Modal -->
+<div id="entry-fees-foreign" class="modal outside-dashboard do-not-animate">
+  <div class="modal-content">
+    <h4>2016 Entry Fees for Foreigners</h4>
+    <table>
+      <thead>
+        <tr>
+            <th>Trail</th>
+            <th>Jan-May</th>
+            <th>June-July</th>
+            <th>Aug-Sept</th>
+            <th>Oct</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>42k</td>
+          <td>€35</td>
+          <td>€40</td>
+          <td>€45</td>
+          <td>€50</td>
+        </tr>
+        <tr>
+          <td>22k</td>
+          <td>€30</td>
+          <td>€35</td>
+          <td>€40</td>
+          <td>€45</td>
+        </tr>
+        <tr>
+          <td>7k</td>
+          <td>€25</td>
+          <td>€30</td>
+          <td>€35</td>
+          <td>€40</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Entry Fees Local Modal -->
+<div id="entry-fees-local" class="modal outside-dashboard do-not-animate">
+  <div class="modal-content">
+    <h4>2016 Entry Fees for Mauritians</h4>
+    <table>
+      <thead>
+        <tr>
+            <th>Trail</th>
+            <th>Jan-May</th>
+            <th>June-July</th>
+            <th>Aug-Sept</th>
+            <th>Oct</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>42k</td>
+          <td>Rs1330</td>
+          <td>Rs1520</td>
+          <td>Rs1710</td>
+          <td>Rs1900</td>
+        </tr>
+        <tr>
+          <td>22k</td>
+          <td>Rs1140</td>
+          <td>Rs1330</td>
+          <td>Rs1520</td>
+          <td>Rs1710</td>
+        </tr>
+        <tr>
+          <td>7k</td>
+          <td>Rs950</td>
+          <td>Rs1140</td>
+          <td>Rs1330</td>
+          <td>Rs1520</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Race Rules Modal -->
+<div id="general" class="modal race-rules outside-dashboard do-not-animate">
+  <div class="modal-content">
+    <h4>Race Rules</h4>
+
+    <h3>Organisation</h3>
+    <p>La 7ème édition du Trail de Rodrigues est organisé par l'Association du Rod Trail le Dimanche 6 novembre 2016.  Cette épreuve constitue la quatrième étape du Trail Tour de l'Océan Indien.</p>
+
+    <h3>Epreuves</h3>
+    <p>Le Trail de Rodrigues est un événement incontournable dans le calendrier d'événementiel de l'ile Rodrigues.  S'insérant dans la logique du développent durable, l'Eden du Trail vise à réunir des hommes et des femmes dans les sentiers autour d'une pratique saine alliant le sport, la découverte et le plaisir de vivre en harmonie avec la nature.  Cet événement rythme avec l'évasion et authenticité qui se réalise avec et pour la communauté.</p>
+    <ul>
+      <li>Le Trail de l'Eden (45km/2100m D+): Départ à l'hôtel Pointe Cotton à 5h30.</li>
+      <li>Le Trail Solitaire (22km/ 1100m D+): Départ à Pointe l'Herbe à 7h00 à côté du Phoenix Beverages Limitée. </li>
+      <li>Le Trail Tortue (7km/145m D+): Départ à Maréchal sur le terrain de foot à 9h00.</li>
+    </ul>
+    <p>L'arrivée des trois courses sera à la Reserve des Tortues à Anse Quitor.</p>
+
+    <h3>Conditions de Participation</h3>
+    <p>Les inscriptions du Trail de l'Eden (45km) et le Trail Solitaire (22km) sont réservées aux personnes bien entrainées et en bonne condition physique (accord de votre médecin traitant).  Le Trail Tortue (7km) est également  réservé aux personnes en bonne condition physique.</p>
+    <ul>
+      <li>Le Trail de l'Eden (45km): Course réservée aux personnes de plus de 18 ans.</li>
+      <li>Le Trail Solitaire (22km): Course réservée aux personnes de plus de 18 ans.</li>
+      <li>Le Trail Tortue (7km): Course réservée aux personnes de plus de 12 ans. Tout enfant moins de 8 ans devra être obligatoirement accompagner d'un adulte.</li>
+    </ul>
+
+    <h3>Semi Autonomie</h3>
+    <p>(a) Chaque coureur doit avoir avec lui pendant toute la durée de la course la totalité de son matériel obligatoire (voir paragraphe EQUIPEMENT).  Le coureur a l’obligation de se soumettre à ces contrôles avec cordialité, sous peine d’exclusion de la course. </p>
+    <p>(b) Des postes de ravitaillement sont approvisionnés en boissons et nourritures à consommer sur place. L’organisation ne fournit que de l’eau plate pour le remplissage des bidons ou poches à eau. Le coureur doit veiller à disposer, au départ de chaque poste de ravitaillement, de la quantité d’eau et d’aliments qui lui est nécessaire pour rallier le point de ravitaillement suivant.</p>
+    <p>(c) Pour le Trail de l'Eden (44km) et le Trail Solitaire (22km), une assistance personnelle est tolérée exclusivement sur certains points de ravitaillement(*), dans la zone spécifiquement réservée à cet usage et à l’appréciation du chef de poste.  Le reste du poste de ravitaillement est strictement réservé aux coureurs.</p>
+    <p>(d)  Il est interdit de se faire accompagner ou d’accepter d’être accompagné pendant tout ou partie de la course par une personne non inscrite, hors des zones de tolérance clairement signalées à proximité des postes de ravitaillement.</p>
+
+    <p><strong>* L'assistance personnelle est tolérée sur les postes suivants:</strong></p>
+    <p>Le Trail de l'Eden et le Trail Solitaire: Mt Bois Noir, Fond la Bonté et Rivière Coco.</p>
+    <p><strong>Elle est interdite sur les autres postes de ravitaillement ainsi que sur tous les autres points du parcours.</strong></p>
+
+    <h3>Catégories/ Récompenses</h3>
+    <p>Les catégories d'âge concernant l'année civile, qui débute le 1 er janvier et se termine le 31 décembre.  Les cinq premiers  participants des trois courses seront classés et récompensés selon les catégories ci-dessus.</p>
+
+    <table class="striped">
+      <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Code</th>
+            <th>Groupe d'Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Junior Homme</td>
+          <td>JUH</td>
+          <td>16 à 19 ans</td>
+        </tr>
+        <tr>
+          <td>Junior Femme</td>
+          <td>JUF</td>
+          <td>16 à 19 ans</td>
+        </tr>
+        <tr>
+          <td>Espoirs Homme</td>
+          <td>ESH</td>
+          <td>20 à 29 ans</td>
+        </tr>
+        <tr>
+          <td>Espoirs Femme</td>
+          <td>ESF</td>
+          <td>20 à 29 ans</td>
+        </tr>
+        <tr>
+          <td>Senior Homme</td>
+          <td>SHE</td>
+          <td>30 à 39 ans</td>
+        </tr>
+        <tr>
+          <td>Senior Femme</td>
+          <td>SHF</td>
+          <td>30 à 39 ans</td>
+        </tr>
+        <tr>
+          <td>Vétérans Homme</td>
+          <td>VH1</td>
+          <td>40 à 49 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VH2</td>
+          <td>50 à 59 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VH3</td>
+          <td>60 à 69 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VH4</td>
+          <td>70+</td>
+        </tr>
+        <tr>
+          <td>Vétérans Femmes</td>
+          <td>VF1</td>
+          <td>40 à 49 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VF2</td>
+          <td>50 à 59 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VF3</td>
+          <td>60 à 69 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VF4</td>
+          <td>70+</td>
+        </tr>
+      </tbody>
+    </table>
+   
+    <p>Le temps de chaque concurrent sera décomposé en heures, minutes et seconde.  Le chronomètre de l'organisation sera la seule référence officielle.  Dans l'éventualité d'arrivée ex-æquo, l'avantage sera donné au plus âgé.</p>
+    <p>La lecture des résultats et la remise des prix auront lieu à partir de 13 heures à la Reserve de Tortues à Anse Quitor sur le podium officiel.</p>
+
+    <h3>Equipement</h3>
+    <ul>
+      <li>Trail Tortue (7km): Chaussures adéquates.</li>
+      <li>Trail Solitaire (22km): Sac à eau (type camelback ou similaire) ou ceinture à bidon obligatoire (réserve d'eau de 1.0 L min); chaussures adéquates.</li>
+      <li>Trail de l'Eden (44km): Sac à eau (type camelback ou similaire) ou ceinture à bidon obligatoire (réserve d'eau de 1.5L min); chaussures adéquates et sifflet.</li>
+    </ul>
+
+    <p>Matériel recommandé en fonction des conditions météo pour le Trail Solitaire (22km) et le Trail de l'Eden (44km):</p>
+    <ul>
+      <li>Casquette ou buff</li>
+      <li>Gants</li>
+    </ul>
+
+    <h3>Postes de Contrôle</h3>
+    <p>Des postes de contrôle sont repartis le long du parcours et constituent des sites de pointage obligatoire pour les concurrents.</p>
+
+    <h3>Abandon</h3>
+    <p>En cas d'abandon, le concurrent doit obligatoirement prévenir le responsable du poste de contrôle le plus proche et lui remettre son dossard.</p>
+
+    <h3>Sécurité / Assistance Médicale</h3>
+    <p>Une équipe de secours sera mise en place par l'organisation et sera présente pendant toute la durée de l'épreuve.  Le concurrent doit impérativement contacter le chef de poste pour une assistance médicale.  Deux docteurs pourront intervenir si nécessaire qui sont poster à l'hôpital de La Ferme et de Mont Lubin.  Une équipe médicale sera aussi présente à l'arrivée.</p>
+    <p>Il appartient à chaque coureur de porter assistance à toute personne en danger et de prévenir les secours.  Tout problème ou accident devra être immédiatement signalé au poste de contrôle le plus proche.  N’oubliez pas que des aléas de toute sorte, liés à l’environnement et à la course, peuvent vous faire attendre les secours plus longtemps que prévu.  Un coureur faisant appel à un médecin ou un secouriste se soumet de fait à son autorité et s’engage à accepter ses décisions. Les secouristes et médecins officiels sont habilités:</p>
+    <ul>
+      <li>À retirer de la course (en invalidant le dossard) tout participant inapte à continuer l’épreuve.</li>
+      <li>À faire évacuer les coureurs qu’ils jugeront en danger.</li>
+      <li>À faire hospitaliser les coureurs dont l’état de santé le nécessitera.</li>
+    </ul>
  
+    <h3>Le Dossard / Briefing de Course</h3>
+    <p>Les dossards pourront être récupérés au centre culturel et loisir de Mont Plaisir entre 9h00 et 17h00 et le briefing de course sera entre 16h00 et 17h00.  Chaque dossard est remis en main propre au coureur inscrit sur présentation d'une pièce d'identité avec photo ou une évidence de paiement, sans ce document le dossard ne sera pas remis. Aucun dossard sera remis le jour du départ.  Le dossard doit être porté sur la poitrine ou le ventre et doit être visible pendant la totalité de la course.</p>
+
+    <h3>Assurance</h3>
+    <p>L’organisation souscrit une assurance responsabilité civile pour la durée de l’épreuve. Cette assurance responsabilité civile garantie les conséquences pécuniaires de sa responsabilité, de celle de ses préposés et des participants. L’organisation décline toute responsabilité en cas d’accident ou de défaillance dû à un mauvais état de santé. L’organisateur invite les participants à se prévaloir d’une assurance individuelle accident couvrant les risques encourus durant l’évènement.</p>
+
+    <h3>Doit d'Image</h3>
+    <p>Chaque participant autorise  les organisateurs du Trail de Rodrigues, ainsi que leurs partenaires et médias, à utiliser les images sur lesquelles il pourrait apparaître.</p>
+
+    <h3>Pénalisation - Disqualification</h3>
+    <p>Les chefs de poste des différents points de contrôle et de ravitaillement sont habilités à faire respecter le règlement et à appliquer immédiatement (*) une pénalité en cas de non-respect, selon le tableau suivant:</p>
+
+    <table class="striped">
+      <thead>
+        <tr>
+            <th>MANQUEMENT AU RÈGLEMENT</th>
+            <th>PÉNALISATION (*) – DISQUALIFICATION</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Absence de matériel obligatoire de sécurité</td>
+          <td>Pénalités de temps</td>
+        </tr>
+        <tr>
+          <td>Refus d’un contrôle du matériel obligatoire</td>
+          <td>Disqualification</td>
+        </tr>
+        <tr>
+          <td>Jet de détritus (acte volontaire) par un concurrent ou un membre de son entourage</td>
+          <td>Pénalités de temps</td>
+        </tr>
+        <tr>
+          <td>Circulation en dehors des sentiers balisés</td>
+          <td>Disqualification</td>
+        </tr>
+        <tr>
+          <td>Dégradation volontaire de l’environnement</td>
+          <td>Disqualification</td>
+        </tr>
+        <tr>
+          <td>Vandalisme sur le balisage</td>
+          <td>Disqualification</td>
+        </tr>
+        <tr>
+          <td>Non-respect des personnes (organisation ou coureurs)</td>
+          <td>Disqualification</td>
+        </tr>
+        <tr>
+          <td>Non-assistance à une personne en difficulté</td>
+          <td>Pénalités de temps</td>
+        </tr>
+        <tr>
+          <td>Assistance en dehors des zones autorisées</td>
+          <td>Pénalités de temps</td>
+        </tr>
+        <tr>
+          <td>Triche (ex : utilisation d’un moyen de transport, partage de dossard…)</td>
+          <td>Disqualification immédiate</td>
+        </tr>
+        <tr>
+          <td>Refus d’obtempérer à un ordre de la direction de la course, d’un commissaire de course, d’un chef de poste, d’un médecin ou d’un secouriste</td>
+          <td>Disqualification immédiate</td>
+        </tr>
+        <tr>
+          <td>Défaut de dossard visible</td>
+          <td>Pénalités de temps</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>(*) Tout autre manquement au règlement fera l’objet d’une sanction décidée par le jury de course.</p>
+
+    <h3>Annulation de la Course</h3>
+    <p>Toute annulation de la course en cas d'intempéries ou cas de force majeure (inondation, incendie, cyclone etc.) ne donnera lieu à aucun remboursement.</p>
+
+    <h3>Complainte</h3>
+    <p>Toutes complaintes de la part des concurrents seront acceptées qu'après 30 minutes après avoir franchi la ligne d'arrivée.</p>
+  </div>
+</div>
+
+<!-- Categories Modal -->
+<div id="categories" class="modal race-rules outside-dashboard do-not-animate">
+  <div class="modal-content">
+    <h4>Catégories / Récompenses</h4>
+    <p>Les catégories d'âge concernant l'année civile, qui débute le 1 er janvier et se termine le 31 décembre.  Les cinq premiers  participants des trois courses seront classés et récompensés selon les catégories ci-dessus.</p>
+
+    <table class="striped">
+      <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Code</th>
+            <th>Groupe d'Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Junior Homme</td>
+          <td>JUH</td>
+          <td>16 à 19 ans</td>
+        </tr>
+        <tr>
+          <td>Junior Femme</td>
+          <td>JUF</td>
+          <td>16 à 19 ans</td>
+        </tr>
+        <tr>
+          <td>Espoirs Homme</td>
+          <td>ESH</td>
+          <td>20 à 29 ans</td>
+        </tr>
+        <tr>
+          <td>Espoirs Femme</td>
+          <td>ESF</td>
+          <td>20 à 29 ans</td>
+        </tr>
+        <tr>
+          <td>Senior Homme</td>
+          <td>SHE</td>
+          <td>30 à 39 ans</td>
+        </tr>
+        <tr>
+          <td>Senior Femme</td>
+          <td>SHF</td>
+          <td>30 à 39 ans</td>
+        </tr>
+        <tr>
+          <td>Vétérans Homme</td>
+          <td>VH1</td>
+          <td>40 à 49 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VH2</td>
+          <td>50 à 59 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VH3</td>
+          <td>60 à 69 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VH4</td>
+          <td>70+</td>
+        </tr>
+        <tr>
+          <td>Vétérans Femmes</td>
+          <td>VF1</td>
+          <td>40 à 49 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VF2</td>
+          <td>50 à 59 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VF3</td>
+          <td>60 à 69 ans</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>VF4</td>
+          <td>70+</td>
+        </tr>
+      </tbody>
+    </table>
+   
+    <p>Le temps de chaque concurrent sera décomposé en heures, minutes et seconde.  Le chronomètre de l'organisation sera la seule référence officielle.  Dans l'éventualité d'arrivée ex-æquo, l'avantage sera donné au plus âgé.</p>
+    <p>La lecture des résultats et la remise des prix auront lieu à partir de 13 heures à la Reserve de Tortues à Anse Quitor sur le podium officiel.</p>
+
+  </div>
+</div>
+
+<!-- Equipment Modal -->
+<div id="equipment" class="modal race-rules outside-dashboard do-not-animate">
+  <div class="modal-content">
+    <h3>Equipement</h3>
+    <ul>
+      <li>Trail Tortue (7km): Chaussures adéquates.</li>
+      <li>Trail Solitaire (22km): Sac à eau (type camelback ou similaire) ou ceinture à bidon obligatoire (réserve d'eau de 1.0 L min); chaussures adéquates.</li>
+      <li>Trail de l'Eden (44km): Sac à eau (type camelback ou similaire) ou ceinture à bidon obligatoire (réserve d'eau de 1.5L min); chaussures adéquates et sifflet.</li>
+    </ul>
+    <p>Matériel recommandé en fonction des conditions météo pour le Trail Solitaire (22km) et le Trail de l'Eden (44km):</p>
+    <ul>
+      <li>Casquette ou buff</li>
+      <li>Gants</li>
+    </ul>
+  </div>
+</div>

@@ -139,8 +139,44 @@ div.flash_messages:empty {
 }
 
 .tile-img-bg {
-  &.rta {
+  &.runners-having-fun-on-beach {
     background-image: url(asset-path('runners-having-fun-on-beach.jpg'));
+  }
+  &.medals {
+    background-image: url(asset-path('medals.jpg'));
+  }
+  &.walking-hand-on-thighs {
+    background-image: url(asset-path('walking-hand-on-thighs.jpg'));
+  }
+  &.support-at-top-of-hill {
+    background-image: url(asset-path('support-at-top-of-hill.jpg'));
+  }
+  &.support-from-musicians-port {
+    background-image: url(asset-path('support-from-musicians-port.jpg'));
+  }
+  &.tortoise-port {
+    background-image: url(asset-path('tortoise-port.jpg'));
+  }
+  &.sunset {
+    background-image: url(asset-path('sunset.jpg'));
+  }
+  &.rodoil {
+    background-image: url(asset-path('rodoil.jpg'));
+  }
+  &.accordian-girl-port {
+    background-image: url(asset-path('accordian-girl-port.jpg'));
+  }
+  &.finish-line {
+    background-image: url(asset-path('finish-line.jpg'));
+  }
+  &.jumping-off-sq {
+    background-image: url(asset-path('jumping-off-sq.jpg'));
+  }
+  &.old-lady-in-red-port {
+    background-image: url(asset-path('old-lady-in-red-port.jpg'));
+  }
+  &.ravitio-sq {
+    background-image: url(asset-path('ravitio-sq.jpg'));
   }
   &.girls-in-red {
     background-image: url(asset-path('two-girls-in-red-sq.jpg'));
