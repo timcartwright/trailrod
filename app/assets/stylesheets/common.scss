@@ -68,13 +68,35 @@ strong {
   font-weight: bold;
 }
 
+p.no-heading {
+  margin-top: 1vw;
+}
+
+a {
+  color: $white;
+}
+
+a.btn-floating {
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+}
+
 div.flash_messages:empty {
    display: none;
+}
+
+.material-icons, .mi {
+    font-size: 2vw;
 }
 
 .btn, .btn-large, .btn-flat {
   height: 48px;
   line-height: 48px;
+}
+
+.btn-large i {
+    font-size: 2.4rem;
 }
 
 .main-wrapper {
@@ -142,11 +164,16 @@ div.flash_messages:empty {
     background-image: url(asset-path('kids-watch-with-umbrella.jpg'));
   }
   &.beach-start {
-  background-image: url(asset-path('beach-start.jpg'));
+    background-image: url(asset-path('beach-start.jpg'));
   }
   &.pig {
-  background-image: url(asset-path('pig-in-basket.jpg'));
-  background-position: 50% 10% !important;
+    background-image: url(asset-path('pig-in-basket.jpg'));
+    background-position: 50% 10% !important;
+  }
+  &.rta {
+    background-image: url(asset-path('logo-rod-trail-medium.jpg'));
+    background-size: contain !important;
+    background-position: 50% 0% !important;
   }
 }
 

@@ -97,6 +97,10 @@ h6 {
   height: 63.13vw;
   padding: 20px;
   padding-top: 0;
+
+  &.half-height {
+    height: 30.56vw;
+  }
 }
 
 .tile-lg .content-wrapper .tile-content .tile-img-bg {

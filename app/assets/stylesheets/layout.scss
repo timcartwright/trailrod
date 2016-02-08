@@ -99,6 +99,9 @@ a.tile {
   -webkit-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .tile:hover,
 .tile:active,
@@ -106,9 +109,9 @@ a.tile {
 .tile:focus,
 .tile:active:focus,
 .tile.active:focus {
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 8px 17px rgba(0, 0, 0, 0.16), 0 8px 17px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 8px 17px rgba(0, 0, 0, 0.16), 0 8px 17px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 8px 17px rgba(0, 0, 0, 0.16), 0 8px 17px rgba(0, 0, 0, 0.23);
 
   // .content-wrapper .tile-content .tile-img.tile-img-bg {
   //   -webkit-background-size: 110%;
@@ -178,7 +181,7 @@ a.tile {
 .tile .content-wrapper .tile-content .tile-holder.tile-holder-sm {
   position: absolute;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 1.3vw;
   // padding-top: 10px;
 }
 /* -- Tiles color ------------------------------------- */
@@ -680,14 +683,14 @@ a.tile {
 }
 .tile-short .content-wrapper .tile-content {
   height: 31vw;
-  padding: 20px;
+  padding: 1.3vw;
   padding-top: 0;
 }
 
 .tile-short .content-wrapper .tile-content .tile-img-bg {
   width: 63vw;
   height: 31vw;
-  margin-left: -20px;
+  margin-left: -1.3vw;
   margin-top: 0px;
 }
 
@@ -714,14 +717,18 @@ a.tile {
 }
 .tile-lg .content-wrapper .tile-content {
   height: 42vw;
-  padding: 20px;
+  padding: 1.3vw;
   padding-top: 0;
+
+  &.half-height {
+    height: 21vw;
+  }
 }
 
 .tile-lg .content-wrapper .tile-content .tile-img-bg {
   width: 63vw;
   height: 42vw;
-  margin-left: -20px;
+  margin-left: -1.3vw;
   margin-top: 0px;
 }
 
@@ -785,7 +792,7 @@ a.tile {
 }
 
 .non-tile {
-  padding: 20px;
+  padding: 1.3vw;
   max-width: 63vw;
 }
 

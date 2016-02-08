@@ -4,13 +4,13 @@
       
       <span class="tile-img tile-img-bg load-first beach-start"></span>
       <span class="tile-holder tile-holder-sm">
-        <span class="title"><%= t('trail_of_rodrigues.title') %></span>
+        <span class="title"><%= t('trail_of_rodrigues.title') %> <i class='material-icons'>arrow_forward</i></span>
       </span>
     </span>      
   </span>
 </a>
 
-<a class="tile tile-lg tile-narrow tile-deep-orange ripple-effect" href="#">
+<div class="tile tile-lg tile-narrow tile-deep-orange">
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
@@ -23,29 +23,27 @@
         <%= t('trail_of_rodrigues.strapline') %>
       </h4>
       <p>
-        <%= t('trail_of_rodrigues.events') %>
+        The Trail of Rodrigues is a beneficial stop almost out of time, a still picture or mingle tranquility and beauty.
       </p>
       
-      
+      <p>
+        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('trail-rodrigues'), class: "btn-floating btn-large waves-effect waves-light orange" %>
+      </p>
     </span>      
   </span>
-</a>
+</div>
 
-
-
-
-
-<div class="tile tile-lg tile-narrow tile-green ripple-effect" href="#">
+<div class="tile tile-lg tile-narrow tile-green" href="#">
   <span class="content-wrapper">
-    <span class="tile-content">
-      <h2>
-        Rod Trail Association
-      </h2>
-      <p>
-        You are a runner, perhaps a hiker or perhaps just someone who likes being out in Nature. Well, this site is for you. 
+    <%= image_tag 'logo-rod-trail-large.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
+
+    <span class="tile-content half-height">
+      
+      <p class="no-heading">
+        Since 2011, we have taken care of race logistics and security.
       </p>
-      <p>
-        Rando-Trail & Nature was created for people like us, so feel at home and contact us if you feel the urge, we would be happy to assist or share or provide a comment. 
+      <p>We promote Trail as an eco-friendly and community enhancing activity.
+        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light green" %>
       </p>
     </span>      
   </span>
@@ -61,16 +59,18 @@
   </span>
 </div>
 
-<a class="tile tile-lg tile-cyan ripple-effect" href="#">
+<div class="tile tile-lg tile-cyan">
   <span class="content-wrapper">
     <span class="tile-content">
       <span class="tile-img tile-img-bg band"></span>
       <span class="tile-holder tile-holder-sm">
-        <span class="title">Discover Rodrigues</span>
+        <span class="title">
+          Discover Rodrigues <i class="material-icons">arrow_forward</i>
+        </span>
       </span>
-     
+    </span>
   </span>
-</a>
+</div>
 
 <div class="tile tile-lg tile-narrow tile-shorten tile-cyan ripple-effect">
 
@@ -79,17 +79,18 @@
       <h2>
         <%= t('trail_league.title') %>
       </h2>
+      <p>
+        Trails from 7 to 20k are organised throughout the year, crisscrossing the island from both sides.
+      </p>
       <h4>
         <%= t('trail_league.next_trail') %>
       </h4>
       <h3 class="next-trail-name">
-        <%= link_to @home.next_trail.name, trail_path(@home.next_trail) %>
+        <%= link_to raw("#{@home.next_trail.name} <i class='material-icons'>arrow_forward</i>"), trail_path(@home.next_trail) %>
       </h3>
 
-      <% @home.next_trail_events.each do |event| %>
-        <%= "#{event.distance}k" %>
-      <% end %>
-      
+      <%= l @home.next_trail.date, format: '%-d %B %Y' if @home.next_trail.date %>
+      <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), trails_path, class: "btn-floating btn-large waves-effect waves-light blue" %>
     </span>      
   </span>
 </div>
@@ -118,7 +119,7 @@
       <br />
         <%= t('trail_of_rodrigues.title') %> 2014
       </p>
-      
+      <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light orange" %>
     </span>      
   </span>
 </div>
