@@ -1,14 +1,15 @@
-<a class="tile tile-lg tile-pink ripple-effect" href="#">
+<div class="tile tile-lg tile-pink">
   <span class="content-wrapper">
     <span class="tile-content">
-      
       <span class="tile-img tile-img-bg load-first beach-start"></span>
       <span class="tile-holder tile-holder-sm">
-        <span class="title"><%= t('trail_of_rodrigues.title') %> <i class='material-icons'>arrow_forward</i></span>
+        <span class="title">
+          <%= t('trail_of_rodrigues.title') %>
+        </span>
       </span>
     </span>      
   </span>
-</a>
+</div>
 
 <div class="tile tile-lg tile-narrow tile-deep-orange">
   <span class="content-wrapper">
@@ -25,7 +26,6 @@
       <p>
         The Trail of Rodrigues is a beneficial stop almost out of time, a still picture or mingle tranquility and beauty.
       </p>
-      
       <p>
         <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('trail-rodrigues'), class: "btn-floating btn-large waves-effect waves-light orange" %>
       </p>
@@ -36,9 +36,7 @@
 <div class="tile tile-lg tile-narrow tile-green" href="#">
   <span class="content-wrapper">
     <%= image_tag 'logo-rod-trail-large.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
-
     <span class="tile-content half-height">
-      
       <p class="no-heading">
         Since 2011, we have taken care of race logistics and security.
       </p>
@@ -49,17 +47,15 @@
   </span>
 </div>
 
-<div class="tile tile-lg tile-light-blue ripple-effect" href="#">
+<div class="tile tile-lg tile-light-blue">
   <span class="content-wrapper">
     <span class="tile-content">
-      
       <span class="tile-img tile-img-bg load-first mountain-goat"></span>
-      
     </span>      
   </span>
 </div>
 
-<div class="tile tile-lg tile-cyan">
+<%= link_to page_path('rodrigues'), class: "tile tile-lg tile-cyan ripple-effect" do %>
   <span class="content-wrapper">
     <span class="tile-content">
       <span class="tile-img tile-img-bg band"></span>
@@ -70,10 +66,9 @@
       </span>
     </span>
   </span>
-</div>
+<% end %>
 
 <div class="tile tile-lg tile-narrow tile-shorten tile-cyan ripple-effect">
-
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
@@ -98,9 +93,7 @@
 <div class="tile tile-short tile-half-width tile-narrow tile-amber" href="#">
   <span class="content-wrapper">
     <span class="tile-content">
-      
       <span class="tile-img tile-img-bg girls-in-red"></span>
-      
     </span>      
   </span>
 </div>
@@ -127,9 +120,7 @@
 <div class="tile tile-short tile-narrow tile-deep-orange" href="#">
   <span class="content-wrapper">
     <span class="tile-content">
-      
       <span class="tile-img tile-img-bg yan"></span>
-      
     </span>      
   </span>
 </div>
