@@ -1,9 +1,12 @@
 en:
   trail_of_rodrigues:
     title: "Trail of Rodrigues"
-    date: "12th November 2016"
+    edition: "7th Edition"
+    date: "6th November 2016"
     strapline: "The spirit of trail"
     events: "42km of Pleasure - 22km of Happiness - 7km of Authenticity"
+    about_part_one_html: "<p>With more than 6 million participants in Europe and the United States, the growing success of the trail has not spared the island of Rodrigues. The idea first came from Philippe Lahausse and Yan de Maroussem of Rando Trail Nature, Mauritius in 2008. Eric Lacroix from the University of Reunion later became the main consultant of the race.</p><p>The first edition took place on 21st November 2010 with just over 300 participants. In 2011, the Rod Trail Association is born and took charge of the entire organization of the Trail of Rodrigues. The Association works closely with institutions, national and international associations, and NGOs. From 300, the number of participants has increased to more than 900, combining professional athletes, the great personalities of Trail, and sports fans in a spirit of democracy, discipline and togetherness.</p>"
+    about_part_two_html: "<p>The Trail of Rodrigues brings together men, women and children around a healthy practice that combines sport, discovery, proximity with nature and respect for the environment.</p><p>The 3 trails offer a variety of technical difficulties: the mountain landscape with its grassy slopes, the earthy paths and rocky patches, and the coastline with its rocky outcrops, sandy beaches and coves. Without much risk, we run with a backdrop of beautiful scenery.</p><p>The Trail is a beneficial stop almost out of time, a still picture mingling tranquility and beauty. It allows a vacuum to face oneself and to purge negative emotions.</p><p>Meet for a truly authentic experience on Sunday, November 6, 2016 for the 7th edition of the Trail of Rodrigues.</p>"
   trail_league:
     title: "League of Trail"
     next_trail: "Next Trail"
@@ -14,3 +17,12 @@ en:
     for: "Register for the"
     registered: "You are registered for the"
     login: "Login to register"
+  rta:
+    about_part_one_html: "<p>In 2011, the Rod Trail Association was born and took care of all the logistics and security of the Trail of Rodrigues. Behind the RTA is an Executive Committee of 10 dynamic young people who love their island as well as Trail.</p><p>Each year the Committee establishes a schedule of activities for amateur and professional trailers, giving them the opportunity to perfect their technique and better prepare for the core event, the Trail of Rodrigues in November. Mini trails are organised throughout the year and include 5 events ranging from 7 to 20k, crisscrossing the island from both sides.</p>"
+    about_part_two_html: "<P>The RTA is not only committed to promoting the Trail, but also wants to be 'nature friendly'. It encourages the respect and protection of nature and has established a whole team to clean the trails. Other activities on the social level are organised in collaboration with Rod Riders and the Blood Donors Association among others.</p><p>The RTA is above all a family that is supported by a hundred faithful volunteers. They lend a hand to the organising committee to assist in the conduct of the races.</p>"
+  links:
+    title: "Links"
+  rodrigues:
+    title: "Rodrigues Island"
+    discover_html: "<h2>Discover Rodrigues</h2><p>In the <strong>tropical heart of the Indian Ocean</strong>, Rodrigues Island stretches over a surface area of only 108 km2. Some 650 km to the north-east of Mauritius, it is the part of Africa that is closest to Australia.</p><p>The landscapes vary from <strong>hilly lands to steep volcanic hills</strong>. Its coasts are made of wild creeks, <strong>marvelous sandy beaches and coral reefs</strong>, surrounded by small islets. The lagoon and coral reefs of Rodrigues are twice the area of the islands and are very rich and full of marine life.</p><p>Its charm and <strong>simple unhurried pace of life</strong> attracts visitors from around the world who come to enjoy the island's tranquility and natural beauty.  Kindness and simplicity are the principal traits of the Rodriguans.</p>"
+    quote_html: '<h3>"Rodrigues offers pristine, empty beaches and the chance to immerse yourself in local life."</h3><p>The Guardian</p>'

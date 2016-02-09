@@ -1,9 +1,12 @@
 fr:
   trail_of_rodrigues:
     title: "Trail de Rodrigues"
-    date: "12 novembre 2016"
+    edition: "7eme édition"
+    date: "6 novembre 2016"
     strapline: "A la source de l'Esprit du Trail"
     events: "42km de Plaisir – 22km de Bonheur – 7km d'Authenticité"
+    about_part_one_html: "<p>Dépassant les six millions de coureurs en Europe et aux Etats Unis, le succès grandissant du trail n’a pas épargné <strong>l’Ile Rodrigues</strong>. L’idée revient à Philippe LaHausse de la Louvriere du Rando Trail Nature et Yan de Maroussem de Yan nature – ile Maurice en 2008. Eric Lacroix de l'Université de la Réunion est devenu par la suite devenu le Consultant principal de la course.</p><p>Une 1ère édition a eu lieu le 21 novembre 2010 avec un peu plus de 300 participants. En 2011, la <strong>Rod Trail Association</strong> voit le jour et prend la charge de toute l’organisation du Trail de Rodrigues. L’Association travaille en étroite collaboration avec des institutions, des associations nationales et internationales, des ONG. De 300, le nombre de participants passera a plus de 900, mêlant les sportifs professionnels, les grandes personnalités du Trail et les sportifs amateurs dans un esprit de démocratie, de discipline et de convivialité.</p>" 
+    about_part_two_html: "<p>Le <strong>Trail de Rodrigues</strong> vise a réunir des hommes et des femmes, des enfants autour d’une pratique saine alliant le sport, la découverte, la notion de proximité avec la nature et le respect de l’environnement.</p><p><strong>Les 3 Trails</strong> offrent des parcours avec une variété de difficultés techniques : le relief montagnard avec ses pentes herbeuses, ses sentiers terreux, et ses zones rocheuses et le littoral avec ses bords de plage, ses cotes rocheuses tourmentées, échancrées de nombreuses criques. On y court sans grand risque avec pour toile de fond des paysages somptueux.</p><p>Le Trail est une halte bénéfique presque hors du temps, un arrêt sur image ou se mêlent quiétude et beauté. Il permet de faire le vide face à soi-même et de se purger des émotions négatives.</p><p><strong>Evasion, authenticité rendez-vous le dimanche 6 novembre 2016 pour la 7eme édition du Trail de Rodrigues.</strong></p>"
   trail_league:
     title: "Ligue de Trail"
     next_trail: "Trail Suivante"
@@ -14,3 +17,15 @@ fr:
     for: "S'inscrire au"
     registered: "Vous êtes inscrit à la"
     login: "Login pour s'inscrire"
+  rta:
+    about_part_one_html: "<p>En 2011 la Rod Trail Association a vu le jour et elle a pris en charge tout l'aspect logistique et sécurité de la course. Derrière cette association, il y a une équipe de 10 jeunes dynamiques, amoureux de leur île et Trail, qui forment le Comité Exécutif.</p><p>Chaque année le comité dresse un calendrier d'activités proposant ainsi aux amateurs comme aux professionnels du Trail l'occasion de parfaire leur technique ainsi mieux se préparer avant l'événement phare qu'est le Trail de Rodrigues prévu au mois de novembre. Des mini trails sont ainsi organisés incluant à ce jour 5 parcours allant de 7 à 20 Km sillonnant l'île de part et d'autre.</p>"
+    about_part_two_html: "<p>Non seulement la RTA a à coeur la promotion du Trail mais elle se veut aussi 'nature friendly'. Elle privilégie le respect et la protection de la nature et toute une équipe a été mise en place pour le nettoyage des sentiers. D'autres activités sur le plan social sont aussi organisées en collaboration avec le Rod Riders et le Blood Donors Association entre autres.</p><p>La RTA est avant tout une grande famille qui est soutenue et encadrée par une centaine de volontaires fidèles. Ils prêtent main forte au comité organisateur pour contribuer au bon déroulement des courses.</p>"
+  links:
+    title: "Liens"
+  rodrigues:
+    title: "Ile Rodrigues"
+    discover_html: "<h2>Découvrez Rodrigues</h2><p>Dans le <strong>coeur tropicale de l'océan Indien</strong>, l'île Rodrigues étend sur une superficie de seulement 108 km2. Quelques 650 km au nord-est de l'île Maurice, il est la partie de l'Afrique qui est le plus proche de l'Australie.</p><p>Les paysages varient de <strong>terres vallonnées à collines volcaniques abruptes</strong>. Ses côtes sont faites de criques sauvages, <strong>merveilleuses plages de sable et les récifs coralliens</strong>, entouré de petits îlots. Le lagon et les récifs coralliens de Rodrigues sont deux fois la superficie des îles et sont très riches et pleine de vie marine.</p><p>Son charme et <strong>simples rythme tranquille de la vie</strong> attire des visiteurs de partout le monde qui viennent profiter de la tranquillité de l'île et la beauté naturelle. La bonté et la simplicité sont les traits principaux des Rodriguais.</p>"
+    quote_html: '<h3>"Rodrigues propose des plages vides vierges et la chance de vous immerger dans la vie locale."</h3><p>The Guardian</p>'
+ 
+
+

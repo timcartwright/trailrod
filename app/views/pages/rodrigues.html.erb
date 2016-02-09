@@ -4,30 +4,31 @@
       <span class="tile-img tile-img-bg load-first sunset"></span>
       <span class="tile-holder tile-holder-sm">
         <span class="title">
-          Rodrigues Island
+          <%= t ('rodrigues.title') %>
         </span>
       </span>
     </span>      
   </span>
 </div>
 
-<div class="tile tile-lg tile-narrow tile-green" href="#">
+<div class="tile tile-lg tile-narrow tile-cyan ripple-effect">
   <span class="content-wrapper">
     <span class="tile-content">
-      <span class="tile-img tile-img-bg load-first pig"></span>
-    </span>   
+      <h2><%= t ('rodrigues.title') %></h2>
+      <%= t ('rodrigues.quote_html') %>
+    </span>      
   </span>
 </div>
 
 <div class="tile tile-lg tile-narrow">
   <span class="content-wrapper">
-      <%= image_tag 'sponsors/tourism-office.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
+      <%= image_tag 'sponsors/tourism-office.jpg', alt: "Tourism Office image", width: '100%', class: 'load-first' %>
       <span class="tile-content half-height">
         
       </span>
     </span>      
       <p>
-        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('trail-rodrigues'), class: "btn-floating btn-large waves-effect waves-light blue" %>
+        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), "http://www.tourism-rodrigues.mu/", class: "btn-floating btn-large waves-effect waves-light blue", target: "_blank" %>
       </p> 
   </span>
 </div>
@@ -37,13 +38,7 @@
 <div class="tile tile-lg tile-light-blue">
   <span class="content-wrapper">
     <span class="tile-content">
-      <h2>Discover Rodrigues</h2>
-      <p>In the <strong>tropical heart of the Indian Ocean</strong>, Rodrigues Island stretches over a surface area of only 108 km2. Some 650 km to the north-east of Mauritius, it is the part of Africa that is closest to Australia.</p>
-
-      <p>The landscapes vary from <strong>hilly lands to steep volcanic hills</strong>. Its coasts are made of wild creeks, <strong>marvelous sandy beaches and coral reefs</strong>, surrounded by small islets. The lagoon and coral reefs of Rodrigues are twice the area of the islands and are very rich and full of marine life.</p>
-
-      <p>Its charm and <strong>simple unhurried pace of life</strong> attracts visitors from around the world who come to enjoy the island's tranquility and natural beauty.  Kindness and simplicity are the principal traits of the Rodriguans.</p>
-      
+      <%= t ('rodrigues.discover_html') %>
     </span>      
   </span>
 </div>
@@ -62,12 +57,7 @@
 <div class="tile tile-lg tile-narrow tile-cyan ripple-effect">
   <span class="content-wrapper">
     <span class="tile-content">
-      <h3>
-        "Rodrigues offers pristine, empty beaches and the chance to immerse yourself in local life."
-      </h3>
-      <p>
-        The Guardian
-      </p>
+      <%= t ('rodrigues.quote_html') %>
     </span>      
   </span>
 </div>

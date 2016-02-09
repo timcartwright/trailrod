@@ -1,7 +1,7 @@
 <div class="tile tile-lg tile-pink">
   <span class="content-wrapper">
     <span class="tile-content">
-      <span class="tile-img tile-img-bg rta"></span>
+      <span class="tile-img tile-img-bg load-first rta"></span>
       <span class="tile-holder tile-holder-sm">
         <span class="title">Rod Trail Association</span>
       </span>
@@ -21,29 +21,23 @@
   <span class="content-wrapper">
     <span class="tile-content">
       <h3 class="next-trail-name">
-        <%= link_to raw("The Trail of Rodrigues <i class='material-icons'>arrow_forward</i>"), page_path('trail-rodrigues') %>
+        <%= link_to raw("#{t('trail_of_rodrigues.title')} <i class='material-icons'>arrow_forward</i>"), page_path('trail-rodrigues') %>
       </h3>
       
 
       <h3 class="next-trail-name">
-        <%= link_to raw("The League of Trail <i class='material-icons'>arrow_forward</i>"), trails_path %>
+        <%= link_to raw("#{t('trail_league.title')} <i class='material-icons'>arrow_forward</i>"), trails_path %>
         
       </h3>
     </span>      
   </span>
 </div>
 
-
-
-
 <div class="tile tile-lg tile-light-blue">
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>Rod Trail Association</h2>
-      <p>En 2011 la Rod Trail Association a vu le jour et elle a pris en charge tout l'aspect logistique et sécurité de la course. Derrière cette association, il y a une équipe de 10 jeunes dynamiques, amoureux de leur île et Trail, qui forment le Comité Exécutif.</p>
-
-      <p>Chaque année le comité dresse un calendrier d'activités proposant ainsi aux amateurs comme aux professionnels du Trail l'occasion de parfaire leur technique ainsi mieux se préparer avant l'événement phare qu'est le Trail de Rodrigues prévu au mois de novembre. Des mini trails sont ainsi organisés incluant à ce jour 5 parcours allant de 7 à 20 Km sillonnant l'île de part et d'autre.</p>
-
+      <%= t ('rta.about_part_one_html') %>
     </span>      
   </span>
 </div>
@@ -52,10 +46,7 @@
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>Nature friendly</h2>
-      <p>Non seulement la RTA a à coeur la promotion du Trail mais elle se veut aussi 'nature friendly'. Elle privilégie le respect et la protection de la nature et toute une équipe a été mise en place pour le nettoyage des sentiers. D'autres activités sur le plan social sont aussi organisées en collaboration avec le Rod Riders et le Blood Donors Association entre autres.</p>
-
-      <p>La RTA est avant tout une grande famille qui est soutenue et encadrée par une centaine de volontaires fidèles. Ils prêtent main forte au comité organisateur pour contribuer au bon déroulement des courses.</p>
-
+      <%= t ('rta.about_part_two_html') %>
     </span>      
   </span>
 </div>
