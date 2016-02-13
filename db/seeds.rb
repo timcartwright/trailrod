@@ -13,6 +13,7 @@ User.where(email: 'admin@teasea.uk').first_or_create! do |u|
   u.save!
 end
 
+EventRegistration.destroy_all
 Event.destroy_all
 Trail.destroy_all
 
