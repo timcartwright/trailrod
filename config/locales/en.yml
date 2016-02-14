@@ -5,19 +5,22 @@ en:
     date: "6th November 2016"
     strapline: "The true spirit of trail"
     events: "42km of Pleasure - 22km of Happiness - 7km of Authenticity"
-    about_part_one_html: "<p>With more than 6 million participants in Europe and the United States, the growing success of the trail has not spared the island of Rodrigues. The idea first came from Philippe Lahausse and Yan de Maroussem of Rando Trail Nature, Mauritius in 2008. Eric Lacroix from the University of Reunion later became the main consultant of the race.</p><p>The first edition took place on 21st November 2010 with just over 300 participants. In 2011, the Rod Trail Association is born and took charge of the entire organization of the Trail of Rodrigues. The Association works closely with institutions, national and international associations, and NGOs. From 300, the number of participants has increased to more than 900, combining professional athletes, the great personalities of Trail, and sports fans in a spirit of democracy, discipline and togetherness.</p>"
+    about_home_page: "The Trail of Rodrigues brings together men, women and children around sport, discovery, natural surroundings and respect for the environment."
+    about_part_one_html: "<h2>About<h2><p>With more than 6 million participants in Europe and the United States, the growing success of the trail has not spared the island of Rodrigues. The idea first came from Philippe Lahausse and Yan de Maroussem of Rando Trail Nature, Mauritius in 2008. Eric Lacroix from the University of Reunion later became the main consultant of the race.</p><p>The first edition took place on 21st November 2010 with just over 300 participants. In 2011, the Rod Trail Association is born and took charge of the entire organization of the Trail of Rodrigues. The Association works closely with institutions, national and international associations, and NGOs. From 300, the number of participants has increased to more than 900, combining professional athletes, the great personalities of Trail, and sports fans in a spirit of democracy, discipline and togetherness.</p>"
     about_part_two_html: "<p>The Trail of Rodrigues brings together men, women and children around a healthy practice that combines sport, discovery, proximity with nature and respect for the environment.</p><p>The 3 trails offer a variety of technical difficulties: the mountain landscape with its grassy slopes, the earthy paths and rocky patches, and the coastline with its rocky outcrops, sandy beaches and coves. Without much risk, we run with a backdrop of beautiful scenery.</p><p>The Trail is a beneficial stop almost out of time, a still picture mingling tranquility and beauty. It allows a vacuum to face oneself and to purge negative emotions.</p><p>Meet for a truly authentic experience on Sunday, November 6, 2016 for the 7th edition of the Trail of Rodrigues.</p>"
   trail_league:
-    title: "League of Trail"
+    about: "Trails from 7 to 20k are organised throughout the year, crisscrossing the island from both sides."
+    title: "League of Rod Trail"
     next_trail: "Next Trail"
   testimonials:
     title: "Testimonials"
   register:
-    title: "Register"
+    title: "Registration"
     for: "Register for the"
     registered: "You are registered for the"
     login: "Login to register"
   rta:
+    about_home_page_html: "<p>Since 2011, we have taken care of race logistics and security.</p><p>We promote Trail as an eco-friendly and community enhancing activity.</p>"
     about_part_one_html: "<p>In 2011, the Rod Trail Association was born and took care of all the logistics and security of the Trail of Rodrigues. Behind the RTA is an Executive Committee of 10 dynamic young people who love their island as well as Trail.</p><p>Each year the Committee establishes a schedule of activities for amateur and professional trailers, giving them the opportunity to perfect their technique and better prepare for the core event, the Trail of Rodrigues in November. Mini trails are organised throughout the year and include 5 events ranging from 7 to 20k, crisscrossing the island from both sides.</p>"
     about_part_two_html: "<P>The RTA is not only committed to promoting the Trail, but also wants to be 'nature friendly'. It encourages the respect and protection of nature and has established a whole team to clean the trails. Other activities on the social level are organised in collaboration with Rod Riders and the Blood Donors Association among others.</p><p>The RTA is above all a family that is supported by a hundred faithful volunteers. They lend a hand to the organising committee to assist in the conduct of the races.</p>"
   links:

@@ -127,6 +127,18 @@ div.flash_messages:empty {
   padding: 1vw;
   width: 18vw;
   height: 18vw;
+
+  &.big-sponsor {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 24vw;
+    height: 24vw;
+  }
+
+  &.title-sponsor {
+    width: auto;
+    height: 18vw;
+  }
 }
 
 #nprogress .bar {

@@ -24,7 +24,7 @@
         <%= t('trail_of_rodrigues.strapline') %>
       </h4>
       <p>
-        The Trail of Rodrigues brings together men, women and children around a healthy practice that combines sport, discovery, proximity with nature and respect for the environment.
+        <%= t('trail_of_rodrigues.about_home_page') %>
       </p>
       <p>
         <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('trail-rodrigues'), class: "btn-floating btn-large waves-effect waves-light orange" %>
@@ -37,12 +37,8 @@
   <span class="content-wrapper">
     <%= image_tag 'logo-rod-trail-large.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
     <span class="tile-content half-height">
-      <p class="no-heading">
-        Since 2011, we have taken care of race logistics and security.
-      </p>
-      <p>We promote Trail as an eco-friendly and community enhancing activity.
-        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light green" %>
-      </p>
+      <%= t('rta.about_home_page_html') %>
+      <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light green" %>
     </span>      
   </span>
 </div>
@@ -75,7 +71,7 @@
         <%= t('trail_league.title') %>
       </h2>
       <p>
-        Trails from 7 to 20k are organised throughout the year, crisscrossing the island from both sides.
+        <%= t('trail_league.about') %>
       </p>
       <h4>
         <%= t('trail_league.next_trail') %>

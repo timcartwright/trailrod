@@ -1,9 +1,30 @@
 <div class="tile tile-lg tile-full-width tile-flexible-height">
   <span class="content-wrapper">
     <span class="tile-content center">
-      <% Dir.glob("app/assets/images/sponsors/*.jpg").each do |image| %>
-        <%= image_tag "sponsors/#{image.split('/').last}", class: "sponsors-image" %>
-      <% end %>
+      <p>
+        <%= image_tag "sponsors/air-mu.jpg", class: "sponsors-image title-sponsor" %>
+      </p>
+      <p>
+        <%= image_tag "sponsors/crystal.jpg", class: "sponsors-image big-sponsor" %>
+        <%= image_tag "sponsors/tourism-office.jpg", class: "sponsors-image big-sponsor" %>
+        <%= image_tag "sponsors/francois-leguat.jpg", class: "sponsors-image big-sponsor" %>
+      </p>
+      <p>
+        <%= image_tag "sponsors/cotton-bay.jpg", class: "sponsors-image big-sponsor" %>
+        <%= image_tag "sponsors/tekoma.jpg", class: "sponsors-image big-sponsor" %>
+        <%= image_tag "sponsors/rra.jpg", class: "sponsors-image big-sponsor" %>
+      </p>
+      <p>
+        <%= image_tag "sponsors/rod-fishing.jpg", class: "sponsors-image" %>
+        <%= image_tag "sponsors/oiseau-des-iles.jpg", class: "sponsors-image" %>
+        <%= image_tag "sponsors/mbc.jpg", class: "sponsors-image" %>
+        <%= image_tag "sponsors/laxman.jpg", class: "sponsors-image" %>
+        <%= image_tag "sponsors/laxman.jpg", class: "sponsors-image" %>
+      </p>
+      <p>
+        <%= image_tag "sponsors/rod-riders.jpg", class: "sponsors-image" %>
+        <%= image_tag "sponsors/feu-rouge.jpg", class: "sponsors-image" %>
+      </p>
     </span>      
   </span>
 </div>
