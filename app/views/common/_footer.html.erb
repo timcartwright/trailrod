@@ -36,11 +36,13 @@
         <%= t('links.title') %>
       </h2>
       <p>
-        Trail du Colorado<br />
-        UTOP
+        <%= link_to "Trail du Colorado", "http://www.trailducolorado.fr/", target: "_blank" %>
+        <br />
+        <%= link_to "UTOP", "http://www.utop.mg/", target: "_blank" %>
       </p>   
       <p>
-        Visitez l'île Maurice www.mauboussol.com
+        <%= link_to t('links.visit_mauritius'), "http://www.mauboussol.com/", target: "_blank" %>
+         
       </p>
       <p>
         &copy; <%= t('trail_of_rodrigues.title') %>
