@@ -11,7 +11,9 @@ en:
   trail_league:
     about: "Trails from 7 to 20k are organised throughout the year, crisscrossing the island from both sides."
     title: "League of Rod Trail"
+    calendar: "Trail Calendar"
     next_trail: "Next Trail"
+    organiser: "Organiser"
   testimonials:
     title: "Testimonials"
   register:

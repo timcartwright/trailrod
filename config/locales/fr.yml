@@ -11,7 +11,9 @@ fr:
   trail_league:
     about: "Des mini trails sont ainsi organisés incluant à ce jour 5 parcours allant de 7 à 20 Km sillonnant l'île de part et d'autre."
     title: "Ligue de Rod Trail"
+    calendar: "Calendrier du Trail"
     next_trail: "Trail Suivante"
+    organiser: "Organisateur"
   testimonials:
     title: "Livre d'Or"
   register:
