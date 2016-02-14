@@ -5,7 +5,7 @@
         <%= l trail.date, format: '%-d %B %Y' if trail.date %>
       </h4>
       <h2>
-        <%= trail.name %><%= ", #{trail.location}" if !in_rodrigues?(trail.location) %>
+        <%= trail.name %>
       </h2>
       <h4>
         <% trail.events.each do |event| %>
