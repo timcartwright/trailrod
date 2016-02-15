@@ -26,7 +26,10 @@
       <p>
         <%= t('trail_of_rodrigues.about_home_page') %>
       </p>
-      <p>
+      <p class="tile-footer">
+        <%= link_to "https://www.facebook.com/TrailDeRodrigues", class: 'btn-floating btn-large waves-effect waves-light social-icon', target: '_blank' do %>
+          <%= image_tag 'facebook_icon_56.png', alt: "Facebook Icon", class: 'load-first' %>
+        <% end %>
         <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('trail-rodrigues'), class: "btn-floating btn-large waves-effect waves-light orange" %>
       </p>
     </span>      
@@ -38,7 +41,12 @@
     <%= image_tag 'logo-rod-trail-large.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
     <span class="tile-content half-height">
       <%= t('rta.about_home_page_html') %>
-      <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light green" %>
+      <p class="tile-footer">
+        <%= link_to "https://www.facebook.com/Rod-Trail-Association-619082944875069", class: 'btn-floating btn-large waves-effect waves-light social-icon', target: '_blank' do %>
+          <%= image_tag 'facebook_icon_56.png', alt: "Facebook Icon", class: 'load-first' %>
+        <% end %>
+        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light green" %>
+      </p>
     </span>      
   </span>
 </div>
@@ -81,7 +89,9 @@
       </h3>
 
       <%= l @home.next_trail.date, format: '%-d %B %Y' if @home.next_trail.date %>
-      <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), trails_path, class: "btn-floating btn-large waves-effect waves-light blue" %>
+      <p class="tile-footer">
+        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), trails_path, class: "btn-floating btn-large waves-effect waves-light blue" %>
+      </p>
     </span>      
   </span>
 </div>
@@ -108,7 +118,9 @@
       <br />
         <%= t('trail_of_rodrigues.title') %> 2014
       </p>
-      <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light orange" %>
+      <p class="tile-footer">
+        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light orange" %>
+      </p>
     </span>      
   </span>
 </div>

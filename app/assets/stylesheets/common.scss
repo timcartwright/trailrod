@@ -92,9 +92,7 @@ a {
 }
 
 a.btn-floating {
-  position: absolute;
-  bottom: 2vw;
-  right: 2vw;
+  
 }
 
 div.flash_messages:empty {
@@ -162,6 +160,33 @@ div.flash_messages:empty {
       text-align: center;
       
     }
+  }
+}
+
+a.social-icon {
+  width: 55.5px;
+  height: 55.5px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  img {
+    width: 55.5px;
+    height: 55.5px;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.tile-footer {
+  position: absolute;
+  bottom: 2vw;
+  right: 20px;
+  margin: 0;
+
+  a {
+    margin-left: 10px;
   }
 }
 
