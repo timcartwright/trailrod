@@ -83,16 +83,12 @@ p {
   margin-bottom: 1.5vw;
 }
 
-// p.no-heading {
-//   margin-top: 1vw;
-// }
-
 a {
   color: $white;
 }
 
-a.btn-floating {
-  
+.devise-links a {
+  color: rgba(175, 180, 54, 1);
 }
 
 div.flash_messages:empty {
