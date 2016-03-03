@@ -24,9 +24,6 @@
       <p>
         <%= t('trail_of_rodrigues.date') %>
       </p>
-      <!-- <p>
-        <%= t('trail_of_rodrigues.about_home_page') %>
-      </p> -->
       <p class="tile-footer">
         <%= link_to "https://www.facebook.com/TrailDeRodrigues", class: 'btn-floating btn-large waves-effect waves-light social-icon', target: '_blank' do %>
           <%= image_tag 'facebook_icon_56.png', alt: "Facebook Icon", class: 'load-first' %>
@@ -39,7 +36,7 @@
 
 <div class="tile tile-lg tile-narrow tile-green" href="#">
   <span class="content-wrapper">
-    <%= image_tag 'logo-rod-trail-large.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
+    <%= image_tag 'logo-rod-trail-medium.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
     <span class="tile-content half-height">
       <%= t('rta.about_home_page_html') %>
       <p class="tile-footer">
@@ -48,14 +45,6 @@
         <% end %>
         <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path('rod-trail-association'), class: "btn-floating btn-large waves-effect waves-light green" %>
       </p>
-    </span>      
-  </span>
-</div>
-
-<div class="tile tile-lg tile-light-blue">
-  <span class="content-wrapper">
-    <span class="tile-content">
-      <span class="tile-img tile-img-bg load-first mountain-goat"></span>
     </span>      
   </span>
 </div>
@@ -72,6 +61,15 @@
     </span>
   </span>
 <% end %>
+
+<div class="tile tile-lg tile-light-blue">
+  <span class="content-wrapper">
+    <span class="tile-content">
+      <span class="tile-img tile-img-bg mountain-goat"></span>
+    </span>      
+  </span>
+</div>
+
 
 <div class="tile tile-lg tile-narrow tile-shorten tile-cyan ripple-effect">
   <span class="content-wrapper">

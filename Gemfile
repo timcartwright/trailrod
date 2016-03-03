@@ -25,6 +25,7 @@ gem 'rails-jquery-autocomplete'
 gem 'nprogress-rails'
 gem 'rails-i18n', '~> 4.0.0'
 gem 'puma'
+gem "paperclip", "~> 4.3"
 
 group :development, :test do
   gem 'byebug'

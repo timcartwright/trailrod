@@ -21,6 +21,9 @@ en:
     for: "Register for the"
     registered: "You are registered for the"
     login: "Login to register"
+  results:
+    title: "Results"
+    pending: "The results will appear here shortly."
   rta:
     about_home_page_html: "<p>Since 2011, we have taken care of race logistics and security.</p><p>We promote Trail as an eco-friendly and community enhancing activity.</p>"
     about_part_one_html: "<p>In 2011, the Rod Trail Association was born and took care of all the logistics and security of the Trail of Rodrigues. Behind the RTA is an Executive Committee of 10 dynamic young people who love their island as well as Trail.</p><p>Each year the Committee establishes a schedule of activities for amateur and professional trailers, giving them the opportunity to perfect their technique and better prepare for the core event, the Trail of Rodrigues in November. Mini trails are organised throughout the year and include 5 events ranging from 7 to 20k, crisscrossing the island from both sides.</p>"

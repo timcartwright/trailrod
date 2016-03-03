@@ -24,7 +24,7 @@
   </span>
 </div>
 
-<%= render 'register' %>
+<%= render @trail.is_finished? ? 'results' : 'register' %>
 
 <div class="tile tile-lg tile-light-blue">
   <span class="content-wrapper">

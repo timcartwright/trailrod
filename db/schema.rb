@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160125065321) do
+ActiveRecord::Schema.define(version: 20160303070913) do
 
   create_table "event_registrations", force: :cascade do |t|
     t.integer  "event_id"
@@ -97,8 +97,12 @@ ActiveRecord::Schema.define(version: 20160125065321) do
     t.boolean  "register_online"
     t.string   "organiser"
     t.string   "course"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.string   "results_file_name"
+    t.string   "results_content_type"
+    t.integer  "results_file_size"
+    t.datetime "results_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
