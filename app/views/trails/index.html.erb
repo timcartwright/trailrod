@@ -33,7 +33,7 @@
       <h3 class="next-trail-name">
         <%= link_to @next_trail.name, trail_path(@next_trail) %>
       </h3>
-
+      <%= l @next_trail.date, format: '%-d %B %Y' if @next_trail.date %>
       <% @next_trail.events.each do |event| %>
         <%= "#{event.distance}k" %>
       <% end %>

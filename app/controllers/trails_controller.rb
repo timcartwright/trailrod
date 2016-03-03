@@ -23,7 +23,7 @@ class TrailsController < ApplicationController
 
   def index
     @trails = Trail.all.order(:date).includes(:events)
-    @next_trail ||= Trail.includes(:events).first
+    @next_trail ||= Trail.includes(:events).where('date >= ?', DateTime.now).order(date: :asc).first
   end
 
   def show

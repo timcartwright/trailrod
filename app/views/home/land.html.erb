@@ -13,19 +13,20 @@
 
 <div class="tile tile-lg tile-narrow tile-deep-orange">
   <span class="content-wrapper">
-    <span class="tile-content">
+    <%= image_tag 'tdr-logo.jpg', alt: "Trail of Rodrigues Logo", width: '100%', class: 'load-first' %>
+    <span class="tile-content half-height">
       <h2>
         <%= t('trail_of_rodrigues.title') %>
       </h2>
-      <p>
-        <%= t('trail_of_rodrigues.date') %>
-      </p>
       <h4>
         <%= t('trail_of_rodrigues.strapline') %>
       </h4>
       <p>
-        <%= t('trail_of_rodrigues.about_home_page') %>
+        <%= t('trail_of_rodrigues.date') %>
       </p>
+      <!-- <p>
+        <%= t('trail_of_rodrigues.about_home_page') %>
+      </p> -->
       <p class="tile-footer">
         <%= link_to "https://www.facebook.com/TrailDeRodrigues", class: 'btn-floating btn-large waves-effect waves-light social-icon', target: '_blank' do %>
           <%= image_tag 'facebook_icon_56.png', alt: "Facebook Icon", class: 'load-first' %>
