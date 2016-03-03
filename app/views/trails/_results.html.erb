@@ -6,29 +6,28 @@
       </h3>
       <p>
         <% if @trail.results_posted? %>
-          <%= link_to 'Download', @trail.results.url %>
-          <% "Delete" if current_user && current_user.is_admin? %>
+          <%= link_to raw("Open <i class='material-icons'>open_in_new</i>"), @trail.results.url, class: 'waves-effect waves-light btn', target: '_blank' %>
         <% else %>
           <%= t('results.pending') %>
-          <% if current_user && current_user.is_admin? %>
-            <h4>Upload Results</h4>
-
-            <%= form_for @trail, html: { multipart: true } do |f| %>
-              <div class="file-field input-field">
-                <div class="btn">
-                  <span>File</span>
-                  <%= f.file_field :results %>
-                </div>
-                <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text">
-                </div>
-              </div>
-              <%= f.submit "Upload", class: 'btn' %>
-            <% end %>
-
-          <% end %>  
         <% end %>
       </p>
+      <% if current_user && current_user.is_admin? %>
+        <h4>Upload Results</h4>
+
+        <%= form_for @trail, html: { multipart: true } do |f| %>
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <%= f.file_field :results %>
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+          <%= f.submit "Upload", class: 'btn' %>
+        <% end %>
+
+      <% end %>  
     </span>      
   </span>
 </div>
