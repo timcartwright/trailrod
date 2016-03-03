@@ -10,16 +10,18 @@
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
-        Testimonials
+        <%= t('testimonials.title') %>
       </h2>
       <h3>
-        "It was the best trail we have ever done, I can't wait to come back next year!"
+        "The Trail of Rodrigues was one of my highlights of the year and I would recommend it to all runners."
       </h3>
       <p>
-        Tim Cartwright,
+        Ryan Sanders
       <br />
-        Trail de Rodrigues 2014
       </p>
+      <!-- <p class="tile-footer">
+        <%= link_to raw("<i class='material-icons'>arrow_forward</i>"), page_path(''), class: "btn-floating btn-large waves-effect waves-light orange" %>
+      </p> -->
       
     </span>      
   </span>
@@ -33,10 +35,12 @@
   </span>
 </div>
 
-<div class="tile tile-short tile-narrow tile-deep-orange md-layout-filler">
-  <span class="content-wrapper">
-    <span class="tile-content">
-      <span class="tile-img tile-img-bg runners-on-rope"></span>
-    </span>      
-  </span>
-</div>
+<% unless controller_name == 'home' %>
+  <div class="tile tile-short tile-narrow tile-deep-orange md-layout-filler">
+    <span class="content-wrapper">
+      <span class="tile-content">
+        <span class="tile-img tile-img-bg runners-on-rope"></span>
+      </span>      
+    </span>
+  </div>
+<% end %>
