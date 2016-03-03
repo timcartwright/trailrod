@@ -13,12 +13,29 @@
 <div class="tile tile-lg tile-narrow tile-deep-orange">
   <span class="content-wrapper">
     <span class="tile-content">
-      <h3 class="next-trail-name">
+      <h4 class="trail-date">
+        <%= l @trail.date, format: '%-d %B %Y' if @trail.date %>
+      </h4>
+      <h2>
         <%= @trail.name %>
-      </h3>
+      </h2>
+      <h4>
+        <% @trail.events.each do |event| %>
+          <%= "#{event.distance}k" %>
+        <% end %>
+      </h4>
       <p>
-        <%= @trail.date.strftime("%d %B") if @trail.date %>
+        <strong><i class='material-icons'>place</i> <%= @trail.description %></strong>
       </p>
+      <p>
+        <%= t('trail_league.organiser') %>:
+        <%= @trail.organiser %>
+      </p>
+      <% if in_rodrigues?(@trail.location) %>
+        <h4>
+          <%= t('trail_league.title') %>
+        </h4>
+      <% end %>
       
     </span>      
   </span>
