@@ -1,35 +1,50 @@
 <span id="form-block">
   <% if user_signed_in? %>
     <% if @registered_event && !current_user.is_admin? %>
-      <%= raw "<strong>#{t('register.registered')} #{@registered_event.distance}k</strong>" %>
+      <h3>
+        <%= raw "#{t('register.registered')} #{@registered_event.distance}k" %>
+      </h3>
+      <% @trail.events.each do |event| %>
+        <% @event = event %>
+        <%= render "trails/event_details" %>
+      <% end %>
     <% else %>
       <% @trail.events.each do |event| %>
         <% @event = event %>
+        <%= render "trails/event_details" %>
         <% if current_user.is_admin? %>
           <p>
-            <%= link_to raw("Manage #{event.distance}k"), new_trail_event_event_registration_path(event.trail, event), class: "waves-effect waves-light btn" %>
+            <%= link_to "Manage Registration", new_trail_event_event_registration_path(event.trail, event), class: "waves-effect waves-light btn" %>
           </p>
         <% else %>
-          <p>
-            <a class="waves-effect waves-light btn modal-trigger" href=<%= "#profile-form-modal-#{event.id}" %> >
-              <%= "#{t('register.for')} #{event.distance}k" %>
-            </a>
-          </p>
-          <!-- Modals -->
-          <div id=<%= "profile-form-modal-#{event.id}" %> class="modal profile-form outside-dashboard do-not-animate">
-            <div class="modal-content">
-              <% if current_user.has_profile? %>
-                <%= render 'profiles/form', edit: true, admin: false %>
-              <% else %>
-                <%= render 'profiles/form', edit: false, admin: false %>
-              <% end %>
-              <%= render 'common/preloader' %>
+          <% if @registered_event && !current_user.is_admin? %>
+            <%= raw "<strong>#{t('register.registered')} #{@registered_event.distance}k</strong>" %>
+          <% else %>
+            <p>
+              <a class="waves-effect waves-light btn modal-trigger" href=<%= "#profile-form-modal-#{event.id}" %> >
+                <%= "#{t('register.for')} #{event.distance}k" %>
+              </a>
+            </p>
+            <!-- Modals -->
+            <div id=<%= "profile-form-modal-#{event.id}" %> class="modal profile-form outside-dashboard do-not-animate">
+              <div class="modal-content">
+                <% if current_user.has_profile? %>
+                  <%= render 'profiles/form', edit: true, admin: false %>
+                <% else %>
+                  <%= render 'profiles/form', edit: false, admin: false %>
+                <% end %>
+                <%= render 'common/preloader' %>
+              </div>
             </div>
-          </div>
+          <% end %>
         <% end %>
       <% end %>
     <% end %>
   <% else %>
+    <% @trail.events.each do |event| %>
+      <% @event = event %>
+      <%= render "trails/event_details" %>
+    <% end %>
     <p>
       <a class="waves-effect waves-light btn modal-trigger" href="#login-form-modal">
         <%= t('register.login') %>

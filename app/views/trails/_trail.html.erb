@@ -13,12 +13,9 @@
         <% end %>
       </h4>
       <p>
-        <strong><i class='material-icons'>place</i> <%= trail.description %></strong>
+        <%= trail.description %>
       </p>
-      <p>
-        <%= t('trail_league.organiser') %>:
-        <%= trail.organiser %>
-      </p>
+      
       <% if in_rodrigues?(trail.location) %>
         <h4>
           <%= t('trail_league.title') %>

@@ -22,6 +22,9 @@
             <%= link_to raw("<i class='material-icons'>edit</i>"), edit_trail_path(@trail), class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "top", delay: "50", tooltip: "Edit #{@trail.name}" } %>
         <% end %>
       </h2>
+      <p>
+        <strong><%= @trail.description %></strong>
+      </p>
       <h4>
         Courses: 
         <% @trail.events.each do |event| %>
@@ -34,9 +37,7 @@
             <%= link_to raw("<i class='material-icons'>add</i>"), new_trail_event_path(@trail), class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "bottom", delay: "50", tooltip: "Add Course" } %>
         <% end %>  
       </h4>
-      <p>
-        <strong><i class='material-icons'>place</i> <%= @trail.description %></strong>
-      </p>
+      
       <p>
         <%= t('trail_league.organiser') %>:
         <%= @trail.organiser %>
@@ -46,14 +47,14 @@
           <%= t('trail_league.title') %>
         </h4>
       <% end %>
-      
+      <p>
+        Adults: Rs150, Chidren: Rs100
+      </p>
     </span>      
   </span>
 </div>
 
-<%= render @trail.is_finished? ? 'results' : 'register' %>
-
-<div class="tile tile-lg tile-light-blue">
+<div class="tile tile-lg tile-narrow tile-light-blue">
   <span class="content-wrapper">
     <span class="tile-content">
       
@@ -62,5 +63,7 @@
     </span>      
   </span>
 </div>
+
+<%= render @trail.is_finished? ? 'results' : 'register' %>
 
 <%= render 'participants' %>

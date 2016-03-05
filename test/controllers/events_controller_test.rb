@@ -12,6 +12,9 @@
 #  trail_id          :integer
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
+#  departure         :string
+#  arrival           :string
+#  course            :text
 #
 
 require 'test_helper'

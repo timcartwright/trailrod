@@ -12,6 +12,9 @@
 #  trail_id          :integer
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
+#  departure         :string
+#  arrival           :string
+#  course            :text
 #
 
 class EventsController < ApplicationController
@@ -52,6 +55,6 @@ private
   end
 
   def event_params
-    params.require(:event).permit(:name, :description, :distance, :local_price, :foreign_price)
+    params.require(:event).permit(:name, :description, :distance, :departure, :arrival, :course, :local_price, :foreign_price)
   end
 end
