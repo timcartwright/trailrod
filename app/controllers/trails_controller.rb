@@ -23,7 +23,8 @@ class TrailsController < ApplicationController
 
   respond_to :html, :js
 
-  before_action :authenticate_user!, only: [:new, :create, :update]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update]
+  before_action :find_trail, only: [:edit, :update]
 
   def index
     @trails = Trail.all.order(:date).includes(:events)
@@ -56,17 +57,19 @@ class TrailsController < ApplicationController
   end
 
   def edit
-    @trail = Trail.find(params[:id])
   end
 
   def update
-    trail = Trail.find(params[:id])
-    trail.update_attributes(trail_params)
-    trail.save!
-    redirect_to trail
+    @trail.update_attributes(trail_params)
+    @trail.save!
+    redirect_to @trail
   end
 
 private
+  def find_trail
+    @trail = Trail.find(params[:id])
+  end
+
   def trail_params
     params.require(:trail).permit(:name, :date, :location, :organiser, :description, :external_link, :register_online, :results)
   end

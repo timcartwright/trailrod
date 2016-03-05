@@ -18,16 +18,21 @@
       </h4>
       <h2>
         <%= @trail.name %>
+        <% if user_signed_in? && current_user.is_admin? %>
+            <%= link_to raw("<i class='material-icons'>edit</i>"), edit_trail_path(@trail), class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "top", delay: "50", tooltip: "Edit #{@trail.name}" } %>
+        <% end %>
       </h2>
       <h4>
+        Courses: 
         <% @trail.events.each do |event| %>
           <%= "#{event.distance}k" %>
           <% if user_signed_in? && current_user.is_admin? %>
-            <p>
-              <%= link_to "Edit", edit_trail_event_path(@trail, event), class: 'waves-effect waves-light btn' %>
-            </p>
+              <%= link_to raw("<i class='material-icons'>edit</i>"), edit_trail_event_path(@trail, event), class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "bottom", delay: "50", tooltip: "Edit #{event.distance}k" } %>
           <% end %>
         <% end %>
+        <% if user_signed_in? && current_user.is_admin? %>
+            <%= link_to raw("<i class='material-icons'>add</i>"), new_trail_event_path(@trail), class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "bottom", delay: "50", tooltip: "Add Course" } %>
+        <% end %>  
       </h4>
       <p>
         <strong><i class='material-icons'>place</i> <%= @trail.description %></strong>
@@ -40,15 +45,6 @@
         <h4>
           <%= t('trail_league.title') %>
         </h4>
-      <% end %>
-
-      <% if user_signed_in? && current_user.is_admin? %>
-        <p>
-          <%= link_to "Edit Trail", edit_trail_path(@trail), class: 'waves-effect waves-light btn' %>
-        </p>
-        <p>
-          <%= link_to "Add New Distance", new_trail_event_path(@trail), class: 'waves-effect waves-light btn' %>
-        </p>
       <% end %>
       
     </span>      

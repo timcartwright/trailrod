@@ -16,7 +16,7 @@
 
 class EventsController < ApplicationController
 
-  before_action :authenticate_user!, only: [:new, :create]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update]
   before_action :find_trail, only: [:new, :create, :edit, :update]
   before_action :find_event, only: [:edit, :update]
 

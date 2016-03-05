@@ -1,4 +1,4 @@
-<%= link_to url_with_protocol(trail.external_link) || trail_path(trail),  class: ["tile tile-short tile-narrow ripple-effect", (in_rodrigues?(trail.location) ? "tile-deep-orange" : "tile-light-blue")], target: ("_blank" if trail.external_link) do %>
+<%= link_to url_with_protocol(trail.external_link) || trail_path(trail),  class: ["tile tile-short tile-narrow ripple-effect", (in_rodrigues?(trail.location) ? "tile-deep-orange" : "tile-light-blue")], target: ("_blank" if trail.external_link.present?) do %>
   <span class="content-wrapper">
     <span class="tile-content">
       <h4 class="trail-date">
