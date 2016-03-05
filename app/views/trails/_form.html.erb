@@ -1,0 +1,25 @@
+<%= simple_form_for @trail do |f| %>
+  <%= f.input :name %>
+  <%= f.input :date, as: :string, input_html: {class: "datepicker"} %>
+  <%= f.input :location %>
+  <%= f.input :organiser %>
+  <%= f.input :description, input_html: {class: 'materialize-textarea'} %>
+  <%= f.input :external_link %>
+  <%= f.input :register_online, label: false, wrapper_html: {class: "switch"} do %>
+    <%= f.label :register_online do %>
+      <%= f.check_box :register_online %>
+      Enable Registration <span class="lever"></span>
+    <% end %>
+  <% end %>
+  <h4>Results</h4>
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>File</span>
+      <%= f.file_field :results %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+  <%= f.button :submit %>
+<% end %>

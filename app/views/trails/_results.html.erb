@@ -11,7 +11,7 @@
           <%= t('results.pending') %>
         <% end %>
       </p>
-      <% if current_user && current_user.is_admin? %>
+      <% if user_signed_in? && current_user.is_admin? %>
         <h4>Upload Results</h4>
 
         <%= form_for @trail, html: { multipart: true } do |f| %>

@@ -55,16 +55,20 @@ class TrailsController < ApplicationController
     end
   end
 
+  def edit
+    @trail = Trail.find(params[:id])
+  end
+
   def update
     trail = Trail.find(params[:id])
-    trail.update_attributes(params.require(:trail).permit(:results))
+    trail.update_attributes(trail_params)
     trail.save!
     redirect_to trail
   end
 
 private
   def trail_params
-    params.require(:trail).permit(:name, :date, :location, :organiser, :description, :external_link, :register_online)
+    params.require(:trail).permit(:name, :date, :location, :organiser, :description, :external_link, :register_online, :results)
   end
 
 end
