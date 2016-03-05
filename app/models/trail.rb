@@ -37,6 +37,10 @@ class Trail < ActiveRecord::Base
     self.results_file_name
   end
 
+  def registration_open?
+    self.register_online
+  end
+
   def slug
     name.downcase.gsub(" ", "-")  
   end

@@ -6,7 +6,7 @@
         <%= t('trail_league.calendar') %>
       </h1>
       <% if user_signed_in? && current_user.is_admin? %>
-        <%= link_to "Add New Trail", new_trail_path, class: 'waves-effect waves-light btn' %>
+        <%= link_to raw("<i class='material-icons'>add</i>"), new_trail_path, class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "right", delay: "50", tooltip: "Create New Trail" } %>
       <% end %>
     </span>      
   </span>
