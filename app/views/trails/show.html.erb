@@ -36,6 +36,15 @@
           <%= t('trail_league.title') %>
         </h4>
       <% end %>
+
+      <% if user_signed_in? && current_user.is_admin? %>
+        <p>
+          <%= link_to "Edit Trail", edit_trail_path(@trail), class: 'waves-effect waves-light btn' %>
+        </p>
+        <p>
+          <%= link_to "Add New Distance", new_trail_event_path(@trail), class: 'waves-effect waves-light btn' %>
+        </p>
+      <% end %>
       
     </span>      
   </span>
