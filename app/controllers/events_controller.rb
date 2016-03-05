@@ -17,14 +17,14 @@
 class EventsController < ApplicationController
 
   before_action :authenticate_user!, only: [:new, :create]
+  before_action :find_trail, only: [:new, :create, :edit, :update]
+  before_action :find_event, only: [:edit, :update]
 
   def new
-    @trail = Trail.find(params[:trail_id])
     @event = @trail.events.new
   end
 
   def create
-    @trail = Trail.find(params[:trail_id])
     @event = @trail.events.new(event_params)
     if @event.save
       redirect_to @trail
@@ -33,7 +33,24 @@ class EventsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @event.update_attributes(event_params)
+    @event.save!
+    redirect_to @trail
+  end
+
 private
+  def find_trail
+    @trail = Trail.find(params[:trail_id])
+  end
+
+  def find_event
+    @event = Event.find(params[:id])
+  end
+
   def event_params
     params.require(:event).permit(:name, :description, :distance, :local_price, :foreign_price)
   end

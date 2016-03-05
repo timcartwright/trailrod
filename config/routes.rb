@@ -17,7 +17,7 @@ Rails.application.routes.draw do
     post 'profiles/load', :to => 'profiles#load'
 
     resources :trails do
-      resources :events, only: [:index, :show, :new, :create] do
+      resources :events do
         resources :event_registrations
       end
     end

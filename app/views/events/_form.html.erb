@@ -1,0 +1,8 @@
+<%= simple_form_for [@trail, @event] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :distance %>
+  <%= f.input :description, input_html: {class: 'materialize-textarea'} %>
+  <%= f.input :local_price %>
+  <%= f.input :foreign_price %>
+  <%= f.button :submit %>
+<% end %>

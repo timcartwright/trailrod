@@ -49,7 +49,7 @@ class TrailsController < ApplicationController
   def create
     @trail = Trail.new(trail_params)
     if @trail.save
-      redirect_to new_trail_event_path(@trail)
+      redirect_to trail_path(@trail)
     else
       render :new
     end
