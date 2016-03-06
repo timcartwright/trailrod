@@ -17,6 +17,8 @@
 }
 .ink.animate {
   -webkit-animation: ripple-effect 0.5s linear;
+  -moz-animation: ripple-effect 0.5s linear;
+  -ms-animation: ripple-effect 0.5s linear;
   -o-animation: ripple-effect 0.5s linear;
   animation: ripple-effect 0.5s linear;
 }
@@ -25,6 +27,7 @@
   100% {
     opacity: 0;
     -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
     -ms-transform: scale(2.5);
     -o-transform: scale(2.5);
     transform: scale(2.5);
@@ -34,6 +37,7 @@
   100% {
     opacity: 0;
     -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
     -ms-transform: scale(2.5);
     -o-transform: scale(2.5);
     transform: scale(2.5);
@@ -43,6 +47,7 @@
   100% {
     opacity: 0;
     -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
     -ms-transform: scale(2.5);
     -o-transform: scale(2.5);
     transform: scale(2.5);
@@ -52,6 +57,7 @@
   100% {
     opacity: 0;
     -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
     -ms-transform: scale(2.5);
     -o-transform: scale(2.5);
     transform: scale(2.5);
@@ -61,6 +67,7 @@
   100% {
     opacity: 0;
     -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
     -ms-transform: scale(2.5);
     -o-transform: scale(2.5);
     transform: scale(2.5);
@@ -814,6 +821,7 @@ a.tile {
   -moz-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
   -webkit-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
   -o-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+  -ms-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
   animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
 }
 .no-js .display-animation > * {

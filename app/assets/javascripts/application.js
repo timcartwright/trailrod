@@ -67,6 +67,7 @@ $(document).ready(function() {
             .css("-moz-animation-delay", delay+'s')
             .css("-webkit-animation-delay", delay+'s')
             .css("-o-animation-delay", delay+'s')
+            .css("-ms-animation-delay", delay+'s')
             .css("animation-delay", delay+'s')
             .addClass('animated');
           };
