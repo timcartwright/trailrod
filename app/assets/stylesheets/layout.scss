@@ -832,12 +832,12 @@ a.tile {
   transform: scale(1);
 }
 
-@keyframes display {
+@-webkit-keyframes display {
   from {
-    transform: scale(0);
+    -webkit-transform: scale(0);
   }
   to {
-    transform: scale(1);
+    -webkit-transform: scale(1);
   }
 }
 @-o-keyframes display {
@@ -848,14 +848,6 @@ a.tile {
     -o-transform: scale(1);
   }
 }
-@-ms-keyframes display {
-  from {
-    -ms-transform: scale(0);
-  }
-  to {
-    -ms-transform: scale(1);
-  }
-}
 @-moz-keyframes display {
   from {
     -moz-transform: scale(0);
@@ -864,12 +856,22 @@ a.tile {
     -moz-transform: scale(1);
   }
 }
-@-webkit-keyframes display {
+@-ms-keyframes display {
   from {
-    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
   }
   to {
-    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+}
+@keyframes display {
+  from {
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -ms-transform: scale(1);
+    transform: scale(1);
   }
 }
 
