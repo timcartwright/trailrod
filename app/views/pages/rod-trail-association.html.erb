@@ -1,11 +1,26 @@
-<div class="tile tile-lg tile-pink">
+
+<div class="tile tile-lg tile-green">
   <span class="content-wrapper">
     <span class="tile-content">
-      <span class="tile-img tile-img-bg load-first rta"></span>
+      <span class="tile-img tile-img-bg load-first support-at-top-of-hill"></span>
       <span class="tile-holder tile-holder-sm">
         <span class="title">Rod Trail Association</span>
       </span>
-    </span>      
+    </span>   
+  </span>
+</div>
+
+<div class="tile tile-lg tile-narrow tile-green" href="#">
+  <span class="content-wrapper">
+    <%= image_tag 'logo-rod-trail-medium.jpg', alt: "Rod Trail Association image", width: '100%', class: 'load-first' %>
+    <span class="tile-content half-height">
+      <%= t('rta.about_home_page_html') %>
+    </span>
+    <p class="tile-footer">
+      <%= link_to "https://www.facebook.com/Rod-Trail-Association-619082944875069", class: 'btn-floating btn-large waves-effect waves-light social-icon', target: '_blank' do %>
+        <%= image_tag 'facebook_icon_56.png', alt: "Facebook Icon", class: 'load-first' %>
+      <% end %>
+    </p>      
   </span>
 </div>
 
@@ -14,27 +29,6 @@
     <span class="tile-content">
       <span class="tile-img tile-img-bg load-first runners-on-rope"></span>
     </span>   
-  </span>
-</div>
-
-<div class="tile tile-lg tile-narrow tile-deep-orange ripple-effect">
-  <span class="content-wrapper">
-    <span class="tile-content">
-      <h3 class="next-trail-name">
-        <%= link_to raw("#{t('trail_of_rodrigues.title')} <i class='material-icons'>arrow_forward</i>"), page_path('trail-rodrigues') %>
-      </h3>
-      
-
-      <h3 class="next-trail-name">
-        <%= link_to raw("#{t('trail_league.title')} <i class='material-icons'>arrow_forward</i>"), trails_path %>
-        
-      </h3>
-      <p class="tile-footer">
-        <%= link_to "https://www.facebook.com/Rod-Trail-Association-619082944875069", class: 'btn-floating btn-large waves-effect waves-light social-icon', target: '_blank' do %>
-          <%= image_tag 'facebook_icon_56.png', alt: "Facebook Icon", class: 'load-first' %>
-        <% end %>
-      </p>
-    </span>      
   </span>
 </div>
 
