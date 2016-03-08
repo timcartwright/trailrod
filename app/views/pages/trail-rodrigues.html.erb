@@ -15,15 +15,13 @@
   <span class="content-wrapper">
     <%= image_tag 'tdr-logo.jpg', alt: "Trail of Rodrigues Logo", width: '100%', class: 'load-first' %>
     <span class="tile-content half-height">
-      <p>
-        <%= t ('trail_of_rodrigues.title') %> <%= t ('trail_of_rodrigues.edition') %>
-      </p>
+      <h2>
+        <%= t ('trail_of_rodrigues.edition') %>
+      </h2>
 
-      <h3><i class='material-icons'>favorite_border</i> 44km de Plaisir</br><i class='material-icons'>insert_emoticon</i> 22km de Bonheur</br><i class='material-icons'>landscape</i> 7km d'Authenticité</h3>
-
-      <p>
-        <i class='material-icons'>date_range</i> <%= t ('trail_of_rodrigues.date') %>
-      </p>
+      <h3>
+        <%= t ('trail_of_rodrigues.date') %>
+      </h3>
       <p class="tile-footer">
         <%= link_to "https://www.facebook.com/TrailDeRodrigues", class: 'btn-floating btn-large waves-effect waves-light social-icon', target: '_blank' do %>
           <%= image_tag 'facebook_icon_56.png', alt: "Facebook Icon", class: 'load-first' %>
@@ -43,7 +41,7 @@
   </span>
 </div>
 
-<div class="tile tile-lg tile-narrow tile-green ripple-effect" href="#">
+<div class="tile tile-lg tile-narrow tile-green ripple-effect">
   <span class="content-wrapper">
     <span class="tile-content">
       <span class="tile-img tile-img-bg old-lady-in-red-port"></span>
@@ -53,7 +51,7 @@
   </span>
 </div>
 
-<div class="tile tile-lg tile-narrow tile-green ripple-effect" href="#">
+<div class="tile tile-lg tile-narrow tile-green ripple-effect">
   <span class="content-wrapper">
     <span class="tile-content">
       <span class="tile-img tile-img-bg support-from-musicians-port"></span>
