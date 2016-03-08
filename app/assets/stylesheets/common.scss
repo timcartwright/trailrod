@@ -252,6 +252,9 @@ a.social-icon {
   &.beach-start {
     background-image: url(asset-path('beach-start.jpg'));
   }
+  &.tdr-start {
+    background-image: url(asset-path('tdr-start.jpg'));
+  }
   &.pig {
     background-image: url(asset-path('pig-in-basket.jpg'));
     background-position: 50% 10% !important;
