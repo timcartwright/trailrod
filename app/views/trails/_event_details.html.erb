@@ -2,9 +2,9 @@
   <%= "#{@event.distance}k" %>
 </h2>
 <p>
-  <strong>Start</strong> <%= @event.departure %>
+  <strong><%= t('trail.start') %></strong> <%= @event.departure %>
 <br />
-  <strong>Via</strong> <%= @event.course %>
+  <strong><%= t('trail.via') %></strong> <%= @event.course %>
 <br />
-  <strong>Finish</strong> <%= @event.arrival %>
+  <strong><%= t('trail.finish') %></strong> <%= @event.arrival %>
 </p>

@@ -13,14 +13,23 @@ fr:
     title: "Ligue de Rod Trail"
     calendar: "Calendrier du Trail"
     next_trail: "Trail Suivante"
+  trail:
     organiser: "Organisateur"
+    start: "Départ"
+    via: "Via"
+    finish: "Arrivée"
   testimonials:
     title: "Livre d'Or"
   register:
     title: "Inscription"
     for: "S'inscrire au"
     registered: "Vous êtes inscrit à la"
+    adults: "Adultes"
+    children: "Enfants"
     login: "Login pour s'inscrire"
+  results:
+    title: "Résultats"
+    pending: "Les résultats apparaîtront bientôt ici."
   rta:
     about_home_page_html: "<p>Depuis 2011, nous avons pris soin de la logistique et de la sécurité course.</p><p>Nous promouvons Trail comme une activité d'Amélioration écologique et communautaire.</p>"
     about_part_one_html: "<p>En 2011 la Rod Trail Association a vu le jour et elle a pris en charge tout l'aspect logistique et sécurité de la course. Derrière cette association, il y a une équipe de 10 jeunes dynamiques, amoureux de leur île et Trail, qui forment le Comité Exécutif.</p><p>Chaque année le comité dresse un calendrier d'activités proposant ainsi aux amateurs comme aux professionnels du Trail l'occasion de parfaire leur technique ainsi mieux se préparer avant l'événement phare qu'est le Trail de Rodrigues prévu au mois de novembre. Des mini trails sont ainsi organisés incluant à ce jour 5 parcours allant de 7 à 20 Km sillonnant l'île de part et d'autre.</p>"

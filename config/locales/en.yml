@@ -13,13 +13,19 @@ en:
     title: "League of Rod Trail"
     calendar: "Trail Calendar"
     next_trail: "Next Trail"
+  trail:
     organiser: "Organiser"
+    start: "Start"
+    via: "Via"
+    finish: "Finish"
   testimonials:
     title: "Testimonials"
   register:
     title: "Registration"
     for: "Register for the"
     registered: "You are registered for the"
+    adults: "Adults"
+    children: "Children"
     login: "Login to register"
   results:
     title: "Results"

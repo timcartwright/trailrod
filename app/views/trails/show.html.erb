@@ -23,7 +23,7 @@
         <% end %>
       </h2>
       <p>
-        <strong><%= @trail.description %></strong>
+        <%= @trail.description %>
       </p>
       <h4>
         Courses: 
@@ -39,7 +39,7 @@
       </h4>
       
       <p>
-        <%= t('trail_league.organiser') %>:
+        <%= t('trail.organiser') %>:
         <%= @trail.organiser %>
       </p>
       <% if in_rodrigues?(@trail.location) %>
@@ -48,7 +48,7 @@
         </h4>
       <% end %>
       <p>
-        Adults: Rs150, Chidren: Rs100
+        <%= t('register.adults') %>: Rs150, <%= t('register.children') %>: Rs100
       </p>
     </span>      
   </span>
