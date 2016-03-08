@@ -19,7 +19,7 @@
         --><%= flash_tag(alert, "alert") %><!-- remove blank space
         --></div>
         <%= yield %>
-        <%= render "common/footer" %>
+        <%= render "common/footer" unless controller_name == 'trails' && action_name == 'index' %>
       </div>
     </div>
   </div>

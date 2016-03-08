@@ -4,10 +4,21 @@
       <h1>
         Rodrigues
         <%= t('trail_league.calendar') %>
+        <% if user_signed_in? && current_user.is_admin? %>
+          <%= link_to raw("<i class='material-icons'>add</i>"), new_trail_path, class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "right", delay: "50", tooltip: "Create New Trail" } %>
+        <% end %>
       </h1>
-      <% if user_signed_in? && current_user.is_admin? %>
-        <%= link_to raw("<i class='material-icons'>add</i>"), new_trail_path, class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "right", delay: "50", tooltip: "Create New Trail" } %>
-      <% end %>
+      <h2>
+        Contacts
+      </h2>
+      <ul>
+        <li>
+          <i class='material-icons'>phone</i><strong> Louis Henrico</strong> 5877 0007
+        </li>
+        <li>
+          <i class='material-icons'>phone</i><strong> Patrice Chan Seem</strong> 5722 3777
+        </li>
+      </ul>
     </span>      
   </span>
 </div>
@@ -15,7 +26,7 @@
 <div class="tile tile-short tile-narrow tile-green">
   <span class="content-wrapper">
     <span class="tile-content">
-      <span class="tile-img tile-img-bg runners-on-rope"></span>
+      <span class="tile-img tile-img-bg jumping-off-sq"></span>
       <h3 class="next-trail-name">
         <%= t('trail_league.title') %>
       </h3>
@@ -25,7 +36,7 @@
   </span>
 </div>
 
-<div class="tile tile-short tile-narrow tile-cyan ripple-effect">
+<div class="tile tile-short tile-narrow tile-light-blue ripple-effect">
 
   <span class="content-wrapper">
     <span class="tile-content">

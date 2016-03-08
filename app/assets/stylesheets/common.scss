@@ -64,13 +64,15 @@ h6 {
   margin: 0.5vw 0 0.4vw 0;
 }
 
-ul {
-  padding-left: 24px;
-  list-style-type: disc;
-
-  li {
+.race-rules {
+  ul {
+    padding-left: 24px;
     list-style-type: disc;
-  } 
+
+    li {
+      list-style-type: disc;
+    } 
+  }
 }
 
 strong {
@@ -223,8 +225,8 @@ a.social-icon {
   &.old-lady-in-red-port {
     background-image: url(asset-path('old-lady-in-red-port.jpg'));
   }
-  &.ravitio-sq {
-    background-image: url(asset-path('ravitio-sq.jpg'));
+  &.ravito-sq {
+    background-image: url(asset-path('ravito-sq.jpg'));
   }
   &.girls-in-red {
     background-image: url(asset-path('two-girls-in-red-sq.jpg'));
