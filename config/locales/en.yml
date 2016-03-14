@@ -27,6 +27,10 @@ en:
       medical: "Medical and Rescue Management"
       transport: "Transport of Trailers"
       cocktail: "Cocktail"
+    transport:
+      44k_html: ""
+      22k_html: ""
+      7k_html: ""
   trail_league:
     about: "Trails from 7 to 20k are organised throughout the year, crisscrossing the island from both sides."
     title: "League of Rod Trail"
