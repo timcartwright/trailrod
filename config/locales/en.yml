@@ -42,6 +42,12 @@ en:
     about_home_page_html: "<p>Since 2011, we have taken care of race logistics and security.</p><p>We promote Trail as an eco-friendly and community enhancing activity.</p>"
     about_part_one_html: "<p>In 2011, the Rod Trail Association was born and took care of all the logistics and security of the Trail of Rodrigues. Behind the RTA is an Executive Committee of 10 dynamic young people who love their island as well as Trail.</p><p>Each year the Committee establishes a schedule of activities for amateur and professional trailers, giving them the opportunity to perfect their technique and better prepare for the core event, the Trail of Rodrigues in November. Mini trails are organised throughout the year and include 5 events ranging from 7 to 20k, crisscrossing the island from both sides.</p>"
     about_part_two_html: "<P>The RTA is not only committed to promoting the Trail, but also wants to be 'nature friendly'. It encourages the respect and protection of nature and has established a whole team to clean the trails. Other activities on the social level are organised in collaboration with Rod Riders and the Blood Donors Association among others.</p><p>The RTA is above all a family that is supported by a hundred faithful volunteers. They lend a hand to the organising committee to assist in the conduct of the races.</p>"
+    committee:
+      title: "The Committee"
+      president: "President"
+      secretary: "Secretary"
+      treasurer: "Treasurer"
+      member: "Member"
   links:
     title: "Links"
     visit_mauritius: "Visit Mauritius"
