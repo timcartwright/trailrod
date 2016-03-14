@@ -6,7 +6,7 @@ en:
     strapline: "The true spirit of trail"
     events: "42km of Pleasure - 22km of Happiness - 7km of Authenticity"
     about_home_page: "The Trail of Rodrigues brings together men, women and children around sport, discovery, natural surroundings and respect for the environment."
-    about_part_one_html: "<h2>Our Story</h2><p>With more than 6 million participants in Europe and the United States, the growing success of the trail has not spared the island of Rodrigues. The idea first came from Philippe Lahausse and Yan de Maroussem of Rando Trail Nature, Mauritius in 2008. Eric Lacroix from the University of Reunion later became the main consultant of the race.</p><p>The first edition took place on 21st November 2010 with just over 300 participants. In 2011, the Rod Trail Association is born and took charge of the entire organization of the Trail of Rodrigues.</p><p>The Association works closely with institutions, national and international associations, and NGOs. From 300, the number of participants has increased to more than 900, combining professional athletes, the great personalities of Trail, and sports fans in a spirit of democracy, discipline and togetherness.</p>"
+    about_part_one_html: "<h2>Our Story</h2><p>With more than 6 million participants in Europe and the United States, the growing success of the trail has not spared the island of Rodrigues. The idea first came from Philippe La Hausse de la Louvière and Yan de Maroussem of Rando Trail Nature, Mauritius in 2008. Eric Lacroix from the University of Reunion later became the main consultant of the race.</p><p>The first edition took place on 21st November 2010 with just over 300 participants. In 2011, the Rod Trail Association is born and took charge of the entire organization of the Trail of Rodrigues.</p><p>The Association works closely with institutions, national and international associations, and NGOs. From 300, the number of participants has increased to more than 900, combining professional athletes, the great personalities of Trail, and sports fans in a spirit of democracy, discipline and togetherness.</p>"
     about_part_two_html: "<h2>Authentic Experience</h2><p>The Trail of Rodrigues brings together men, women and children around a healthy practice that combines sport, discovery, proximity with nature and respect for the environment.</p><p>The 3 trails offer a variety of technical difficulties: the mountain landscape with its grassy slopes, the earthy paths and rocky patches, and the coastline with its rocky outcrops, sandy beaches and coves. Without much risk, we run with a backdrop of beautiful scenery.</p><p>The Trail is a beneficial stop almost out of time, a still picture mingling tranquility and beauty. It allows a vacuum to face oneself and to purge negative emotions.</p><p>Meet for a truly authentic experience on Sunday, November 6, 2016 for the 7th edition of the Trail of Rodrigues.</p>"
   trail_league:
     about: "Trails from 7 to 20k are organised throughout the year, crisscrossing the island from both sides."
@@ -27,9 +27,17 @@ en:
     adults: "Adults"
     children: "Children"
     login: "Login to register"
+    entry_fees: "Entry fees"
+    foreigners: "For Foreigners"
+    Mauritians: "For Mauritians"
+    early_date_1: "Feb-June"
+    early_date_2: "July-Sept"
+    early_date_3: "Oct"
   results:
     title: "Results"
     pending: "The results will appear here shortly."
+  rules:
+    title: "Race Rules"
   rta:
     about_home_page_html: "<p>Since 2011, we have taken care of race logistics and security.</p><p>We promote Trail as an eco-friendly and community enhancing activity.</p>"
     about_part_one_html: "<p>In 2011, the Rod Trail Association was born and took care of all the logistics and security of the Trail of Rodrigues. Behind the RTA is an Executive Committee of 10 dynamic young people who love their island as well as Trail.</p><p>Each year the Committee establishes a schedule of activities for amateur and professional trailers, giving them the opportunity to perfect their technique and better prepare for the core event, the Trail of Rodrigues in November. Mini trails are organised throughout the year and include 5 events ranging from 7 to 20k, crisscrossing the island from both sides.</p>"
@@ -39,5 +47,6 @@ en:
     visit_mauritius: "Visit Mauritius"
   rodrigues:
     title: "Rodrigues Island"
+    discover_title: "Discover Rodrigues"
     discover_html: "<h2>Discover Rodrigues</h2><p>In the <strong>tropical heart of the Indian Ocean</strong>, Rodrigues Island stretches over a surface area of only 108 km2. Some 650 km to the north-east of Mauritius, it is the part of Africa that is closest to Australia.</p><p>The landscapes vary from <strong>hilly lands to steep volcanic hills</strong>. Its coasts are made of wild creeks, <strong>marvelous sandy beaches and coral reefs</strong>, surrounded by small islets. The lagoon and coral reefs of Rodrigues are twice the area of the islands and are very rich and full of marine life.</p><p>Its charm and <strong>simple unhurried pace of life</strong> attracts visitors from around the world who come to enjoy the island's tranquility and natural beauty.  Kindness and simplicity are the principal traits of the Rodriguans.</p>"
     quote_html: '<h3>"Rodrigues offers pristine, empty beaches and the chance to immerse yourself in local life."</h3><p>The Guardian</p>'

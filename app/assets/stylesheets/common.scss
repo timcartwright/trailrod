@@ -91,6 +91,14 @@ p {
   }
 }
 
+// a[href^="mailto"] {
+//   &:after {
+//     font-family: 'Material Icons';
+//     font-size: 0.6em;
+//     content: "arrow_forward";
+//   }
+// }
+
 .devise-links a {
   color: rgba(175, 180, 54, 1);
 }

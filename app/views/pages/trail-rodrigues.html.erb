@@ -86,17 +86,19 @@
       <h2>
         <%= t('register.title') %>
       </h2>
-      <h4>Entry Fees</h4>
+      <h4>
+        <%= t('register.entry_fees') %>
+      </h4>
       <p>
         <!-- Modal Trigger -->
         <a class="waves-effect waves-light btn modal-trigger" href="#entry-fees-foreign">
-          For Foreigners <i class='material-icons'>open_in_new</i>
+          <%= t('register.foreigners') %> <i class='material-icons'>open_in_new</i>
         </a>
       </p>
       <p>
         <!-- Modal Trigger -->
         <a class="waves-effect waves-light btn modal-trigger" href="#entry-fees-local">
-          For Mauritians <i class='material-icons'>open_in_new</i>
+          <%= t('register.Mauritians') %> <i class='material-icons'>open_in_new</i>
         </a>
       </p>
     </span>      
@@ -111,7 +113,7 @@
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
-        Race Rules
+        <%= t('rules.title') %>
       </h2>
       <p>
         <!-- Modal Trigger -->
@@ -153,22 +155,22 @@
 <!-- Entry Fees Foreigners Modal -->
 <div id="entry-fees-foreign" class="modal outside-dashboard do-not-animate">
   <div class="modal-content">
-    <h4>2016 Entry Fees for Foreigners</h4>
+    <h4>
+      <%= "#{t('register.entry_fees')} #{t('register.foreigners')}" %>
+    </h4>
     <table>
       <thead>
         <tr>
             <th>Trail</th>
-            <th>Jan-May</th>
-            <th>June-July</th>
-            <th>Aug-Sept</th>
-            <th>Oct</th>
+            <th><%= t('register.early_date_1') %></th>
+            <th><%= t('register.early_date_2') %></th>
+            <th><%= t('register.early_date_3') %></th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
           <td>44k</td>
-          <td>€35</td>
           <td>€40</td>
           <td>€45</td>
           <td>€50</td>
@@ -178,14 +180,12 @@
           <td>€30</td>
           <td>€35</td>
           <td>€40</td>
-          <td>€45</td>
         </tr>
         <tr>
           <td>7k</td>
           <td>€25</td>
           <td>€30</td>
           <td>€35</td>
-          <td>€40</td>
         </tr>
       </tbody>
     </table>
@@ -195,39 +195,37 @@
 <!-- Entry Fees Local Modal -->
 <div id="entry-fees-local" class="modal outside-dashboard do-not-animate">
   <div class="modal-content">
-    <h4>2016 Entry Fees for Mauritians</h4>
+    <h4>
+      <%= "#{t('register.entry_fees')} #{t('register.Mauritians')}" %>
+    </h4>
     <table>
       <thead>
         <tr>
             <th>Trail</th>
-            <th>Jan-May</th>
-            <th>June-July</th>
-            <th>Aug-Sept</th>
-            <th>Oct</th>
+            <th><%= t('register.early_date_1') %></th>
+            <th><%= t('register.early_date_2') %></th>
+            <th><%= t('register.early_date_3') %></th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
           <td>44k</td>
-          <td>Rs1330</td>
-          <td>Rs1520</td>
-          <td>Rs1710</td>
-          <td>Rs1900</td>
+          <td>Rs1600</td>
+          <td>Rs1800</td>
+          <td>Rs2000</td>
         </tr>
         <tr>
           <td>22k</td>
-          <td>Rs1140</td>
-          <td>Rs1330</td>
-          <td>Rs1520</td>
-          <td>Rs1710</td>
+          <td>Rs1400</td>
+          <td>Rs1600</td>
+          <td>Rs1800</td>
         </tr>
         <tr>
           <td>7k</td>
-          <td>Rs950</td>
-          <td>Rs1140</td>
-          <td>Rs1330</td>
-          <td>Rs1520</td>
+          <td>Rs1200</td>
+          <td>Rs1400</td>
+          <td>Rs1600</td>
         </tr>
       </tbody>
     </table>
@@ -237,7 +235,9 @@
 <!-- Race Rules Modal -->
 <div id="general" class="modal race-rules outside-dashboard do-not-animate">
   <div class="modal-content">
-    <h4>Race Rules</h4>
+    <h4>
+      <%= t('rules.title') %>
+    </h4>
 
     <h3>Organisation</h3>
     <p>La 7ème édition du Trail de Rodrigues est organisé par l'Association du Rod Trail le Dimanche 6 novembre 2016.</p>
