@@ -61,6 +61,20 @@ fr:
     pending: "Les résultats apparaîtront bientôt ici."
   rules:
     title: "Réglements de la course"
+    general: ""
+    categories:
+      title: "Catégories et Récompenses"
+      intro: "Les catégories d'âge concernant l'année civile, qui débute le 1 er janvier et se termine le 31 décembre.  Les cinq premiers  participants des trois courses seront classés et récompensés selon les catégories ci-dessus."
+      category: "Catégorie"
+      age_group: "Groupe d'Age"
+      men: "Hommes"
+      women: "Femmes"
+      young: "Espoirs"
+      veteran: "Vétérans" 
+      to: "à"
+      years: "ans"
+      outro_html: "<p>Le temps de chaque concurrent sera décomposé en heures, minutes et seconde.  Le chronomètre de l'organisation sera la seule référence officielle.  Dans l'éventualité d'arrivée ex-æquo, l'avantage sera donné au plus âgé.</p><p>La lecture des résultats et la remise des prix auront lieu à partir de 13 heures à la Reserve de Tortues à Anse Quitor sur le podium officiel.</p>"
+    equipment: ""
   rta:
     about_home_page_html: "<p>Depuis 2011, nous avons pris soin de la logistique et de la sécurité course.</p><p>Nous promouvons Trail comme une activité d'Amélioration écologique et communautaire.</p>"
     about_part_one_html: "<p>En 2011 la Rod Trail Association a vu le jour et elle a pris en charge tout l'aspect logistique et sécurité de la course. Derrière cette association, il y a une équipe de 10 jeunes dynamiques, amoureux de leur île et Trail, qui forment le Comité Exécutif.</p><p>Chaque année le comité dresse un calendrier d'activités proposant ainsi aux amateurs comme aux professionnels du Trail l'occasion de parfaire leur technique ainsi mieux se préparer avant l'événement phare qu'est le Trail de Rodrigues prévu au mois de novembre. Des mini trails sont ainsi organisés incluant à ce jour 5 parcours allant de 7 à 20 Km sillonnant l'île de part et d'autre.</p>"

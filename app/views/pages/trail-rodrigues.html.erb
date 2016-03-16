@@ -480,63 +480,67 @@
 <!-- Categories Modal -->
 <div id="categories" class="modal race-rules outside-dashboard do-not-animate">
   <div class="modal-content">
-    <h4>Catégories / Récompenses</h4>
-    <p>Les catégories d'âge concernant l'année civile, qui débute le 1 er janvier et se termine le 31 décembre.  Les cinq premiers  participants des trois courses seront classés et récompensés selon les catégories ci-dessus.</p>
+    <h4>
+      <%= t('rules.categories.title') %>
+    </h4>
+    <p>
+      <%= t('rules.categories.intro') %>
+    </p>
 
     <table class="striped">
       <thead>
         <tr>
-            <th>Catégorie</th>
+            <th><%= t('rules.categories.category') %></th>
             <th>Code</th>
-            <th>Groupe d'Age</th>
+            <th><%= t('rules.categories.age_group') %></th>
         </tr>
       </thead>
 
       <tbody>
         <tr>
-          <td>Junior Homme</td>
+          <td>Junior <%= t('rules.categories.men') %></td>
           <td>JUH</td>
-          <td>16 à 19 ans</td>
+          <td>16 <%= t('rules.categories.to') %> 19 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
-          <td>Junior Femme</td>
+          <td>Junior <%= t('rules.categories.women') %></td>
           <td>JUF</td>
-          <td>16 à 19 ans</td>
+          <td>16 <%= t('rules.categories.to') %> 19 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
-          <td>Espoirs Homme</td>
+          <td><%= t('rules.categories.young') %> <%= t('rules.categories.men') %></td>
           <td>ESH</td>
-          <td>20 à 29 ans</td>
+          <td>20 <%= t('rules.categories.to') %> 29 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
-          <td>Espoirs Femme</td>
+          <td><%= t('rules.categories.young') %> <%= t('rules.categories.women') %></td>
           <td>ESF</td>
-          <td>20 à 29 ans</td>
+          <td>20 <%= t('rules.categories.to') %> 29 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
-          <td>Senior Homme</td>
+          <td>Senior <%= t('rules.categories.men') %></td>
           <td>SHE</td>
-          <td>30 à 39 ans</td>
+          <td>30 <%= t('rules.categories.to') %> 39 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
-          <td>Senior Femme</td>
+          <td>Senior <%= t('rules.categories.women') %></td>
           <td>SHF</td>
-          <td>30 à 39 ans</td>
+          <td>30 <%= t('rules.categories.to') %> 39 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
-          <td>Vétérans Homme</td>
+          <td><%= t('rules.categories.veteran') %> <%= t('rules.categories.men') %></td>
           <td>VH1</td>
-          <td>40 à 49 ans</td>
+          <td>40 <%= t('rules.categories.to') %> 49 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
           <td></td>
           <td>VH2</td>
-          <td>50 à 59 ans</td>
+          <td>50 <%= t('rules.categories.to') %> 59 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
           <td></td>
           <td>VH3</td>
-          <td>60 à 69 ans</td>
+          <td>60 <%= t('rules.categories.to') %> 69 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
           <td></td>
@@ -544,19 +548,19 @@
           <td>70+</td>
         </tr>
         <tr>
-          <td>Vétérans Femmes</td>
+          <td><%= t('rules.categories.veteran') %> <%= t('rules.categories.women') %></td>
           <td>VF1</td>
-          <td>40 à 49 ans</td>
+          <td>40 <%= t('rules.categories.to') %> 49 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
           <td></td>
           <td>VF2</td>
-          <td>50 à 59 ans</td>
+          <td>50 <%= t('rules.categories.to') %> 59 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
           <td></td>
           <td>VF3</td>
-          <td>60 à 69 ans</td>
+          <td>60 <%= t('rules.categories.to') %> 69 <%= t('rules.categories.years') %></td>
         </tr>
         <tr>
           <td></td>
@@ -566,8 +570,7 @@
       </tbody>
     </table>
    
-    <p>Le temps de chaque concurrent sera décomposé en heures, minutes et seconde.  Le chronomètre de l'organisation sera la seule référence officielle.  Dans l'éventualité d'arrivée ex-æquo, l'avantage sera donné au plus âgé.</p>
-    <p>La lecture des résultats et la remise des prix auront lieu à partir de 13 heures à la Reserve de Tortues à Anse Quitor sur le podium officiel.</p>
+    <%= t('rules.categories.outro_html') %>
 
   </div>
 </div>

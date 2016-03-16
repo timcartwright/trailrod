@@ -61,6 +61,20 @@ en:
     pending: "The results will appear here shortly."
   rules:
     title: "Race Rules"
+    general: ""
+    categories:
+      title: "Categories and Prizes"
+      intro: "The age categories are by calendar year, which begins on 1 January and ends on 31 December. The first five participants of the three races will be ranked and rewarded according to the categories below."
+      category: "Category"
+      age_group: "Age Group"
+      men: "Men"
+      women: "Women"
+      young: "Young"
+      veteran: "Veteran" 
+      to: "to"
+      years: "years"
+      outro_html: "<p>The time of each competitor will be broken down into hours, minutes and seconds. The stopwatch of the organisors will be the only official reference. In the event of a tie, the advantage will be given to the oldest.</p><p>The publication of results and prize giving will be held from 13h00 at the Tortoise Reserve in Anse Quitor.</p>"
+    equipment: ""
   rta:
     about_home_page_html: "<p>Since 2011, we have taken care of race logistics and security.</p><p>We promote Trail as an eco-friendly and community enhancing activity.</p>"
     about_part_one_html: "<p>In 2011, the Rod Trail Association was born and took care of all the logistics and security of the Trail of Rodrigues. Behind the RTA is an Executive Committee of 10 dynamic young people who love their island as well as Trail.</p><p>Each year the Committee establishes a schedule of activities for amateur and professional trailers, giving them the opportunity to perfect their technique and better prepare for the core event, the Trail of Rodrigues in November. Mini trails are organised throughout the year and include 5 events ranging from 7 to 20k, crisscrossing the island from both sides.</p>"
