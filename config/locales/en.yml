@@ -50,6 +50,11 @@ en:
     adults: "Adults"
     children: "Children"
     login: "Login to register"
+    now: "Register Now"
+    roag: 
+      intro_html: "<h2>Register for the event with ROAG</h2><h4>You need to be a member of ROAG to register</h4>"
+      become_member: "Become a ROAG member"
+      already_member: "I am already a ROAG member"
     entry_fees: "Entry fees"
     foreigners: "For Foreigners"
     Mauritians: "For Mauritians"

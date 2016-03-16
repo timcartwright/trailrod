@@ -80,12 +80,18 @@
   </span>
 </div>
 
-<div class="tile tile-lg tile-narrow tile-green ripple-effect" href="#">
+<div class="tile tile-lg tile-narrow tile-green">
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
         <%= t('register.title') %>
       </h2>
+      <p>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#register-now">
+          <%= t('register.now') %> <i class='material-icons'>open_in_new</i>
+        </a>
+      </p>
       <h4>
         <%= t('register.entry_fees') %>
       </h4>
@@ -681,5 +687,30 @@
 <div id="transport-7" class="modal race-rules transport outside-dashboard do-not-animate">
   <div class="modal-content">
     <%= t ('trail_of_rodrigues.transport.7k_html') %>
+  </div>
+</div>
+
+<!-- Register Now Modal -->
+<div id="register-now" class="modal outside-dashboard do-not-animate">
+  <div class="modal-content">
+    <%= t ('register.roag.intro_html') %>
+    <p>
+      <a href='https://www.roag.co.za/register.aspx' target='_blank'>
+        <%= t ('register.roag.become_member') %> <i class='material-icons'>arrow_forward</i>
+      </a>
+    </p>
+    <p>
+      <a href='https://www.roag.co.za/online-entries.aspx?EventID=1799' target='_blank'>
+        <%= t ('register.roag.already_member') %> <i class='material-icons'>arrow_forward</i>
+      </a>
+    </p>
+    <h4>
+      Contact ROAG
+    </h4>
+    <p>
+      <i class='material-icons'>email</i> info@roag.mu<br>
+      <i class='material-icons'>phone</i> (+230) 5705 5162 
+    </p>
+
   </div>
 </div>
