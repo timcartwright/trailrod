@@ -578,17 +578,15 @@
 <!-- Equipment Modal -->
 <div id="equipment" class="modal race-rules outside-dashboard do-not-animate">
   <div class="modal-content">
-    <h3>Equipement</h3>
+    <h3>
+      <%= t('rules.equipment.title') %>
+    </h3>
     <ul>
-      <li>Trail Tortue (7km): Chaussures adéquates.</li>
-      <li>Trail Solitaire (22km): Sac à eau (type camelback ou similaire) ou ceinture à bidon obligatoire (réserve d'eau de 1.0 L min); chaussures adéquates.</li>
-      <li>Trail de l'Eden (44km): Sac à eau (type camelback ou similaire) ou ceinture à bidon obligatoire (réserve d'eau de 1.5L min); chaussures adéquates et sifflet.</li>
+      <li><%= t('rules.equipment.44k') %></li>
+      <li><%= t('rules.equipment.22k') %></li>
+      <li><%= t('rules.equipment.7k') %></li>
     </ul>
-    <p>Matériel recommandé en fonction des conditions météo pour le Trail Solitaire (22km) et le Trail de l'Eden (44km):</p>
-    <ul>
-      <li>Casquette ou buff</li>
-      <li>Gants</li>
-    </ul>
+    <%= t('rules.equipment.general_html') %>
   </div>
 </div>
 

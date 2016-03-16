@@ -74,7 +74,12 @@ en:
       to: "to"
       years: "years"
       outro_html: "<p>The time of each competitor will be broken down into hours, minutes and seconds. The stopwatch of the organisors will be the only official reference. In the event of a tie, the advantage will be given to the oldest.</p><p>The publication of results and prize giving will be held from 13h00 at the Tortoise Reserve in Anse Quitor.</p>"
-    equipment: ""
+    equipment:
+      title: "Equipment"
+      44k: "Trail of Eden (44 km): water bag (camelback or similar) or belt (water reserve 1.5L min) compulsory; appropriate footwear and whistle."
+      22k: "Trail Solitaire (22km): water bag (camelback or similar) or belt (water reserve 1L min) compulsory; appropriate footwear."
+      7k: "Trail Tortue (7km): Appropriate footwear."
+      general_html: "<p>Recommended equipment depending on weather conditions for the Trail Solitaire (22km) and the Trail of Eden (44km):</p><ul><li>Cap or buff</li><li>Gloves</li></ul>"
   rta:
     about_home_page_html: "<p>Since 2011, we have taken care of race logistics and security.</p><p>We promote Trail as an eco-friendly and community enhancing activity.</p>"
     about_part_one_html: "<p>In 2011, the Rod Trail Association was born and took care of all the logistics and security of the Trail of Rodrigues. Behind the RTA is an Executive Committee of 10 dynamic young people who love their island as well as Trail.</p><p>Each year the Committee establishes a schedule of activities for amateur and professional trailers, giving them the opportunity to perfect their technique and better prepare for the core event, the Trail of Rodrigues in November. Mini trails are organised throughout the year and include 5 events ranging from 7 to 20k, crisscrossing the island from both sides.</p>"
