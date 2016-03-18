@@ -50,6 +50,10 @@
         <%= t('register.login') %>
       </a>
     </p>
+    <p>
+      Don't have a login?
+      <%= link_to "Click here to sign up.", new_registration_path(resource_name) %>
+    </p>
     <!-- Modals -->
     <div id="login-form-modal" class="modal login-form outside-dashboard do-not-animate">
       <div class="modal-content">
