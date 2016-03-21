@@ -104,6 +104,11 @@ fr:
     discover_title: "Découverte de l’île Rodrigues"
     discover_html: "<h2>Découvrez Rodrigues</h2><p>Dans le <strong>coeur tropicale de l'océan Indien</strong>, l'île Rodrigues étend sur une superficie de seulement 108 km2. Quelques 650 km au nord-est de l'île Maurice, il est la partie de l'Afrique qui est le plus proche de l'Australie.</p><p>Les paysages varient de <strong>terres vallonnées à collines volcaniques abruptes</strong>. Ses côtes sont faites de criques sauvages, <strong>merveilleuses plages de sable et les récifs coralliens</strong>, entouré de petits îlots. Le lagon et les récifs coralliens de Rodrigues sont deux fois la superficie des îles et sont très riches et pleine de vie marine.</p><p>Son charme et <strong>simples rythme tranquille de la vie</strong> attire des visiteurs de partout le monde qui viennent profiter de la tranquillité de l'île et la beauté naturelle. La bonté et la simplicité sont les traits principaux des Rodriguais.</p>"
     quote_html: '<h3>"Rodrigues propose des plages vides vierges et la chance de vous immerger dans la vie locale."</h3><p>The Guardian</p>'
- 
+  activities:
+    title: "Activités"
+    body_html: "Kite surf, tyrolienne, sanctuaire d'oiseaux de Cocos ilot, The Giant Tortoise & Cave Reserve de Francois Leguat, Réserve naturelle Montagne Grande, la protection des tortues marines, Safari Night club"
+  hotels:
+    title: "Hôtels et Forfaits"
+    body_html: "S'il vous plaît contacter l'organisation pour plus d'infos sur <a href='mailto:trailrodrigues@gmail.com'>trailrodrigues@gmail.com</a>"
 
 
