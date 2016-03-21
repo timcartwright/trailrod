@@ -82,9 +82,11 @@
       <h4>
         <%= t('trail_league.next_trail') %>
       </h4>
-      <h3 class="next-trail-name">
-        <%= link_to raw("#{@home.next_trail.name} <i class='material-icons'>arrow_forward</i>"), trail_path(@home.next_trail) %>
-      </h3>
+      <span class="title">
+        <h3 class="next-trail-name">
+          <%= link_to raw("#{@home.next_trail.name} <i class='material-icons'>arrow_forward</i>"), trail_path(@home.next_trail) %>
+        </h3>
+     </span>
 
       <%= l @home.next_trail.date, format: '%-d %B %Y' if @home.next_trail.date %>
       <p class="tile-footer">
