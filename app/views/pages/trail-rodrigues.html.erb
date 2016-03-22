@@ -726,34 +726,42 @@
   <div class="modal-content">
     <%= form_for data, html: { multipart: true } do |f| %>
       <h4>Participants</h4>
-      <div class="file-field input-field">
-        <div class="btn">
-          <span>44k</span>
-          <%= f.file_field :participants_44k %>
+      <div class="form-inputs">
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>44k</span>
+            <%= f.file_field :participants_44k %>
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+            <%= f.check_box :delete_participants_44k %>
+            <%= f.label :delete_participants_44k, "Delete?" %>
+          </div>
         </div>
-        <div class="file-path-wrapper">
-          <input class="file-path validate" type="text">
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>22k</span>
+            <%= f.file_field :participants_22k %>
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+            <%= f.check_box :delete_participants_22k %>
+            <%= f.label :delete_participants_22k, "Delete?" %>
+          </div>
         </div>
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>7k</span>
+            <%= f.file_field :participants_7k %>
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+            <%= f.check_box :delete_participants_7k %>
+            <%= f.label :delete_participants_7k, "Delete?" %>
+          </div>
+        </div>
+        <%= f.submit "Update", class: 'btn' %>
       </div>
-      <div class="file-field input-field">
-        <div class="btn">
-          <span>22k</span>
-          <%= f.file_field :participants_22k %>
-        </div>
-        <div class="file-path-wrapper">
-          <input class="file-path validate" type="text">
-        </div>
-      </div>
-      <div class="file-field input-field">
-        <div class="btn">
-          <span>7k</span>
-          <%= f.file_field :participants_7k %>
-        </div>
-        <div class="file-path-wrapper">
-          <input class="file-path validate" type="text">
-        </div>
-      </div>
-      <%= f.submit "Upload", class: 'btn' %>
     <% end %>
   </div>
 </div>

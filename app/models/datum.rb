@@ -21,6 +21,8 @@
 
 class Datum < ActiveRecord::Base
 
+  attr_accessor :"delete_#{name}"
+
   has_attached_file :participants_44k,
                     storage: :s3,
                     s3_credentials: Proc.new{|a| a.instance.s3_credentials }
@@ -36,6 +38,8 @@ class Datum < ActiveRecord::Base
   validates_attachment_content_type :participants_44k, content_type: ['application/pdf']
   validates_attachment_content_type :participants_22k, content_type: ['application/pdf']
   validates_attachment_content_type :participants_7k, content_type: ['application/pdf']
+
+  include DeletableAttachment
 
   def s3_credentials
     {:bucket => ENV['S3_BUCKET_NAME'], :access_key_id => ENV['AWS_ACCESS_KEY_ID'], :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']}
