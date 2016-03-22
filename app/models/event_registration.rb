@@ -25,6 +25,23 @@ class EventRegistration < ActiveRecord::Base
 
   validate :cannot_register_more_than_once_per_trail
 
+  comma do
+    event :distance
+    profile :first_name             
+    profile :family_name            
+    profile :date_of_birth        
+    profile :email                  
+    profile :mobile                 
+    profile :gender                 
+    profile :nationality            
+    profile :country_of_residence   
+    profile :passport_number        
+    profile :tshirt_size            
+    profile :emergency_contact_name 
+    profile :emergency_contact_phone
+    paid
+  end
+
 private
   def cannot_register_more_than_once_per_trail
     related_events = self.event.related_events.map(&:id)

@@ -8,6 +8,9 @@
       <span class="left-col">
         <h3>
           <%= "#{event.distance}k" %>
+          <% if user_signed_in? && current_user.is_admin? %>
+            <%= link_to raw("<i class='material-icons'>file_download</i>"), trail_event_event_registrations_path(@trail, event), class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "right", delay: "50", tooltip: "Download" } %>
+          <% end %>
         </h3>
         <h5>
           <%= pluralize(@participants[event].count, 'participant') if @participants[event].length > 0 %>

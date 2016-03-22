@@ -21,6 +21,11 @@ class EventRegistrationsController < ApplicationController
 
   before_action :authenticate_user!, only: [:new, :create]
 
+  def index
+    event = Event.includes(:trail).find(params[:event_id])
+    render csv: EventRegistration.where("event_id = ?", params[:event_id]), filename: "#{event.trail.name}_#{event.distance}k_registrations_#{Time.now.strftime('%d-%m-%Y_%H:%M:%S')}"
+  end
+
   def new
     @event = Event.includes(:trail).find(params[:event_id])
     if current_user.is_admin?

@@ -60,6 +60,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
+    comma (3.2.4)
+      activesupport (>= 3.0.0)
     concurrent-ruby (1.0.0)
     countries (1.2.2)
       currencies (~> 0.4.2)
@@ -231,6 +233,7 @@ DEPENDENCIES
   aws-sdk-v1
   byebug
   coffee-rails (~> 4.1.0)
+  comma (~> 3.2.1)
   country_select
   devise
   devise-i18n
