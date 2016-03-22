@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160305152647) do
+ActiveRecord::Schema.define(version: 20160322042351) do
+
+  create_table "data", force: :cascade do |t|
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.string   "participants_44k_file_name"
+    t.string   "participants_44k_content_type"
+    t.integer  "participants_44k_file_size"
+    t.datetime "participants_44k_updated_at"
+    t.string   "participants_22k_file_name"
+    t.string   "participants_22k_content_type"
+    t.integer  "participants_22k_file_size"
+    t.datetime "participants_22k_updated_at"
+    t.string   "participants_7k_file_name"
+    t.string   "participants_7k_content_type"
+    t.integer  "participants_7k_file_size"
+    t.datetime "participants_7k_updated_at"
+  end
 
   create_table "event_registrations", force: :cascade do |t|
     t.integer  "event_id"
