@@ -22,6 +22,10 @@
       <h2>
         <%= t ('trail_of_rodrigues.date') %>
       </h2>
+      <% if user_signed_in? && current_user.is_admin? %>
+        <!-- Modal Trigger -->
+        <%= link_to raw("Manage <i class='material-icons'>edit</i>"), "#admin", class: "waves-effect waves-light btn modal-trigger" %>
+      <% end %>
       <p class="tile-footer">
         <%= link_to "https://www.facebook.com/TrailDeRodrigues", class: 'btn-floating btn-large waves-effect waves-light social-icon', target: '_blank' do %>
           <%= image_tag 'facebook_icon_56.png', alt: "Facebook Icon", class: 'load-first' %>
@@ -714,3 +718,44 @@
 
   </div>
 </div>
+
+<% if user_signed_in? && current_user.is_admin? %>
+
+<!-- Admin Modal -->
+<div id="admin" class="modal outside-dashboard do-not-animate">
+  <div class="modal-content">
+    <%= form_for data, html: { multipart: true } do |f| %>
+      <h4>Participants</h4>
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>44k</span>
+          <%= f.file_field :participants_44k %>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>22k</span>
+          <%= f.file_field :participants_22k %>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>7k</span>
+          <%= f.file_field :participants_7k %>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <%= f.submit "Upload", class: 'btn' %>
+    <% end %>
+  </div>
+</div>
+
+<% end %>

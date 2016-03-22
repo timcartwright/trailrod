@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|fr/ do
     root 'home#land'
     devise_for :users, :path => 'accounts'
-
+    resources :data
     resources :users
     resources :profiles
     post 'profiles/load', :to => 'profiles#load'

@@ -36,4 +36,8 @@ module ApplicationHelper
     @devise_mapping ||= Devise.mappings[:user]
   end
 
+  def data
+    @data = Datum.first || Datum.new
+  end
+
 end

@@ -10,7 +10,7 @@
         <%= link_to raw("<i class='material-icons'>trending_up</i>"), "#course-44", class: "btn-floating btn-large waves-effect waves-light orange modal-trigger tooltipped", data: { position: "bottom", delay: "50", tooltip: "Course" } %>
         <!-- Modal Trigger -->
         <%= link_to raw("<i class='material-icons'>directions_bus</i>"), "#transport-44", class: "btn-floating btn-large waves-effect waves-light blue modal-trigger tooltipped", data: { position: "bottom", delay: "50", tooltip: "Transport" } %>
-        <%= link_to raw("<i class='material-icons'>directions_run</i>"), "#participants-44", class: "btn-floating btn-large waves-effect waves-light tooltipped", target: "_blank", data: { position: "bottom", delay: "50", tooltip: "Participants" } %>
+        <%= link_to raw("<i class='material-icons'>directions_run</i>"), @data.participants_44k.url, class: "btn-floating btn-large waves-effect waves-light tooltipped", target: "_blank", data: { position: "bottom", delay: "50", tooltip: "Participants" } if data.participants_44k.present? %>
       </p>
     </span>      
   </span>
@@ -29,6 +29,7 @@
         <%= link_to raw("<i class='material-icons'>directions_run</i>"), "#course-22", class: "btn-floating btn-large waves-effect waves-light orange modal-trigger tooltipped", data: { position: "bottom", delay: "50", tooltip: "Course" } %>
         <!-- Modal Trigger -->
         <%= link_to raw("<i class='material-icons'>directions_bus</i>"), "#transport-22", class: "btn-floating btn-large waves-effect waves-light blue modal-trigger tooltipped", data: { position: "bottom", delay: "50", tooltip: "Transport" } %>
+        <%= link_to raw("<i class='material-icons'>directions_run</i>"), @data.participants_22k.url, class: "btn-floating btn-large waves-effect waves-light tooltipped", target: "_blank", data: { position: "bottom", delay: "50", tooltip: "Participants" } if data.participants_22k.present? %>
       </p>
     </span>     
   </span>
@@ -46,6 +47,7 @@
         <%= link_to raw("<i class='material-icons'>directions_run</i>"), "#course-7", class: "btn-floating btn-large waves-effect waves-light orange modal-trigger tooltipped", data: { position: "bottom", delay: "50", tooltip: "Course" } %>
         <!-- Modal Trigger -->
         <%= link_to raw("<i class='material-icons'>directions_bus</i>"), "#transport-7", class: "btn-floating btn-large waves-effect waves-light blue modal-trigger tooltipped", data: { position: "bottom", delay: "50", tooltip: "Transport" } %>
+        <%= link_to raw("<i class='material-icons'>directions_run</i>"), @data.participants_7k.url, class: "btn-floating btn-large waves-effect waves-light tooltipped", target: "_blank", data: { position: "bottom", delay: "50", tooltip: "Participants" } if data.participants_7k.present? %>
       </p>
     </span>       
   </span>

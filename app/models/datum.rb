@@ -20,4 +20,24 @@
 #
 
 class Datum < ActiveRecord::Base
+
+  has_attached_file :participants_44k,
+                    storage: :s3,
+                    s3_credentials: Proc.new{|a| a.instance.s3_credentials }
+
+  has_attached_file :participants_22k,
+                    storage: :s3,
+                    s3_credentials: Proc.new{|a| a.instance.s3_credentials }
+
+  has_attached_file :participants_7k,
+                    storage: :s3,
+                    s3_credentials: Proc.new{|a| a.instance.s3_credentials }
+
+  validates_attachment_content_type :participants_44k, content_type: ['application/pdf']
+  validates_attachment_content_type :participants_22k, content_type: ['application/pdf']
+  validates_attachment_content_type :participants_7k, content_type: ['application/pdf']
+
+  def s3_credentials
+    {:bucket => ENV['S3_BUCKET_NAME'], :access_key_id => ENV['AWS_ACCESS_KEY_ID'], :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']}
+  end
 end
