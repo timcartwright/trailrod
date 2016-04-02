@@ -106,7 +106,25 @@ fr:
     quote_html: '<h3>"Rodrigues propose des plages vides vierges et la chance de vous immerger dans la vie locale."</h3><p>The Guardian</p>'
   activities:
     title: "Activités"
-    body_html: "Kite surf, tyrolienne, sanctuaire d'oiseaux de Cocos ilot, The Giant Tortoise & Cave Reserve de Francois Leguat, Réserve naturelle Montagne Grande, la protection des tortues marines, Safari Night club"
+    intro: "Rodrigues, l’île authentique saura vous charmer de par les multiples activités proposées."
+    tortoise:
+      title: "La Réserve des Tortues François Leguat"
+      body_html: "<p>L’écosystème original de Rodrigues a été recrée dans la partie ouest de l’île grâce à la replantation des espèces indigènes et endémiques les mieux adaptées et à l’introduction des tortues natives de la région de l'Océan Indien. Aujourd’hui, plus de 1,200 vivent en liberté dans la réserve.</p><p>Parmi les 26 grottes calcaires qui se trouvent sur le site, deux d’entre elles ont été réhabilitées, notamment la Grande-Caverne, dotée d’imposante stalagmites et stalactites et la Caverne-de-La-Vierge.</p><p>Aujourd’hui, la réserve François Leguat connaît une popularité grandissante aussi bien auprès de la population locale que des touristes venus du monde entier.</p>"
+    cocos:
+      title: "Ile Aux Cocos"
+      body_html: "<p>Autour de Rodrigues gravitent 17 îlots dont l'île aux Cocos et sa voisine l'île au Sable. Ces deux jolis petits bancs de sable sont devenus Réserve Naturelle, cependant les visiteurs sont autorisés la journée sur une partie de l'île aux Cocos.</p><p>L'île aux Cocos, d’une superficie de 1.5 km de long et 250 m de large, est un îlot inhabité, situé à l'ouest de Rodrigues  à l'intérieur du lagon, non loin de la barrière de corail.</p><p>La traversée en bateau est d’une durée de 1 h 30 aller Les paysages côtiers et l'approche de l'île sont magnifiques.  Dès qu’on met pied à terre, on se laisse bercer par les cris de quelques espèces d'oiseaux rares, dont la magnifique sterne blanche, autrement appelée Zoizo de la vierge par les Rodriguais et le noddy brun ou macoua, une sorte de mouette toute noire.  Ces oiseaux sont partout, se laissant même approcher.  On peut profiter de longues baignades et se prélasser sur le sable blanc qui ne vous laissera pas de marbre.</p>"
+    zip_line:
+      title: "Tyrodrig"
+      body_html: "<p>Dans l’est de Rodrigues, les amateurs d’adrénaline et de sensations fortes trouveront leur compte avec une série de 5 tyroliennes à découvrir en 2 parcours accessibles à tous. Perché à plus de 100 mètres de haut,  une belle glisse au-dessus des vallées verdoyantes et des cascades, face au lagon vous attend.</p><p>Traverser la vallée de Pistaches à l’aide d’un pont suspendu est devenue chose possible depuis février 2016. Une traversée longue d’une centaine de mètres, offrant une vue imprenable sur le lagon du nord-ouest de l’ile et sur les pailles en queue de la Cascade Pistaches.  Les promoteurs Tyrodrig a su allier ses activités 'eco-friendly' avec la topographie de l’île pour le grand plaisir des petits et des grands.</p>"
+    kitesurf:
+      title: "Le Kitesurf"
+      body_html: "<p>Le lagon de Mourouk est devenu le spot mythique dont rêvent tous les kiters avec sa trilogie: alizés réguliers, 200 km² de lagon d'eau chaude turquoise peu profonde, et son accueil légendaire. </p><p>On s'initie très vite au kite, deux heures de cours suffises à apprendre à manier la voile et deux heures de plus à gérer la voile et la planche, les meilleurs sont prêts pour la première 'descente' accompagnée. </p><p>Au carrefour de la glisse (wake), de l'air (cerf-volant), et de la voile (planche, fun board), le kitesurf  connaît une ascension fulgurante avec son festival annuel qui accueillent les meilleurs kiters du monde.</p>"
+    grande_montagne:
+      title: "La Réserve Naturelle de Grande Montagne"
+      body_html: "<p>A Rodrigues, la forêt primaire avait complètement disparu. Grâce à l’initiative des techniciens du gouvernement sous la responsabilité de la Mauritius Wildlife Foundation, des travaux de replantation d'espèces endémiques ont été entrepris afin de reconstituer une forêt primaire d’où la naissance d’une réserve naturelle à Grande Montagne.</p><p>La réserve est ouverte au public. Tout le long d’un sentier balisé, le visiteur peut découvrir une végétation, souvent dense et parfois plus aérée, où se côtoient de nombreuses espèces d’arbres endémiques.</p><p>Un véritable défi de la nature, soutenu pour une fois par l'homme.</p>"
+    night_life:
+      title: "Night Life"
+      body_html: "<p>Le Safari Bar situé à Baie Lascars, non loin de la capitale Port Mathurin est l'endroit le plus 'tendance' de tout Rodrigues! Une boîte de nuit de bon standing, où l'on vient passer des soirées agréables entre amis ou tout simplement se défouler sur des airs variés: techno, house, musiques commerciales.</p><p>Bref, on peut dire que la Cendrillon des Mascareignes a tous les atouts pour faire de votre séjour quelque chose d’inoubliable.</p>"
   hotels:
     title: "Hôtels et Forfaits"
     body_html: "S'il vous plaît contacter l'organisation pour plus d'infos sur <a href='mailto:trailrodrigues@gmail.com'>trailrodrigues@gmail.com</a>"

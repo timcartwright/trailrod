@@ -102,11 +102,29 @@ en:
   rodrigues:
     title: "Rodrigues Island"
     discover_title: "Discover Rodrigues"
-    discover_html: "<h2>Discover Rodrigues</h2><p>In the <strong>tropical heart of the Indian Ocean</strong>, Rodrigues Island stretches over a surface area of only 108 km2. Some 650 km to the north-east of Mauritius, it is the part of Africa that is closest to Australia.</p><p>The landscapes vary from <strong>hilly lands to steep volcanic hills</strong>. Its coasts are made of wild creeks, <strong>marvelous sandy beaches and coral reefs</strong>, surrounded by small islets. The lagoon and coral reefs of Rodrigues are twice the area of the islands and are very rich and full of marine life.</p><p>Its charm and <strong>simple unhurried pace of life</strong> attracts visitors from around the world who come to enjoy the island's tranquility and natural beauty.  Kindness and simplicity are the principal traits of the Rodriguans.</p>"
+    discover_html: "<h2>Discover Rodrigues</h2><p>In the <strong>tropical heart of the Indian Ocean</strong>, Rodrigues Island stretches over a surface area of only 108 km2. Some 650 km to the north-east of Mauritius, it is the part of Africa that is closest to Australia.</p><p>The landscapes vary from <strong>hilly lands to steep volcanic hills</strong>. Its coasts are made of wild creeks, <strong>marvelous sandy beaches and coral reefs</strong>, surrounded by small islets. The lagoon and coral reefs of Rodrigues are twice the area of the islands and are very rich and full of marine life.</p><p>Its charm and <strong>simple unhurried pace of life</strong> attracts visitors from around the world who come to enjoy the island's tranquility and natural beauty. Kindness and simplicity are the principal traits of the Rodriguans.</p>"
     quote_html: '<h3>"Rodrigues offers pristine, empty beaches and the chance to immerse yourself in local life."</h3><p>The Guardian</p>'
   activities:
     title: "Activities"
-    body_html: "Kite surf, zip line, bird sanctuary of ilot Cocos, The Francois Leguat Giant Tortoise & Cave Reserve, Grande Montagne Nature Reserve, Protection of Marine Turtles, Safari Night club"
+    intro: "The authentic island of Rodrigues will entice you with the many activities on offer."
+    tortoise:
+      title: "François Leguat Tortoise Reserve"
+      body_html: "The original Rodrigais ecosystem was reestablished in the western part of the island thanks to the replanting of the most suitable native and endemic species and the introduction of the native turtles of the Indian Ocean region. Today, more than 1,200 live freely in the reserve.</p><p>Of the 26 limestone caves on site, two were rehabilitated, including the Great Cave - equipped with impressive stalactites and stalagmites - and the Cave de La Virgin.</p><p>Today, François Leguat Reserve is growing in popularity both with locals and tourists from around the world."
+    cocos:
+      title: "Ile Aux Cocos"
+      body_html: "Rodrigues is surrounded by 17 islands including Ile aux Cocos and its neighbour Ile au Sable. These two pretty little sandbars have become nature reserves, however visitors are welcome on part of Cocos Island.</p><p>Ile aux Cocos, with an area of 1.5km long by 250m wide, is an uninhabited island located west of Rodrigues in the lagoon not far from the coral reef.</p><p>The boat trip lasts an hour and a half and the coastal landscapes and approach to the island is beautiful. As soon as we arrive we are lulled by the cries of some rare birds including a beautiful white bird known as 'Bird of the Virgin' by the Rodrigais, and brown noddy or macoua, a kind of black seagull. These birds are everywhere and come close. One can enjoy a long swim and bask on the warm white sand.</p>"
+    zip_line:
+      title: "Tyrodrig Zip Lines"
+      body_html: "In eastern Rodrigues, lovers of thrills and adrenaline are treated to a series of five zip lines over 2 courses accessible to everyone. Perched over 100 meters high, an amazing glide above green valleys and waterfalls, facing the lagoon awaits.</p><p>Crossing the Pistachio Valley via a suspension bridge became possible since February 2016. A long crossing of a hundred meters, offering stunning views of the northwestern lagoon, Tropic birds and the Pistachio Waterfall. The company, Tyrodrig, has combined its eco-friendly activities with the topography of the island to the delight of young and old.</p>"
+    kitesurf:
+      title: "Kitesurf"
+      body_html: "Mourouk Lagoon has become a mythical spot which all kiters dream of with it's trilogy of regular trade winds, 200 sq km of shallow turquoise lagoon warm water, and its legendary hospitality.</p><p>It is fast to learn to kitesurf. A two hour course is sufficient to learn how to handle the sail and after two hours more for manageable sailing and windsurfing, the best are ready for the first 'down' together.</p><p>At the crossroads of surf, air and sailing, kitesurfing is experiencing a meteoric rise with its annual festival hosting the best kiters in the world.</p>"
+    grande_montagne:
+      title: "Grande Montagne Nature Reserve"
+      body_html: "In Rodrigues, the primary forest had completely disappeared. Thanks to the initiative of the government technicians under the responsibility of the Mauritius Wildlife Foundation, replanting of endemic species work has been undertaken to rebuild a primary forest and the birth of a nature reserve in Grande Mountain.</p><p>The reserve is open to the public. All along a marked path, visitors can discover vegetation, often dense and sometimes more airy, which combines many endemic tree species.</p><p>A challenge of nature, created for once by man.</p>"
+    night_life:
+      title: "Night Life"
+      body_html: "The Safari Bar located in Lascars Bay - not far from the capital Port Mathurin - is the most trendy of any place in Rodrigues!</p><p>A club of good standing, where people come spend pleasant evenings with friends or simply unwind to a variety of tunes: techno, house and commercial music.</p>"
   hotels:
     title: "Hotels and Packages"
     body_html: "Please contact the organization for more info at <a href='mailto:trailrodrigues@gmail.com'>trailrodrigues@gmail.com</a>"
