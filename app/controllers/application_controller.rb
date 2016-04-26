@@ -28,7 +28,7 @@ private
     if ['fr', 'en'].include? http_accept_language
       http_accept_language
     else
-      'en'
+      'fr'
     end
   end
 
