@@ -1,6 +1,6 @@
 class Home
   def next_trail
-    next_trail ||= Trail.includes(:events).where('date >= ?', DateTime.now).order(date: :asc).first
+    next_trail ||= Trail.includes(:events).where('date >= ? AND location = ?', DateTime.now, 'Rodrigues').order(date: :asc).first
   end
 
   def next_trail_events
