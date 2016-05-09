@@ -15,13 +15,19 @@
   <span class="content-wrapper">
     <%= image_tag 'tdr-logo.jpg', alt: "Trail of Rodrigues Logo", width: '100%', class: 'load-first' %>
     <span class="tile-content half-height">
-      <h3>
-        <%= t ('trail_of_rodrigues.edition') %>
-      </h3>
 
-      <h2>
+      <h2 style="margin-bottom: 0;">
         <%= t ('trail_of_rodrigues.date') %>
       </h2>
+      <h4 style="margin-top: 0;">
+        <%= t ('trail_of_rodrigues.edition') %>
+      </h4>
+      <p>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#register-now">
+          <%= t('register.now') %> <i class='material-icons'>open_in_new</i>
+        </a>
+      </p>
       <% if user_signed_in? && current_user.is_admin? %>
         <!-- Modal Trigger -->
         <%= link_to raw("Manage <i class='material-icons'>edit</i>"), "#admin", class: "waves-effect waves-light btn modal-trigger" %>
