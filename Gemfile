@@ -29,6 +29,7 @@ gem 'puma'
 gem "paperclip", "~> 4.3"
 gem 'aws-sdk-v1'
 gem "comma", "~> 3.2.1"
+gem 'tinymce-rails'
 
 group :development, :test do
   gem 'byebug'
