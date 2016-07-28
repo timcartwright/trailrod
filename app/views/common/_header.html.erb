@@ -6,6 +6,7 @@
       <li><%= link_to_unless_current "Rod Trail Association", page_path('rod-trail-association') %></li>
       <li><%= link_to_unless_current t('rodrigues.title'), page_path('rodrigues') %></li>
       <li><%= link_to_unless_current t('trail_league.calendar'), trails_path %></li>
+      <li><%= link_to_unless_current t('news'), posts_path %></li>
       <li>
         <%=
         if user_signed_in?
