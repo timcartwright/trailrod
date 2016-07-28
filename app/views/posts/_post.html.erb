@@ -4,7 +4,11 @@
       <h2>
         <%= post.title %>
         <% if user_signed_in? && current_user.is_admin? %>
+
           <%= link_to raw("<i class='material-icons'>edit</i>"), edit_post_path(post), class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "right", delay: "50", tooltip: "Edit Post" } %>
+
+          <%= link_to raw("<i class='material-icons'>delete</i>"), post_path(post), method: :delete, class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "right", delay: "50", tooltip: "Delete Post", confirm: 'Are you certain you want to delete this?' } %>
+
         <% end %>
       </h2>
       <div>
