@@ -1,4 +1,4 @@
-<div class="tile tile-lg tile-full-width tile-flexible-height tile-deep-orange">
+<div class="tile tile-lg tile-full-width tile-flexible-height <%= tile_colour %>">
   <span class="content-wrapper">
     <span class="tile-content">
       <h2>
@@ -17,3 +17,6 @@
     </span>      
   </span>
 </div>
+
+<!-- Change background colour for each post -->
+<% @post_background_colour += 1 %>
