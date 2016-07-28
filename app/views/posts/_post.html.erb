@@ -3,8 +3,13 @@
     <span class="tile-content">
       <h2>
         <%= post.title %>
+        <% if user_signed_in? && current_user.is_admin? %>
+          <%= link_to raw("<i class='material-icons'>edit</i>"), edit_post_path(post), class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "right", delay: "50", tooltip: "Edit Post" } %>
+        <% end %>
       </h2>
-        <%= post.body %>
+      <div>
+        <%= post.body.html_safe %>
+      </div>
     </span>      
   </span>
 </div>
