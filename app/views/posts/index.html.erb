@@ -1,0 +1,15 @@
+<div class="tile tile-lg tile-full-width tile-flexible-height tile-deep-orange">
+  <span class="content-wrapper">
+    <span class="tile-content">
+      <h1>
+        News
+        <% if user_signed_in? && current_user.is_admin? %>
+          <%= link_to raw("<i class='material-icons'>add</i>"), new_post_path, class: 'btn-floating btn-large waves-effect waves-light tooltipped',  data: { position: "right", delay: "50", tooltip: "Create New Post" } %>
+        <% end %>
+      </h1>
+    </span>      
+  </span>
+</div>
+
+<%= render @posts %>
+

@@ -22,6 +22,8 @@ Rails.application.routes.draw do
       end
     end
 
+    resources :posts
+
     get "/:id" => "high_voltage/pages#show", :as => :page, :format => false
   end
   
