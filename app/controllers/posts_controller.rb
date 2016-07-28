@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
   before_action :authenticate_user!, only: [:new, :create, :edit, :update]
+  before_action :find_post, only: [:edit, :update]
 
   def index
     @posts = Post.all.order(created_at: :desc)
@@ -20,11 +21,10 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
   end
 
   def update
-    @post = Post.find(params[:id])
+    
     if @post.update_attributes(post_params)
       redirect_to posts_path
     else
@@ -36,6 +36,10 @@ private
 
   def post_params
     params.require(:post).permit(:title, :body)
+  end
+
+  def find_post
+    @post = Post.find(params[:id])
   end
 
 end
