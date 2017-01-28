@@ -56,9 +56,9 @@ en:
     roag: 
       intro_html: "<h2>Register for the event with ROAG</h2><h4>You need to be a member of ROAG to register</h4>"
       become_member: "Become a ROAG member"
-      become_member_link: "http://www.roag.org/entries/rodrigues2016/register.aspx"
+      become_member_link: "https://www.roag.co.za/online-entries.aspx?EventID=1973"
       already_member: "I am already a ROAG member"
-      already_member_link: "http://www.roag.org/entries/rodrigues2016/entries.aspx"
+      already_member_link: "https://www.roag.co.za/online-entries.aspx?EventID=1973"
     entry_fees: "Entry fees"
     foreigners: "For Foreigners"
     Mauritians: "For Mauritians"
