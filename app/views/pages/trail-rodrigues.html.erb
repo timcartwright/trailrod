@@ -818,6 +818,17 @@
         </div>
         <div class="file-field input-field">
           <div class="btn">
+            <span>12k</span>
+            <%= f.file_field :participants_12k %>
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+            <%= f.check_box :delete_participants_12k %>
+            <%= f.label :delete_participants_12k, "Delete?" %>
+          </div>
+        </div>
+        <div class="file-field input-field">
+          <div class="btn">
             <span>7k</span>
             <%= f.file_field :participants_7k %>
           </div>

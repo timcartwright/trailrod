@@ -13,6 +13,10 @@
 #  participants_22k_content_type :string
 #  participants_22k_file_size    :integer
 #  participants_22k_updated_at   :datetime
+#  participants_12k_file_name    :string
+#  participants_12k_content_type :string
+#  participants_12k_file_size    :integer
+#  participants_12k_updated_at   :datetime
 #  participants_7k_file_name     :string
 #  participants_7k_content_type  :string
 #  participants_7k_file_size     :integer
@@ -31,12 +35,17 @@ class Datum < ActiveRecord::Base
                     storage: :s3,
                     s3_credentials: Proc.new{|a| a.instance.s3_credentials }
 
+  has_attached_file :participants_12k,
+                    storage: :s3,
+                    s3_credentials: Proc.new{|a| a.instance.s3_credentials }
+
   has_attached_file :participants_7k,
                     storage: :s3,
                     s3_credentials: Proc.new{|a| a.instance.s3_credentials }
 
   validates_attachment_content_type :participants_44k, content_type: ['application/pdf']
   validates_attachment_content_type :participants_22k, content_type: ['application/pdf']
+  validates_attachment_content_type :participants_12k, content_type: ['application/pdf']
   validates_attachment_content_type :participants_7k, content_type: ['application/pdf']
 
   include DeletableAttachment

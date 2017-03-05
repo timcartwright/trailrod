@@ -18,6 +18,6 @@ class DataController < ApplicationController
 private
 
   def datum_params
-    params.require(:datum).permit(:participants_44k, :participants_22k, :participants_7k, :delete_participants_44k, :delete_participants_22k, :delete_participants_7k)
+    params.require(:datum).permit(:participants_44k, :participants_22k, :participants_12k, :participants_7k, :delete_participants_44k, :delete_participants_22k, :delete_participants_12k, :delete_participants_7k)
   end
 end

@@ -30,6 +30,7 @@
         <%= link_to raw("<i class='material-icons'>trending_up</i>"), "#course-12", class: "btn-floating btn-large waves-effect waves-light orange modal-trigger tooltipped", data: { position: "bottom", delay: "50", tooltip: "Course" } %>
         <!-- Modal Trigger -->
         <%= link_to raw("<i class='material-icons'>directions_bus</i>"), "#transport-12", class: "btn-floating btn-large waves-effect waves-light blue modal-trigger tooltipped", data: { position: "bottom", delay: "50", tooltip: "Transport" } %>
+        <%= link_to raw("<i class='material-icons'>directions_run</i>"), @data.participants_12k.url, class: "btn-floating btn-large waves-effect waves-light tooltipped", target: "_blank", data: { position: "bottom", delay: "50", tooltip: "Participants" } if data.participants_12k.present? %>
       </p>
     </span>     
   </span>
