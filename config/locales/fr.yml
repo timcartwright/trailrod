@@ -44,7 +44,7 @@ fr:
     finish: "Arrivée"
   testimonials:
     title: "Livre d'Or"
-    ryan: "Le Trail de Rodrigues était un de mes événements phares de l’année et je le recommande à tous les Trailers."
+    ryan: "Le Trail de Rodrigues: un de mes événements phares de l’année et je le recommande à tous les Trailers."
   register:
     title: "Inscription"
     for: "S'inscrire au"
@@ -91,8 +91,8 @@ fr:
       7k: "Trail Tortue (7km): Chaussures adéquates."
       general_html: "<p>Matériel recommandé en fonction des conditions météo pour le Trail Solitaire (22km) et le Trail de l'Eden (44km):</p><ul><li>Casquette ou buff</li><li>Gants</li></ul>"
   rta:
-    about_home_page_html: "<p>Depuis 2011, nous avons pris soin de la logistique et de la sécurité course.</p><p>Nous promouvons Trail comme une activité d'Amélioration écologique et communautaire.</p>"
-    about_part_one_html: "<p>En 2011 la Rod Trail Association a vu le jour et elle a pris en charge tout l'aspect logistique et sécurité de la course. Derrière cette association, il y a une équipe de 10 jeunes dynamiques, amoureux de leur île et Trail, qui forment le Comité Exécutif.</p><p>Chaque année le comité dresse un calendrier d'activités proposant ainsi aux amateurs comme aux professionnels du Trail l'occasion de parfaire leur technique ainsi mieux se préparer avant l'événement phare qu'est le Trail de Rodrigues prévu au mois de novembre. Des mini trails sont ainsi organisés incluant à ce jour 5 parcours allant de 7 à 20 Km sillonnant l'île de part et d'autre.</p>"
+    about_home_page_html: "<p>Depuis 2011, nous avons pris soin de la logistique et de la sécurité de la course.</p><p>Nous promouvons le Trail comme une activité d'amélioration écologique et communautaire.</p>"
+    about_part_one_html: "<p>En 2011 la Rod Trail Association a vu le jour et elle a pris en charge tout l'aspect logistique et sécurité de la course. Derrière cette association, il y a une équipe de 10 jeunes dynamiques, amoureux de leur île et Trail, qui forment le Comité Exécutif.</p><p>Chaque année le comité dresse un calendrier d'activités proposant ainsi aux amateurs comme aux professionnels du Trail l'occasion de parfaire leur technique ainsi mieux se préparer avant l'événement phare qu'est le Trail de Rodrigues prévu au mois de novembre. Des mini trails sont, de ce fait, organisés incluant à ce jour 5 parcours allant de 7 à 20 Km sillonnant l'île de part et d'autre.</p>"
     about_part_two_html: "<p>Non seulement la RTA a à coeur la promotion du Trail mais elle se veut aussi 'nature friendly'. Elle privilégie le respect et la protection de la nature et toute une équipe a été mise en place pour le nettoyage des sentiers. D'autres activités sur le plan social sont aussi organisées en collaboration avec le Rod Riders et le Blood Donors Association entre autres.</p><p>La RTA est avant tout une grande famille qui est soutenue et encadrée par une centaine de volontaires fidèles. Ils prêtent main forte au comité organisateur pour contribuer au bon déroulement des courses.</p>"
     committee:
       title: "Le Comité"
