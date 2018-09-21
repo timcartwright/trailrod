@@ -149,6 +149,7 @@ GEM
       mimemagic (= 0.3.0)
     pg (0.21.0)
     public_suffix (3.0.3)
+    puma (3.12.0)
     rack (1.6.10)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -273,6 +274,7 @@ DEPENDENCIES
   nprogress-rails
   paperclip (~> 4.3)
   pg (~> 0.20)
+  puma
   rails (= 4.2.8)
   rails-i18n (~> 4.0.0)
   rails-jquery-autocomplete
