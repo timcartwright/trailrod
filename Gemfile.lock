@@ -271,7 +271,7 @@ DEPENDENCIES
   jquery-ui-rails (~> 5.0.5)
   letter_opener
   material_icons
-  materialize-sass
+  materialize-sass (~> 1.0.0.beta)
   nprogress-rails
   paperclip (~> 4.3)
   pg (~> 0.20)
