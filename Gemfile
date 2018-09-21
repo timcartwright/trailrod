@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.8'
 gem 'sass-rails', '~> 5.0'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'uglifier', '>= 1.3.0'
@@ -25,7 +25,7 @@ gem 'jquery-ui-rails'
 gem 'rails-jquery-autocomplete'
 gem 'nprogress-rails'
 gem 'rails-i18n', '~> 4.0.0'
-gem 'puma'
+gem 'webrick'
 gem "paperclip", "~> 4.3"
 gem 'aws-sdk-v1'
 gem "comma", "~> 3.2.1"
