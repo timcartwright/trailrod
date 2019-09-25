@@ -55,6 +55,8 @@ en:
     now: "Register Now"
     roag: 
       intro_html: "<h2>Register for the event with ROAG</h2><h4>You need to be a member of ROAG to register</h4>"
+      sign_up_with_roag: "Sign up with ROAG"
+      sign_up_link: "https://new.roag.org/public/event/3205/en"
       become_member: "Become a ROAG member"
       become_member_link: "https://new.roag.org/public/event/3205/en"
       already_member: "I am already a ROAG member"
