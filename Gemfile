@@ -27,7 +27,7 @@ gem 'rails-jquery-autocomplete'
 gem 'nprogress-rails'
 gem 'rails-i18n', '~> 4.0.0'
 gem 'webrick'
-gem "paperclip", "~> 4.3"
+gem "paperclip", "~> 5.2"
 gem 'aws-sdk-v1'
 gem "comma", "~> 3.2.1"
 gem 'tinymce-rails'
